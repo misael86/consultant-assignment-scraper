@@ -1,0 +1,41 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": { "source.fixAll": "explicit" },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // Show a line between the brackets to easily follow start and end
+  "editor.guides.bracketPairs": true,
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "svelte": "html",
+    "typescript": "typescriptreact"
+  },
+  "eslint.format.enable": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte", "json", "jsonc"],
+  // Save file when tab focus is changed, no avoid unsaved files
+  "files.autoSave": "onFocusChange",
+  // Use linux file ending as default
+  "files.eol": "\n",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "indentRainbow.indicatorStyle": "light",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown.updateLinksOnFileMove.enabled": "always",
+  // Change prettier print width to fit a 14 inch laptop
+  "prettier.printWidth": 120,
+  // Exclude generated folders from search results
+  "search.exclude": {
+    "build": true,
+    "coverage": true,
+    "dist": true,
+    "node_modules": true
+  },
+  // Configure default terminal in vscode
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  // Use project version of typescript instead of the one locally installed on the mashin
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme"
+}
