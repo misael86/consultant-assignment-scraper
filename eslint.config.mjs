@@ -49,7 +49,7 @@ export default defineConfig(
     rules: {
       "no-relative-import-paths/no-relative-import-paths": [
         "error",
-        { allowSameFolder: true, prefix: "", rootDir: "app" },
+        { allowSameFolder: true, prefix: "", rootDir: "src" },
       ],
       "unicorn/filename-case": ["error", { case: "kebabCase" }],
     },
