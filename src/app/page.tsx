@@ -1,52 +1,113 @@
-import Image from "next/image";
+import AssignmentItem from "@/components/assignment-item";
+import AssignmentList from "@/components/assignment-list";
+import Button from "@/components/button";
+import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image alt="Next.js logo" className="dark:invert" height={20} priority src="/next.svg" width={100} />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="m-10 mt-5 mb-5">
+      <Header size={1}>Consultant Assignment Scraper</Header>
+
+      <div className="mt-5">
+        <Header size={2}>Available assignments (X)</Header>
+      </div>
+
+      <div className="mt-10 flex flex-row gap-5 items-center">
+        <span>Type:</span>
+        <div className="flex flex-row gap-5">
+          <Button>Dev (X)</Button>
+          <Button>UX (X)</Button>
+          <Button>A11y (X)</Button>
+          <Button>Clear all</Button>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <Image alt="Vercel logomark" className="dark:invert" height={16} src="/vercel.svg" width={16} />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Documentation
-          </a>
+      </div>
+
+      <div className="mt-5 mb-10 flex flex-row gap-5 items-center">
+        <span>Source:</span>
+        <div className="flex flex-row gap-5">
+          <Button>Verama (X)</Button>
+          <Button>Cinode (X)</Button>
+          <Button>Clear all</Button>
         </div>
-      </main>
-    </div>
+      </div>
+
+      <AssignmentList>
+        <AssignmentItem
+          description="Description"
+          lastApplicationDate="Last Date"
+          scrappedDate="Read"
+          source="Source"
+          startDate="Start"
+          title="Name"
+        />
+        <AssignmentItem
+          description="Description"
+          isDev={true}
+          lastApplicationDate="Last Date"
+          scrappedDate="Read"
+          source="Source"
+          startDate="Start"
+          title="Name"
+        />
+        <AssignmentItem
+          description="Description"
+          isUX={true}
+          lastApplicationDate="Last Date"
+          scrappedDate="Read"
+          source="Source"
+          startDate="Start"
+          title="Name"
+        />
+        <AssignmentItem
+          description="Description"
+          isA11y={true}
+          lastApplicationDate="Last Date"
+          scrappedDate="Read"
+          source="Source"
+          startDate="Start"
+          title="Name"
+        />
+      </AssignmentList>
+
+      <div className="mt-10">
+        <Header size={2}>Filters</Header>
+      </div>
+
+      <div className="mt-5 mb-5 flex flex-row gap-5">
+        <span className="mt-1">Dev:</span>
+        <div className="flex flex-row flex-wrap gap-5">
+          <Button>Froentend</Button>
+          <Button>Dev</Button>
+          <Button>Developer</Button>
+          <Button>Backend</Button>
+          <Button>Utvecklare</Button>
+          <Button>Fullstack</Button>
+          <Button>JavaScript</Button>
+          <Button>TypeScript</Button>
+          <Button>C#</Button>
+          <Button>React</Button>
+          <Button>+</Button>
+        </div>
+      </div>
+
+      <div className="mt-5 flex flex-row gap-5">
+        <span className="mt-1">UX:</span>
+        <div className="flex flex-row flex-wrap gap-5">
+          <Button>UX</Button>
+          <Button>+</Button>
+        </div>
+      </div>
+
+      <div className="mt-5 mb-20 flex flex-row gap-5">
+        <span className="mt-1">A11y:</span>
+        <div className="flex flex-row flex-wrap gap-5">
+          <Button>A11y</Button>
+          <Button>T12t</Button>
+          <Button>Accessibility</Button>
+          <Button>Tillgänglighet</Button>
+          <Button>+</Button>
+        </div>
+      </div>
+    </main>
   );
 }
