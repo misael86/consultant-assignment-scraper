@@ -26,7 +26,7 @@ And visit the localhost url
 
 ## Folder structure
 
-Normally in nextjs projects you have one app folder in root and then have all the code there. But I am used to having one src folder containing all the code and in there separate the code into specific folders.
+Normally in nextjs projects you have one app folder in the root and then have all the code there. But I am used to having one src folder containing all the code and in there separate the code into specific folders, like this:
 
 - app: nextjs routes and apis
 - components: shared components
