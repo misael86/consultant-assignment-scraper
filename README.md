@@ -15,6 +15,7 @@ Running the code is straight forward. I've used PNPM for package managing.
 Install all the dependencies the first time
 
 - `pnpm install`
+- `pnpm exec playwright install chromium`
 
 And then just run the local server
 

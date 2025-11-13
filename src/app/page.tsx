@@ -2,8 +2,13 @@ import AssignmentItem from "@/components/assignment-item";
 import AssignmentList from "@/components/assignment-list";
 import Button from "@/components/button";
 import Header from "@/components/header";
+// import { IAssignment } from "@/lib/scraper-response";
+import { scrapeVerama } from "@/lib/verama-scraper";
 
-export default function Home() {
+export default async function Home() {
+  const veramaAssignments = await scrapeVerama();
+  // const veramaAssignments: IAssignment[] = [{ source: "test", title: "test", url: "" }];
+
   return (
     <main className="m-10 mt-5 mb-5">
       <Header size={1}>Consultant Assignment Scraper</Header>
@@ -25,48 +30,23 @@ export default function Home() {
       <div className="mt-5 mb-10 flex flex-row gap-5 items-center">
         <span>Source:</span>
         <div className="flex flex-row gap-5">
-          <Button>Verama (X)</Button>
+          <Button>Verama ({veramaAssignments.length})</Button>
           <Button>Cinode (X)</Button>
           <Button>Clear all</Button>
         </div>
       </div>
 
       <AssignmentList>
-        <AssignmentItem
-          description="Description"
-          lastApplicationDate="Last Date"
-          scrappedDate="Read"
-          source="Source"
-          startDate="Start"
-          title="Name"
-        />
-        <AssignmentItem
-          description="Description"
-          isDev={true}
-          lastApplicationDate="Last Date"
-          scrappedDate="Read"
-          source="Source"
-          startDate="Start"
-          title="Name"
-        />
-        <AssignmentItem
-          description="Description"
-          isUX={true}
-          lastApplicationDate="Last Date"
-          scrappedDate="Read"
-          source="Source"
-          startDate="Start"
-          title="Name"
-        />
-        <AssignmentItem
-          description="Description"
-          isA11y={true}
-          lastApplicationDate="Last Date"
-          scrappedDate="Read"
-          source="Source"
-          startDate="Start"
-          title="Name"
-        />
+        {veramaAssignments.map((assignment) => {
+          return (
+            <AssignmentItem
+              key={assignment.url}
+              source={assignment.source}
+              title={assignment.title ?? "N/A"}
+              url={assignment.url ?? ""}
+            />
+          );
+        })}
       </AssignmentList>
 
       <div className="mt-10">
@@ -86,6 +66,7 @@ export default function Home() {
           <Button>TypeScript</Button>
           <Button>C#</Button>
           <Button>React</Button>
+          <Button>.Net</Button>
           <Button>+</Button>
         </div>
       </div>

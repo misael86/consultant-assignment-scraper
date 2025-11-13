@@ -1,41 +1,29 @@
 interface IProperties {
-  description: string;
   isA11y?: boolean;
   isDev?: boolean;
   isUX?: boolean;
-  lastApplicationDate: string;
-  scrappedDate: string;
   source: string;
-  startDate: string;
   title: string;
+  url: string;
 }
 
-export default function AssignmentItem({
-  description,
-  isA11y,
-  isDev,
-  isUX,
-  lastApplicationDate,
-  scrappedDate,
-  source,
-  startDate,
-  title,
-}: Readonly<IProperties>) {
+export default function AssignmentItem({ isA11y, isDev, isUX, source, title, url }: Readonly<IProperties>) {
   return (
-    <li className="p-5 pt-2.5 pb-2.5 mt-2.5 mb-2.5 border-1 rounded-sm flex flex-column gap-5 justify-between">
-      <div className="flex flex-col">
-        <h3 className="font-bold">{title}</h3>
-        <span>
-          <DevelopmentLabel display={isDev} /> <UxLabel display={isUX} /> <A11yLabel display={isA11y} />
-        </span>
-        <span>{description}</span>
-      </div>
-      <div className="flex flex-col gap-2 border-l-2 border-dotted pl-5">
-        <span>Start: {startDate}</span>
-        <span>Apply before: {lastApplicationDate}</span>
-        <span>Scrapped: {scrappedDate}</span>
-        <span>Source: {source}</span>
-      </div>
+    <li>
+      <a
+        className="p-5 pt-2.5 pb-2.5 mt-2.5 mb-2.5 border-1 rounded-sm flex flex-column gap-5 justify-between cursor-pointer hover:outline-2 hover:outline-yellow-100 hover:outline-offset-2 transition-all duration-200"
+        href={url}
+      >
+        <div className="flex flex-col">
+          <h3 className="font-bold">{title}</h3>
+          <small>
+            <DevelopmentLabel display={isDev} /> <UxLabel display={isUX} /> <A11yLabel display={isA11y} />
+          </small>
+        </div>
+        <div className="flex flex-col gap-2 border-l-2 border-dotted pl-5">
+          <span>Source: {source}</span>
+        </div>
+      </a>
     </li>
   );
 }
