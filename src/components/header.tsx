@@ -3,7 +3,7 @@ interface IProperties {
   size: 1 | 2 | 3 | 4;
 }
 
-export default function Header({ children, size }: Readonly<IProperties>) {
+export function Header({ children, size }: Readonly<IProperties>) {
   switch (size) {
     case 1: {
       return <h1 className="text-2xl font-bold">{children}</h1>;

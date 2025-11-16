@@ -6,7 +6,7 @@ I am a consultant and when I was trying to find a new assingment I found Anna Le
 
 ## Stack
 
-I've decided to write the solution in Nextjs and TypeScript. In that way practicing server rendering and also React Server Components. The database is stored localy, therefor, as for now, this page can only be run localy. I don't see the point of hosting this somewhere yet. I am also going to experiment with Gemini CLI and see if I can get some help writing documentation, getting code reviewed and having a coding partner who can guide me in the right direction, without writing the code for me. So I want to stay away from vibe coding the project.
+I've decided to write the solution in Nextjs and TypeScript. In that way practicing server rendering and also React Server Components. The database is stored localy in a .json file and edited with the lowdb package. Since the database is stored localy for now, this page can only be run localy, I don't see the point of hosting this somewhere yet. For scraping webpages I am using Playwright. I am also going to experiment with Gemini CLI and see if I can get some help writing documentation, getting code reviewed and having a coding partner who can guide me in the right direction, without writing the code for me. So I want to stay away from vibe coding the project.
 
 ## Running the code
 
@@ -29,7 +29,7 @@ And visit the localhost url
 
 Normally in nextjs projects you have one app folder in the root and then have all the code there. But I am used to having one src folder containing all the code and in there separate the code into specific folders, like this:
 
-- app: nextjs routes and apis
+- app: nextjs routes
 - components: shared components
 - context: state management
 - hooks: custom hooks

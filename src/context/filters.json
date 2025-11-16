@@ -1,0 +1,17 @@
+{
+  "a11y": ["a11y", "t12t", "accessibility", "tillgänglighet"],
+  "dev": [
+    "frontend",
+    "dev",
+    "developer",
+    "utvecklare",
+    "backend",
+    "fullstack",
+    "javascript",
+    "typescript",
+    "c#",
+    ".net",
+    "react"
+  ],
+  "ux": ["ux"]
+}
