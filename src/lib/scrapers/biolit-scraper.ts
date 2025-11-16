@@ -1,28 +1,32 @@
-import { chromium } from "playwright";
+import { Page } from "playwright";
 
 import { IAssignment } from "@/lib/scrape-response";
 
-export async function scrapeBiolit(): Promise<IAssignment[]> {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-
+export async function scrapeBiolit(page: Page, storedAssignmentIds: string[]): Promise<IAssignment[]> {
   await page.goto("https://biolit.se/konsultuppdrag/");
   await page.waitForSelector(".collapsible");
 
-  const assignments = await page.evaluate(() => {
-    return [...document.querySelectorAll(".collapsible")].map((element) => {
+  return await page.evaluate((storedAssignmentIds) => {
+    const assignments: IAssignment[] = [];
+    const elements = document.querySelectorAll(".collapsible");
+
+    for (const element of elements) {
       const url = "https://biolit.se/konsultuppdrag/";
-      return {
-        key: element.attributes.getNamedItem("id")?.value.toString() ?? crypto.randomUUID(),
+      const key = element.attributes.getNamedItem("id")?.value.toString() ?? crypto.randomUUID();
+
+      if (storedAssignmentIds.includes(key)) break;
+
+      const assignment = {
+        key,
         scraped: new Date().toLocaleDateString("sv-SE"),
         source: "biolit",
         title: element.querySelector("b")?.textContent?.trim() ?? "N/A",
         url,
       };
-    });
-  });
 
-  await browser.close();
+      assignments.push(assignment);
+    }
 
-  return assignments;
+    return assignments;
+  }, storedAssignmentIds);
 }
