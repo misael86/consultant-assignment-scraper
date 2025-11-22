@@ -1,10 +1,7 @@
 export interface IAssignment {
-  isA11y?: boolean;
-  isDev?: boolean;
-  isUX?: boolean;
-  key: string;
+  id?: string;
   scraped: string;
   source: string;
-  title: string;
+  title?: string;
   url: string;
 }

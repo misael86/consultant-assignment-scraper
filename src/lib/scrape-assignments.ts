@@ -2,8 +2,6 @@ import { Low } from "lowdb";
 import { JSONFilePreset } from "lowdb/node";
 import { Browser, chromium, Page } from "playwright";
 
-import filters from "@/context/filters.json";
-
 import { IAssignment } from "./scrape-response";
 import { scrapeASociety } from "./scrapers/a-society-scraper";
 import { scrapeAliant } from "./scrapers/aliant-scraper";
@@ -14,43 +12,25 @@ import { scrapeVerama } from "./scrapers/verama-scraper";
 export async function scrapeAssignments() {
   const browser = await chromium.launch();
   const database = await JSONFilePreset<IAssignment[]>("./src/context/assignments.json", []);
+  const existingKeys = new Set(database.data.map((assignment) => `${assignment.source}-${assignment.id}`));
 
   try {
     const results = await Promise.allSettled([
-      runScraper(
-        scrapeASociety,
-        database.data.filter((assignment) => assignment.source === "a-society").map((assignment) => assignment.key),
-        browser
-      ),
-      runScraper(
-        scrapeAliant,
-        database.data.filter((assignment) => assignment.source === "aliant").map((assignment) => assignment.key),
-        browser
-      ),
-      runScraper(
-        scrapeBiolit,
-        database.data.filter((assignment) => assignment.source === "biolit").map((assignment) => assignment.key),
-        browser
-      ),
-      runScraper(
-        scrapeCinode,
-        database.data.filter((assignment) => assignment.source === "cinode").map((assignment) => assignment.key),
-        browser
-      ),
-      runScraper(
-        scrapeVerama,
-        database.data.filter((assignment) => assignment.source === "verama").map((assignment) => assignment.key),
-        browser
-      ),
+      runScraper(scrapeASociety, existingKeys, browser),
+      runScraper(scrapeAliant, existingKeys, browser),
+      runScraper(scrapeBiolit, existingKeys, browser),
+      runScraper(scrapeCinode, existingKeys, browser),
+      runScraper(scrapeVerama, existingKeys, browser),
     ]);
 
     let successfulAssignments = results
       .filter((result) => result.status === "fulfilled")
       .flatMap((result) => result.value);
 
+    if (results.filter((result) => result.status === "rejected")) console.log("Some scrapers failed", results);
+
     successfulAssignments = await store(successfulAssignments, database);
     successfulAssignments = sort(successfulAssignments);
-    successfulAssignments = tag(successfulAssignments);
 
     return successfulAssignments;
   } finally {
@@ -59,12 +39,12 @@ export async function scrapeAssignments() {
 }
 
 async function runScraper(
-  scraper: (page: Page, storedAssignmentIds: string[]) => Promise<IAssignment[]>,
-  storedAssignmentIds: string[],
+  scraper: (page: Page, existingKeys: Set<string>) => Promise<IAssignment[]>,
+  existingKeys: Set<string>,
   browser: Browser
 ) {
   const page = await browser.newPage();
-  const assingments = await scraper(page, storedAssignmentIds);
+  const assingments = await scraper(page, existingKeys);
   await page.close();
   return assingments;
 }
@@ -82,20 +62,7 @@ function sort(assignments: IAssignment[]) {
 }
 
 async function store(assignments: IAssignment[], database: Low<IAssignment[]>): Promise<IAssignment[]> {
-  for (const assignment of assignments) {
-    if (database.data.some((item) => item.key === assignment.key && item.source === assignment.source)) continue;
-    database.data.push(assignment);
-  }
+  database.data.push(...assignments);
   await database.write();
   return database.data;
-}
-
-function tag(assignments: IAssignment[]): IAssignment[] {
-  return assignments.map((assignment) => {
-    const lowerCaseTitle = assignment.title.toLowerCase();
-    assignment.isA11y = filters.a11y.some((filter) => lowerCaseTitle.includes(filter.toLowerCase()));
-    assignment.isDev = filters.dev.some((filter) => lowerCaseTitle.includes(filter.toLowerCase()));
-    assignment.isUX = filters.ux.some((filter) => lowerCaseTitle.includes(filter.toLowerCase()));
-    return assignment;
-  });
 }

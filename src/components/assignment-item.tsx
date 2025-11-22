@@ -1,3 +1,6 @@
+import { isA11y } from "@/lib/filters/is-a11y";
+import { isDevelopment } from "@/lib/filters/is-development";
+import { isUX } from "@/lib/filters/is-ux";
 import { IAssignment } from "@/lib/scrape-response";
 
 interface IProperties {
@@ -14,16 +17,19 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
         <div className="flex flex-row gap-5">
           <h3 className="font-bold">{assignment.title}</h3>
           <span>
-            <DevelopmentLabel display={assignment.isDev} /> <UxLabel display={assignment.isUX} />{" "}
-            <A11yLabel display={assignment.isA11y} />
+            <DevelopmentLabel display={isDevelopment(assignment)} /> <UxLabel display={isUX(assignment)} />{" "}
+            <A11yLabel display={isA11y(assignment)} />
           </span>
         </div>
         <div className="flex">
           <div className="border-l-2 border-dotted pl-5 pr-5">
             <span>{assignment.source}</span>
           </div>
-          <div className="border-l-2 border-dotted pl-5">
+          <div className="border-l-2 border-dotted pl-5 pr-5">
             <span>{assignment.scraped}</span>
+          </div>
+          <div className="border-l-2 border-dotted pl-5">
+            <span>Status</span>
           </div>
         </div>
       </a>

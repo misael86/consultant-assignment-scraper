@@ -2,30 +2,27 @@ import { Page } from "playwright";
 
 import { IAssignment } from "@/lib/scrape-response";
 
-export async function scrapeVerama(page: Page, storedAssignmentIds: string[]): Promise<IAssignment[]> {
+export async function scrapeVerama(page: Page, existingKeys: Set<string>): Promise<IAssignment[]> {
   await page.goto("https://app.verama.com/app/job-requests?size=500");
   await page.waitForSelector(".route-section");
 
-  return await page.evaluate((storedAssignmentIds) => {
+  return await page.evaluate((existingKeys) => {
     const assignments: IAssignment[] = [];
-    const elements = document.querySelectorAll(".route-section");
+    const elements = document.querySelectorAll("app-list-row");
 
     for (const element of elements) {
-      const url = "https://app.verama.com/app" + element.attributes.getNamedItem("href")?.value.toString();
-      const key = url.slice(url.lastIndexOf("/") + 1) ?? crypto.randomUUID();
+      const domain = "https://app.verama.com/app";
+      const url = domain + element.attributes.getNamedItem("href")?.value;
+      const id = url.slice(url.lastIndexOf("/") + 1);
+      const source = "verama";
+      const title = element.querySelector(".el-header")?.textContent?.trim();
+      const scraped = new Date().toLocaleDateString("sv-SE");
 
-      if (storedAssignmentIds.includes(key)) break;
+      if (existingKeys.has(`${source}-${id}`)) break;
 
-      const assignment = {
-        key,
-        scraped: new Date().toLocaleDateString("sv-SE"),
-        source: "verama",
-        title: element.querySelector(".el-header")?.textContent?.trim() ?? "N/A",
-        url,
-      };
-      assignments.push(assignment);
+      assignments.push({ id, scraped, source, title, url });
     }
 
     return assignments;
-  }, storedAssignmentIds);
+  }, existingKeys);
 }

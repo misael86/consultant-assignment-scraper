@@ -1,29 +1,19 @@
-import { useCallback } from "react";
-
-import { IAssignment } from "@/lib/scrape-response";
+import { useStore } from "@/context/store";
 
 import { Button } from "./button";
 import { Header } from "./header";
 
-interface IProperties {
-  assignments: IAssignment[];
-  filters: string[];
-  setFilters: (filters: string[]) => void;
-}
+export function AssignmentFilters() {
+  const { activeFilters, assignments, clearActiveFilters, toggleActiveFilter } = useStore((state) => ({
+    activeFilters: state.activeFilters,
+    assignments: state.assignments,
+    clearActiveFilters: state.clearActiveFilters,
+    toggleActiveFilter: state.toggleActiveFilter,
+  }));
 
-export function AssignmentFilters({ assignments, filters, setFilters }: Readonly<IProperties>) {
-  const handleFilter = useCallback(
-    (filter: string) => {
-      if (filters.includes(filter)) {
-        setFilters(filters.filter((f) => f !== filter));
-      } else if (filter === "") {
-        setFilters([]);
-      } else {
-        setFilters([...filters, filter]);
-      }
-    },
-    [filters, setFilters]
-  );
+  const toggleDevelopment = () => toggleActiveFilter("development");
+  const toggleUx = () => toggleActiveFilter("ux");
+  const toggleA11y = () => toggleActiveFilter("a11y");
 
   return (
     <div>
@@ -34,16 +24,16 @@ export function AssignmentFilters({ assignments, filters, setFilters }: Readonly
       <div className="flex flex-row gap-5 items-center">
         <span>Type:</span>
         <div className="flex flex-row gap-5">
-          <Button isActive={filters.includes("dev")} onClick={() => handleFilter("dev")}>
-            Dev ({assignments.filter((assignment) => assignment.isDev).length})
+          <Button isActive={activeFilters.development} onClick={toggleDevelopment}>
+            Development ({assignments?.filter((assignment) => assignment.isDevelopment).length})
           </Button>
-          <Button isActive={filters.includes("ux")} onClick={() => handleFilter("ux")}>
-            UX ({assignments.filter((assignment) => assignment.isUX).length})
+          <Button isActive={activeFilters.ux} onClick={toggleUx}>
+            User Experience ({assignments?.filter((assignment) => assignment.isUX).length})
           </Button>
-          <Button isActive={filters.includes("a11y")} onClick={() => handleFilter("a11y")}>
-            A11y ({assignments.filter((assignment) => assignment.isA11y).length})
+          <Button isActive={activeFilters.a11y} onClick={toggleA11y}>
+            Accessibility ({assignments?.filter((assignment) => assignment.isA11y).length})
           </Button>
-          <Button onClick={() => handleFilter("")}>Show all</Button>
+          <Button onClick={clearActiveFilters}>Show all</Button>
         </div>
       </div>
     </div>
