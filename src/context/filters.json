@@ -1,6 +1,6 @@
 {
   "a11y": ["a11y", "t12t", "accessibility", "tillgänglighet"],
-  "dev": [
+  "development": [
     "frontend",
     "dev",
     "developer",

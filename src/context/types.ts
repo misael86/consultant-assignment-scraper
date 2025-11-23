@@ -1,10 +1,8 @@
 import { IAssignment } from "@/lib/scrape-response";
 
 export interface IActions {
-  addAssignments: (assignments: IAssignment[]) => void;
   clearActiveFilters: () => void;
-  setAssignments: (assignments: IAssignment[]) => void;
-  setFilters: (filters: IFilterState) => void;
+  scrapeAssignments: () => Promise<void>;
   toggleActiveFilter: (filter: keyof IFilterState) => void;
 }
 
@@ -24,8 +22,9 @@ export interface IFilterState {
 
 export interface IState {
   activeFilters: { a11y: boolean; development: boolean; ux: boolean };
-  assignments?: IAssignmentWithTags[];
-  filters?: IFilterState;
+  assignments: IAssignmentWithTags[];
+  filters: IFilterState;
+  isLoadingAssignments: boolean;
 }
 
 export type IStore = IActions & IState;

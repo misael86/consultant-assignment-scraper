@@ -1,10 +1,7 @@
-import { isA11y } from "@/lib/filters/is-a11y";
-import { isDevelopment } from "@/lib/filters/is-development";
-import { isUX } from "@/lib/filters/is-ux";
-import { IAssignment } from "@/lib/scrape-response";
+import { IAssignmentWithTags } from "@/context/types";
 
 interface IProperties {
-  assignment: IAssignment;
+  assignment: IAssignmentWithTags;
 }
 
 export function AssignmentItem({ assignment }: Readonly<IProperties>) {
@@ -17,8 +14,8 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
         <div className="flex flex-row gap-5">
           <h3 className="font-bold">{assignment.title}</h3>
           <span>
-            <DevelopmentLabel display={isDevelopment(assignment)} /> <UxLabel display={isUX(assignment)} />{" "}
-            <A11yLabel display={isA11y(assignment)} />
+            <DevelopmentLabel display={assignment.isDevelopment} /> <UxLabel display={assignment.isUX} />{" "}
+            <A11yLabel display={assignment.isA11y} />
           </span>
         </div>
         <div className="flex">
@@ -38,13 +35,13 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
 }
 
 function A11yLabel({ display }: { display?: boolean }) {
-  return display ? <span className="text-orange-300 italic">[ a11y ]</span> : undefined;
+  return display ? <span className="text-orange-300">[ a11y ]</span> : undefined;
 }
 
 function DevelopmentLabel({ display }: { display?: boolean }) {
-  return display ? <span className="text-green-300 italic">[ dev ]</span> : undefined;
+  return display ? <span className="text-green-300">[ dev ]</span> : undefined;
 }
 
 function UxLabel({ display }: { display?: boolean }) {
-  return display ? <span className="text-blue-300 italic">[ ux ]</span> : undefined;
+  return display ? <span className="text-blue-300">[ ux ]</span> : undefined;
 }

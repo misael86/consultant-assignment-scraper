@@ -2,7 +2,7 @@ import { Page } from "playwright";
 
 import { IAssignment } from "@/lib/scrape-response";
 
-export async function scrapeBiolit(page: Page, existingKeys: Set<string>): Promise<IAssignment[]> {
+export async function scrapeBiolit(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
   await page.goto("https://biolit.se/konsultuppdrag/");
   await page.waitForSelector(".collapsible");
 
@@ -17,7 +17,7 @@ export async function scrapeBiolit(page: Page, existingKeys: Set<string>): Promi
       const title = element.querySelector("b")?.textContent?.trim();
       const scraped = new Date().toLocaleDateString("sv-SE");
 
-      if (existingKeys.has(`${source}-${id}`)) break;
+      if (existingKeys.includes(`${source}-${id}`)) break;
 
       assignments.push({ id, scraped, source, title, url });
     }

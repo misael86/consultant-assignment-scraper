@@ -2,7 +2,7 @@ import { Page } from "playwright";
 
 import { IAssignment } from "@/lib/scrape-response";
 
-export async function scrapeAliant(page: Page, existingKeys: Set<string>): Promise<IAssignment[]> {
+export async function scrapeAliant(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
   await page.goto("https://aliant.recman.se");
   await page.waitForSelector("#job-post-listing-box");
 
@@ -19,7 +19,7 @@ export async function scrapeAliant(page: Page, existingKeys: Set<string>): Promi
       const title = element.querySelector("span")?.textContent?.trim();
       const scraped = new Date().toLocaleDateString("sv-SE");
 
-      if (existingKeys.has(`${source}-${id}`)) break;
+      if (existingKeys.includes(`${source}-${id}`)) break;
 
       assignments.push({ id, scraped, source, title, url });
     }
