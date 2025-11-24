@@ -7,14 +7,15 @@ import {
   createClearActiveFilters,
   createScrapeAssignments,
   createToggleActiveFilter,
-  filterAssignments,
+  sort,
+  tagAssignments,
 } from "./actions";
 import { IActions, IState, IStore } from "./types";
 
 export const useStore = create<IStore>((set) => {
   const state: IState = {
     activeFilters: { a11y: false, development: true, ux: false },
-    assignments: filterAssignments(assignments, filters),
+    assignments: sort(tagAssignments(assignments, filters)),
     filters,
     isLoadingAssignments: false,
   };

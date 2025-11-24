@@ -8,7 +8,7 @@ export const createClearActiveFilters = (set: IStoreSet) => () => {
   set(() => ({ activeFilters: { a11y: false, development: false, ux: false } }));
 };
 
-export function filterAssignments(assignments: IAssignment[], filters: IFilterState): IAssignmentWithTags[] {
+export function tagAssignments(assignments: IAssignment[], filters: IFilterState): IAssignmentWithTags[] {
   return assignments.map((assignment) => {
     const lowerCaseTitle = assignment.title?.toLowerCase();
     return {
@@ -29,11 +29,29 @@ export const createScrapeAssignments = (set: IStoreSet) => async () => {
   set(() => ({ isLoadingAssignments: true }));
   const assignments = await axios.get<IAssignment[]>("/api/assignments");
   set((state: IState) => {
-    console.log("filter?", state.filters);
-    const filteredAssignments = state.filters ? filterAssignments(assignments.data, state.filters) : assignments.data;
+    const existingKeys = new Set(state.assignments.map((assignment) => `${assignment.source}-${assignment.id}`));
+    const newAssignments = assignments.data.filter(
+      (assignment) => !existingKeys.has(`${assignment.source}-${assignment.id}`)
+    );
+
+    let tagedAssignments = state.filters ? tagAssignments(newAssignments, state.filters) : newAssignments;
+    tagedAssignments = sort(tagedAssignments);
+
     return {
-      assignments: [...(state.assignments ?? []), ...filteredAssignments],
+      assignments: [...(state.assignments ?? []), ...tagedAssignments],
       isLoadingAssignments: false,
     };
   });
 };
+
+export function sort(assignments: IAssignment[]) {
+  return assignments.toSorted((a, b) => {
+    if (a.scraped < b.scraped) {
+      return 1;
+    }
+    if (a.scraped > b.scraped) {
+      return -1;
+    }
+    return 0;
+  });
+}

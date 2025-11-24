@@ -13,20 +13,17 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
       >
         <div className="flex flex-row gap-5">
           <h3 className="font-bold">{assignment.title}</h3>
-          <span>
+        </div>
+        <div className="flex">
+          <span className="pr-5">
             <DevelopmentLabel display={assignment.isDevelopment} /> <UxLabel display={assignment.isUX} />{" "}
             <A11yLabel display={assignment.isA11y} />
           </span>
-        </div>
-        <div className="flex">
           <div className="border-l-2 border-dotted pl-5 pr-5">
             <span>{assignment.source}</span>
           </div>
-          <div className="border-l-2 border-dotted pl-5 pr-5">
-            <span>{assignment.scraped}</span>
-          </div>
           <div className="border-l-2 border-dotted pl-5">
-            <span>Status</span>
+            <span>{assignment.scraped}</span>
           </div>
         </div>
       </a>

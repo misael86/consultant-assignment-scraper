@@ -30,7 +30,6 @@ export async function GET() {
       .filter((result) => result.status === "fulfilled")
       .flatMap((result) => result.value);
     successfulAssignments = await store(successfulAssignments, database);
-    successfulAssignments = sort(successfulAssignments);
 
     return Response.json(successfulAssignments);
   } finally {
@@ -47,18 +46,6 @@ async function runScraper(
   const assingments = await scraper(page, existingKeys);
   await page.close();
   return assingments;
-}
-
-function sort(assignments: IAssignment[]) {
-  return assignments.toSorted((a, b) => {
-    if (a.scraped < b.scraped) {
-      return 1;
-    }
-    if (a.scraped > b.scraped) {
-      return -1;
-    }
-    return 0;
-  });
 }
 
 async function store(assignments: IAssignment[], database: Low<IAssignment[]>): Promise<IAssignment[]> {

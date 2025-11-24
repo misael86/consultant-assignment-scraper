@@ -25,10 +25,10 @@ export default function Home() {
       <Header size={1}>Consultant Assignment Scraper</Header>
       <div className="mt-2.5" />
       <Button onClick={scrapeAssignments}>Scrape assignments</Button>
+      {isLoadingAssignments && <div>Loading...</div>}
 
       <AssignmentFilters />
 
-      {isLoadingAssignments && <div>Loading...</div>}
       {assignments && (
         <AssignmentList>
           {assignments
