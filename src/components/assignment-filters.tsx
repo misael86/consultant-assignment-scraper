@@ -44,11 +44,13 @@ export function AssignmentFilters() {
       <div className="flex flex-row gap-5 items-center mt-5">
         <span>Source:</span>
         <div className="flex flex-row gap-5">
-          {[...new Set(assignments?.map((assignment) => assignment.source))].map((source) => (
-            <Button key={source}>
-              {source} ({assignments?.filter((assignment) => assignment.source === source).length})
-            </Button>
-          ))}
+          {[...new Set(assignments?.map((assignment) => assignment.source))]
+            .toSorted((a, b) => a.localeCompare(b))
+            .map((source) => (
+              <Button key={source}>
+                {source} ({assignments?.filter((assignment) => assignment.source === source).length})
+              </Button>
+            ))}
           <Button>Show all</Button>
         </div>
       </div>

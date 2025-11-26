@@ -9,6 +9,7 @@ export async function scrapeAliant(page: Page, existingKeys: string[]): Promise<
   return await page.evaluate((existingKeys) => {
     const assignments: IAssignment[] = [];
     const elements = document.querySelector("#job-post-listing-box")?.querySelectorAll('[class="box"]') ?? [];
+    if (elements.length === 0) throw new Error("No elements found for Aliant");
 
     for (const element of elements) {
       const domain = "https://aliant.recman.se";

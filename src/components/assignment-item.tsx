@@ -10,13 +10,15 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
       <a
         className="p-5 pt-2.5 pb-2.5 mt-2.5 mb-2.5 border-1 rounded-sm flex flex-column gap-5 justify-between cursor-pointer hover:outline-2 hover:outline-yellow-100 hover:outline-offset-2 transition-all duration-200"
         href={assignment.url}
+        rel="noreferrer"
+        target="_blank"
       >
         <div className="flex flex-row gap-5">
           <h3 className="font-bold">{assignment.title}</h3>
         </div>
         <div className="flex">
           <span className="pr-5">
-            <DevelopmentLabel display={assignment.isDevelopment} /> <UxLabel display={assignment.isUX} />{" "}
+            <DevelopmentLabel display={assignment.isDevelopment} /> <UxLabel display={assignment.isUX} />
             <A11yLabel display={assignment.isA11y} />
           </span>
           <div className="border-l-2 border-dotted pl-5 pr-5">

@@ -9,6 +9,7 @@ export async function scrapeASociety(page: Page, existingKeys: string[]): Promis
   return await page.evaluate((keys) => {
     const assignments: IAssignment[] = [];
     const elements = document.querySelectorAll('[class*="Assignment_assignmentComponent__"]');
+    if (elements.length === 0) throw new Error("No elements found for A Society");
 
     for (const element of elements) {
       const domain = "https://www.asocietygroup.com";

@@ -9,6 +9,7 @@ export async function scrapeBiolit(page: Page, existingKeys: string[]): Promise<
   return await page.evaluate((existingKeys) => {
     const assignments: IAssignment[] = [];
     const elements = document.querySelectorAll(".collapsible");
+    if (elements.length === 0) throw new Error("No elements found for Biolit");
 
     for (const element of elements) {
       const url = "https://biolit.se/konsultuppdrag/";

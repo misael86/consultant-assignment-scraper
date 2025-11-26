@@ -13,9 +13,14 @@ export function tagAssignments(assignments: IAssignment[], filters: IFilterState
     const lowerCaseTitle = assignment.title?.toLowerCase();
     return {
       ...assignment,
-      isA11y: filters?.a11y.some((filter) => lowerCaseTitle?.includes(filter.toLowerCase())),
-      isDevelopment: filters?.development.some((filter) => lowerCaseTitle?.includes(filter.toLowerCase())),
-      isUx: filters?.ux.some((filter) => lowerCaseTitle?.includes(filter.toLowerCase())),
+      isA11y: filters.a11y.some((filter) => lowerCaseTitle?.includes(filter.toLowerCase())),
+      isDevelopment: filters.development.some((filter) => lowerCaseTitle?.includes(filter.toLowerCase())),
+      isUX: filters.ux.some(
+        (filter) =>
+          lowerCaseTitle?.includes(filter.toLowerCase()) &&
+          !lowerCaseTitle?.includes("linux") &&
+          !lowerCaseTitle?.includes("benelux")
+      ),
     };
   });
 }
@@ -34,8 +39,7 @@ export const createScrapeAssignments = (set: IStoreSet) => async () => {
       (assignment) => !existingKeys.has(`${assignment.source}-${assignment.id}`)
     );
 
-    let tagedAssignments = state.filters ? tagAssignments(newAssignments, state.filters) : newAssignments;
-    tagedAssignments = sort(tagedAssignments);
+    const tagedAssignments = sort(tagAssignments(newAssignments, state.filters));
 
     return {
       assignments: [...(state.assignments ?? []), ...tagedAssignments],
@@ -44,7 +48,7 @@ export const createScrapeAssignments = (set: IStoreSet) => async () => {
   });
 };
 
-export function sort(assignments: IAssignment[]) {
+export function sort<T extends IAssignment | IAssignmentWithTags>(assignments: T[]): T[] {
   return assignments.toSorted((a, b) => {
     if (a.scraped < b.scraped) {
       return 1;
