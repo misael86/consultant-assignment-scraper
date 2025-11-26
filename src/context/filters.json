@@ -2,16 +2,20 @@
   "a11y": ["a11y", "t12t", "accessibility", "tillgänglighet"],
   "development": [
     "frontend",
+    "front-end",
     "dev",
     "developer",
     "utvecklare",
     "backend",
+    "back-end",
     "fullstack",
+    "full-stack",
     "javascript",
     "typescript",
     "c#",
     ".net",
-    "react"
+    "react",
+    "software"
   ],
   "ux": ["ux"]
 }

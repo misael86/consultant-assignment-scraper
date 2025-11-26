@@ -1,30 +1,12 @@
 import { create } from "zustand";
 
-import assignments from "@/context/assignments.json";
-import filters from "@/context/filters.json";
+import { getStoreActions, IActions } from "./actions";
+import { getInitialState, IState } from "./state";
 
-import {
-  createClearActiveFilters,
-  createScrapeAssignments,
-  createToggleActiveFilter,
-  sort,
-  tagAssignments,
-} from "./actions";
-import { IActions, IState, IStore } from "./types";
+export type IStore = IActions & IState;
+
+export type IStoreSet = (function_: (state: IStore) => Partial<IStore>) => void;
 
 export const useStore = create<IStore>((set) => {
-  const state: IState = {
-    activeFilters: { a11y: false, development: true, ux: false },
-    assignments: sort(tagAssignments(assignments, filters)),
-    filters,
-    isLoadingAssignments: false,
-  };
-
-  const actions: IActions = {
-    clearActiveFilters: createClearActiveFilters(set),
-    scrapeAssignments: createScrapeAssignments(set),
-    toggleActiveFilter: createToggleActiveFilter(set),
-  };
-
-  return { ...state, ...actions };
+  return { ...getInitialState(), ...getStoreActions(set) };
 });

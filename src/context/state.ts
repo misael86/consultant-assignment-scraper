@@ -1,10 +1,8 @@
+import assignments from "@/context/assignments.json";
+import filters from "@/context/filters.json";
 import { IAssignment } from "@/lib/scrape-response";
 
-export interface IActions {
-  clearActiveFilters: () => void;
-  scrapeAssignments: () => Promise<void>;
-  toggleActiveFilter: (filter: keyof IFilterState) => void;
-}
+import { sortAssignments, tagAssignments } from "./libs";
 
 export interface IAssignmentTag {
   isA11y?: boolean;
@@ -27,6 +25,11 @@ export interface IState {
   isLoadingAssignments: boolean;
 }
 
-export type IStore = IActions & IState;
-
-export type IStoreSet = (function_: (state: IStore) => Partial<IStore>) => void;
+export function getInitialState(): IState {
+  return {
+    activeFilters: { a11y: true, development: true, ux: true },
+    assignments: sortAssignments(tagAssignments(assignments, filters)),
+    filters,
+    isLoadingAssignments: false,
+  };
+}

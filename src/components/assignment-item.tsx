@@ -1,4 +1,4 @@
-import { IAssignmentWithTags } from "@/context/types";
+import { IAssignmentWithTags } from "@/context/state";
 
 interface IProperties {
   assignment: IAssignmentWithTags;
@@ -25,7 +25,7 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
             <span>{assignment.source}</span>
           </div>
           <div className="border-l-2 border-dotted pl-5">
-            <span>{assignment.scraped}</span>
+            <span>{new Date().toLocaleDateString("sv-SE") === assignment.scraped ? "NEW" : assignment.scraped}</span>
           </div>
         </div>
       </a>

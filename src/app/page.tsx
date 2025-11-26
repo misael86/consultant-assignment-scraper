@@ -25,6 +25,7 @@ export default function Home() {
     <StrictMode>
       <main className="m-10 mt-5 mb-5">
         <Header size={1}>Consultant Assignment Scraper</Header>
+
         <div className="mt-2.5">
           <Button onClick={scrapeAssignments}>Scrape assignments</Button>
           {isLoadingAssignments && <span className="ml-5">Loading...</span>}
@@ -37,9 +38,9 @@ export default function Home() {
             {assignments
               .filter((assignment) => {
                 return (
-                  (!activeFilters.development || assignment.isDevelopment === true) &&
-                  (!activeFilters.ux || assignment.isUX === true) &&
-                  (!activeFilters.a11y || assignment.isA11y === true)
+                  (activeFilters.development && assignment.isDevelopment === true) ||
+                  (activeFilters.ux && assignment.isUX === true) ||
+                  (activeFilters.a11y && assignment.isA11y === true)
                 );
               })
               .map((assignment) => {
