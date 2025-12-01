@@ -21,6 +21,14 @@ export default function Home() {
     }))
   );
 
+  const filteredAssignments = assignments.filter((assignment) => {
+    return (
+      (activeFilters.development && assignment.isDevelopment === true) ||
+      (activeFilters.ux && assignment.isUX === true) ||
+      (activeFilters.a11y && assignment.isA11y === true)
+    );
+  });
+
   return (
     <StrictMode>
       <main className="m-10 mt-5 mb-5">
@@ -34,18 +42,10 @@ export default function Home() {
         <AssignmentFilters />
 
         {assignments && (
-          <AssignmentList>
-            {assignments
-              .filter((assignment) => {
-                return (
-                  (activeFilters.development && assignment.isDevelopment === true) ||
-                  (activeFilters.ux && assignment.isUX === true) ||
-                  (activeFilters.a11y && assignment.isA11y === true)
-                );
-              })
-              .map((assignment) => {
-                return <AssignmentItem assignment={assignment} key={assignment?.id ?? crypto.randomUUID()} />;
-              })}
+          <AssignmentList assignmentCount={filteredAssignments.length}>
+            {filteredAssignments.map((assignment) => {
+              return <AssignmentItem assignment={assignment} key={assignment?.id ?? crypto.randomUUID()} />;
+            })}
           </AssignmentList>
         )}
       </main>

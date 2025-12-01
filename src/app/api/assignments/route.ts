@@ -10,22 +10,24 @@ import { scrapeBiolit } from "./scrapers/biolit-scraper";
 import { scrapeCinode } from "./scrapers/cinode-scraper";
 import { scrapeCombitech } from "./scrapers/combitech-scraper";
 import { scrapeEpico } from "./scrapers/epico-scraper";
+import { scrapeExperis } from "./scrapers/experis-scraper";
 import { scrapeVerama } from "./scrapers/verama-scraper";
 
 export async function GET() {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const database = await JSONFilePreset<IAssignment[]>("./src/context/assignments.json", []);
   const existingKeys = database.data.map((assignment) => `${assignment.source}-${assignment.id}`);
 
   try {
     const results = await Promise.allSettled([
-      runScraper(scrapeASociety, existingKeys, browser),
-      runScraper(scrapeAliant, existingKeys, browser),
-      runScraper(scrapeBiolit, existingKeys, browser),
-      runScraper(scrapeCinode, existingKeys, browser),
-      runScraper(scrapeCombitech, existingKeys, browser),
-      runScraper(scrapeEpico, existingKeys, browser),
-      runScraper(scrapeVerama, existingKeys, browser),
+      // runScraper(scrapeASociety, existingKeys, browser),
+      // runScraper(scrapeAliant, existingKeys, browser),
+      // runScraper(scrapeBiolit, existingKeys, browser),
+      // runScraper(scrapeCinode, existingKeys, browser),
+      // runScraper(scrapeCombitech, existingKeys, browser),
+      // runScraper(scrapeEpico, existingKeys, browser),
+      runScraper(scrapeExperis, existingKeys, browser),
+      // runScraper(scrapeVerama, existingKeys, browser),
     ]);
     const rejectedAssignments = results.filter((result) => result.status !== "fulfilled");
 
@@ -55,10 +57,10 @@ async function runScraper(
   existingKeys: string[],
   browser: Browser
 ) {
-    const page = await browser.newPage();
-    const assingments = await scraper(page, existingKeys);
-    await page.close();
-    return assingments;
+  const page = await browser.newPage();
+  const assingments = await scraper(page, existingKeys);
+  await page.close();
+  return assingments;
 }
 
 async function store(assignments: IAssignment[], database: Low<IAssignment[]>): Promise<IAssignment[]> {
