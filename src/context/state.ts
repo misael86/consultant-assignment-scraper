@@ -1,8 +1,4 @@
-import assignments from "@/context/assignments.json";
-import filters from "@/context/filters.json";
 import { IAssignment } from "@/lib/scrape-response";
-
-import { sortAssignments, tagAssignments } from "./libs";
 
 export interface IAssignmentTag {
   isA11y?: boolean;
@@ -23,13 +19,35 @@ export interface IState {
   assignments: IAssignmentWithTags[];
   filters: IFilterState;
   isLoadingAssignments: boolean;
+  isScrapingAssignments: boolean;
+  newAssignments: IAssignment[];
 }
 
-export function getInitialState(): IState {
-  return {
-    activeFilters: { a11y: true, development: true, ux: true },
-    assignments: sortAssignments(tagAssignments(assignments, filters)),
-    filters,
-    isLoadingAssignments: false,
-  };
-}
+export const initialState: IState = {
+  activeFilters: { a11y: true, development: true, ux: true },
+  assignments: [],
+  filters: {
+    a11y: ["a11y", "t12t", "accessibility", "tillgänglighet"],
+    development: [
+      "frontend",
+      "front-end",
+      "dev",
+      "developer",
+      "utvecklare",
+      "backend",
+      "back-end",
+      "fullstack",
+      "full-stack",
+      "javascript",
+      "typescript",
+      "c#",
+      ".net",
+      "react",
+      "software",
+    ],
+    ux: ["ux"],
+  },
+  isLoadingAssignments: false,
+  isScrapingAssignments: false,
+  newAssignments: [],
+};

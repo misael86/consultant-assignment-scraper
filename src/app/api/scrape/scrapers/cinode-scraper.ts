@@ -40,7 +40,6 @@ export async function scrapeCinode(page: Page, existingKeys: string[]): Promise<
       continueScraping = false;
     } else {
       assignments.push(...newAssignments);
-      console.log(newAssignments);
       await page.getByRole("button", { name: /Next page/i }).click();
     }
   }
