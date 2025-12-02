@@ -37,7 +37,7 @@ export const initialState: IState = {
   activeFilters: { a11y: true, development: true, ux: true },
   assignments: { all: [], filteredAll: [], filteredNew: [], new: [] },
   filters: {
-    a11y: ["a11y", "t12t", "accessibility", "tillgänglighet"],
+    a11y: ["a11y", "t12t", "accessibility", "tillgänglighet", "wcag"],
     development: [
       "frontend",
       "front-end",
@@ -54,6 +54,8 @@ export const initialState: IState = {
       ".net",
       "react",
       "software",
+      "programmer",
+      "programmerare",
     ],
     ux: ["ux"],
   },

@@ -12,6 +12,7 @@ import { scrapeCombitech } from "./scrapers/combitech-scraper";
 import { scrapeEpico } from "./scrapers/epico-scraper";
 import { scrapeExperis } from "./scrapers/experis-scraper";
 import { scrapeFunctionalSoftware } from "./scrapers/functional-software-scraper";
+import { scrapeGameBoost } from "./scrapers/game-boost-scraper";
 import { scrapeVerama } from "./scrapers/verama-scraper";
 
 export async function GET() {
@@ -29,6 +30,7 @@ export async function GET() {
       runScraper(scrapeEpico, existingKeys, browser),
       runScraper(scrapeExperis, existingKeys, browser),
       runScraper(scrapeFunctionalSoftware, existingKeys, browser),
+      runScraper(scrapeGameBoost, existingKeys, browser),
       runScraper(scrapeVerama, existingKeys, browser),
     ]);
     const rejectedAssignments = results.filter((result) => result.status !== "fulfilled");
