@@ -39,14 +39,14 @@ export async function GET() {
         results.filter((result) => result.status !== "fulfilled")
       );
 
-    let successfulAssignments = results
+    const successfulAssignments = results
       .filter((result) => result.status === "fulfilled")
       .flatMap((result) => result.value);
 
     console.log("Scraped sources count:", results.filter((result) => result.status === "fulfilled").length);
     console.log("Scraped assignments count:", successfulAssignments.length);
 
-    successfulAssignments = await store(successfulAssignments, database);
+    await store(successfulAssignments, database);
 
     return Response.json(successfulAssignments);
   } finally {
@@ -65,8 +65,7 @@ async function runScraper(
   return assingments;
 }
 
-async function store(assignments: IAssignment[], database: Low<IAssignment[]>): Promise<IAssignment[]> {
+async function store(assignments: IAssignment[], database: Low<IAssignment[]>): Promise<void> {
   database.data.push(...assignments);
   await database.write();
-  return database.data;
 }

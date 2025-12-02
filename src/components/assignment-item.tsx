@@ -25,7 +25,7 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
             <span>{assignment.source}</span>
           </div>
           <div className="border-l-2 border-dotted pl-5">
-            <span>{new Date().toLocaleDateString("sv-SE") === assignment.scraped ? "NEW" : assignment.scraped}</span>
+            <span>{assignment.scraped}</span>
           </div>
         </div>
       </a>

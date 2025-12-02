@@ -7,13 +7,18 @@ import { IAssignment } from "@/lib/scrape-response";
 
 export function createScrapeAssignments(set: IStoreSet) {
   return async () => {
-    set(() => ({ isScrapingAssignments: true }));
+    set((state: IState) => ({
+      assignments: [...state.assignments, ...state.newAssignments],
+      isScrapingAssignments: true,
+      newAssignments: [],
+    }));
+
     const response = await axios.get<IAssignment[]>("/api/scrape");
+
     set((state: IState) => {
       const assignments = sortAssignments(tagAssignments(response.data, state.filters));
 
       return {
-        assignments: [...(state.assignments ?? []), ...assignments],
         isScrapingAssignments: false,
         newAssignments: assignments,
       };

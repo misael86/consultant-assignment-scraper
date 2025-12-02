@@ -15,7 +15,8 @@ export async function scrapeExperis(page: Page, existingKeys: string[]): Promise
     for (const element of elements) {
       if (!element) break;
 
-      const url = element.querySelector("a")?.attributes.getNamedItem("href")?.value ?? "";
+      const domain = "https://www.experis.se";
+      const url = domain + (element.querySelector("a")?.attributes.getNamedItem("href")?.value ?? "");
       const id = url?.replace("/sv/jobb/", "").slice(0, url.lastIndexOf("/"));
       const source = "experis";
       const title = element.textContent?.trim();
