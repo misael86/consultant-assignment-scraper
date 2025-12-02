@@ -1,5 +1,11 @@
 import { IAssignment } from "@/lib/scrape-response";
 
+export interface IActiveFilterState {
+  a11y: boolean;
+  development: boolean;
+  ux: boolean;
+}
+
 export interface IAssignmentTag {
   isA11y?: boolean;
   isDevelopment?: boolean;
@@ -15,17 +21,21 @@ export interface IFilterState {
 }
 
 export interface IState {
-  activeFilters: { a11y: boolean; development: boolean; ux: boolean };
-  assignments: IAssignmentWithTags[];
+  activeFilters: IActiveFilterState;
+  assignments: {
+    all: IAssignmentWithTags[];
+    filteredAll: IAssignmentWithTags[];
+    filteredNew: IAssignmentWithTags[];
+    new: IAssignmentWithTags[];
+  };
   filters: IFilterState;
   isLoadingAssignments: boolean;
   isScrapingAssignments: boolean;
-  newAssignments: IAssignment[];
 }
 
 export const initialState: IState = {
   activeFilters: { a11y: true, development: true, ux: true },
-  assignments: [],
+  assignments: { all: [], filteredAll: [], filteredNew: [], new: [] },
   filters: {
     a11y: ["a11y", "t12t", "accessibility", "tillgänglighet"],
     development: [
@@ -49,5 +59,4 @@ export const initialState: IState = {
   },
   isLoadingAssignments: false,
   isScrapingAssignments: false,
-  newAssignments: [],
 };

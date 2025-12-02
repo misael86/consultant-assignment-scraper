@@ -9,7 +9,7 @@ export function AssignmentFilters() {
   const { activeFilters, assignments, clearActiveFilters, toggleActiveFilter } = useStore(
     useShallow((state) => ({
       activeFilters: state.activeFilters,
-      assignments: state.assignments,
+      assignments: state.assignments.all,
       clearActiveFilters: state.clearActiveFilters,
       toggleActiveFilter: state.toggleActiveFilter,
     }))
