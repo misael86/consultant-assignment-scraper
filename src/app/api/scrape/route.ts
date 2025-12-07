@@ -29,10 +29,11 @@ import { scrapeRegent } from "./scrapers/regent-scraper";
 import { scrapeResursbrist } from "./scrapers/resursbrist-scraper";
 import { scrapeSafemind } from "./scrapers/safemind-scraper";
 import { scrapeSenterprise } from "./scrapers/senterprise-scraper";
+import { scrapeSigma } from "./scrapers/sigma-scraper";
 import { scrapeVerama } from "./scrapers/verama-scraper";
 
 export async function GET() {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const database = await JSONFilePreset<IAssignment[]>("./public/assignments.json", []);
   const existingKeys = database.data.map((assignment) => `${assignment.source}-${assignment.id}`);
 
@@ -62,7 +63,8 @@ export async function GET() {
       // runScraper(scrapeRegent, existingKeys, browser),
       // runScraper(scrapeResursbrist, existingKeys, browser),
       // runScraper(scrapeSafemind, existingKeys, browser),
-      runScraper(scrapeSenterprise, existingKeys, browser),
+      // runScraper(scrapeSenterprise, existingKeys, browser),
+      runScraper(scrapeSigma, existingKeys, browser),
       // runScraper(scrapeVerama, existingKeys, browser),
     ]);
     const rejectedAssignments = results.filter((result) => result.status !== "fulfilled");
