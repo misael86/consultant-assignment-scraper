@@ -5,12 +5,16 @@ import { IState } from "@/context/state";
 import { IStoreSet } from "@/context/store";
 import { IAssignment } from "@/lib/scrape-response";
 
+import { filterAssignments } from "./toggle-active-filter";
+
 export function createScrapeAssignments(set: IStoreSet) {
   return async () => {
     set((state: IState) => ({
       assignments: {
         ...state.assignments,
         all: [...state.assignments.new, ...state.assignments.all],
+        filteredAll: [...state.assignments.filteredNew, ...state.assignments.filteredAll],
+        filteredNew: [],
         new: [],
       },
       isScrapingAssignments: true,
@@ -24,6 +28,7 @@ export function createScrapeAssignments(set: IStoreSet) {
       return {
         assignments: {
           ...state.assignments,
+          filteredNew: filterAssignments(assignments, state.activeFilters),
           new: assignments,
         },
         isScrapingAssignments: false,

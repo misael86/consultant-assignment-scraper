@@ -1,0 +1,61 @@
+import { Locator, Page } from "playwright";
+
+import { IAssignment } from "@/lib/scrape-response";
+
+interface IProperties {
+  existingAssignmentIds: string[];
+  getAssignmentData: (
+    element: Locator
+  ) => Promise<{ id: null | string | undefined; title: string | undefined; url: null | string }>;
+  getElements: () => Promise<Locator[]>;
+  goToNextPage: () => Promise<void>;
+  pageName: string;
+  pageUrl: string;
+  playwrightPage: Page;
+  preScrapeJob?: (page: Page) => Promise<void>;
+  waitForSelector: string;
+}
+
+export async function scrapeMultiplePages({
+  existingAssignmentIds,
+  getAssignmentData,
+  getElements,
+  goToNextPage,
+  pageName,
+  pageUrl,
+  playwrightPage,
+  preScrapeJob,
+  waitForSelector,
+}: IProperties) {
+  console.log("scraping", pageName);
+
+  await playwrightPage.goto(pageUrl);
+  await playwrightPage.waitForSelector(waitForSelector);
+  if (preScrapeJob) await preScrapeJob(playwrightPage);
+
+  const assignments: IAssignment[] = [];
+  const assignmentIds = [...existingAssignmentIds];
+  let continueScraping = true;
+  while (continueScraping) {
+    const elements = await getElements();
+    if (elements.length === 0) throw new Error("No elements found for " + pageName);
+
+    for (const element of elements) {
+      const { id, title, url } = await getAssignmentData(element);
+
+      if (assignmentIds.includes(`${pageName}-${id}`)) {
+        continueScraping = false;
+        break;
+      }
+
+      const scraped = new Date().toLocaleDateString("sv-SE");
+      assignments.push({ id: id ?? "", scraped, source: pageName, title: title?.trim(), url: url ?? "" });
+      assignmentIds.push(`${pageName}-${id}`);
+    }
+
+    await goToNextPage();
+  }
+
+  console.log("scraped", pageName, assignments.length);
+  return assignments;
+}

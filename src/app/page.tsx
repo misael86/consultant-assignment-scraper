@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <StrictMode>
-      <main className="m-10 mt-5 mb-5">
+      <main className="m-10 mt-5 mb-20">
         <Header size={1}>Consultant Assignment Scraper</Header>
 
         <div className="mt-2.5">
@@ -48,13 +48,13 @@ export default function Home() {
 
         <AssignmentList assignmentCount={filteredAssignmentsNew.length} title="New assignments">
           {filteredAssignmentsNew.map((assignment) => {
-            return <AssignmentItem assignment={assignment} key={assignment?.id ?? crypto.randomUUID()} />;
+            return <AssignmentItem assignment={assignment} key={`${assignment.source}-${assignment.id}`} />;
           })}
         </AssignmentList>
 
         <AssignmentList assignmentCount={filteredAssignmentsAll.length} title="Old assignments">
           {filteredAssignmentsAll.map((assignment) => {
-            return <AssignmentItem assignment={assignment} key={assignment?.id ?? crypto.randomUUID()} />;
+            return <AssignmentItem assignment={assignment} key={`${assignment.source}-${assignment.id}`} />;
           })}
           {isLoadingAssignments && <li>Loading...</li>}
         </AssignmentList>

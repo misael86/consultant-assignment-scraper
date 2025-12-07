@@ -19,7 +19,9 @@ export function tagAssignments(assignments: IAssignment[], filters: IFilterState
     return {
       ...assignment,
       isA11y: filters.a11y.some((filter) => lowerCaseTitle?.includes(filter.toLowerCase())),
-      isDevelopment: filters.development.some((filter) => lowerCaseTitle?.includes(filter.toLowerCase())),
+      isDevelopment: filters.development.some(
+        (filter) => lowerCaseTitle?.includes(filter.toLowerCase()) && !lowerCaseTitle?.includes("uddevalla")
+      ),
       isUX: filters.ux.some(
         (filter) =>
           lowerCaseTitle?.includes(filter.toLowerCase()) &&
