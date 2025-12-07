@@ -4,21 +4,20 @@ import { IAssignment } from "@/lib/scrape-response";
 
 import { scrapeOnePage } from "./libs/scrape-one-page";
 
-export async function scrapeExperis(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
+export async function scrapeRandstad(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
   return scrapeOnePage({
     existingAssignmentIds: existingKeys,
     getAssignmentData: async (element) => {
-      const domain = "https://www.experis.se";
+      const domain = "https://www.randstad.se";
       const url = domain + (await element.locator("a").first().getAttribute("href"));
-      const id = url?.replace("/sv/jobb/", "").slice(0, url.lastIndexOf("/"));
+      const id = url?.slice(url.lastIndexOf("_") + 1, -1);
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".job-position").all(),
-    pageName: "experis",
-    pageUrl: "https://www.experis.se/sv/sok",
+    getElements: () => page.locator("#search-results").first().locator("h3").all(),
+    pageName: "randstad",
+    pageUrl: "https://www.randstad.se/jobb/jt-konsultuppdrag/",
     playwrightPage: page,
-    preScrapeJob: () => page.getByRole("button", { name: /Avvisa alla/i }).click(),
-    waitForSelector: ".job-position",
+    waitForSelector: "#search-results",
   });
 }

@@ -4,19 +4,20 @@ import { IAssignment } from "@/lib/scrape-response";
 
 import { scrapeOnePage } from "./libs/scrape-one-page";
 
-export async function scrapeEpico(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
+export async function scrapePaventia(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
   return scrapeOnePage({
     existingAssignmentIds: existingKeys,
     getAssignmentData: async (element) => {
       const url = await element.getAttribute("href");
-      const id = url?.replace("https://jobs.epico.se/jobs/", "").slice(0, url.lastIndexOf("-"));
+      let id = url?.slice(0, url.lastIndexOf("/"));
+      id = id?.slice(id.lastIndexOf("/") + 1);
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#jobs_list_container").first().locator("a").all(),
-    pageName: "epico",
-    pageUrl: "https://jobs.epico.se/jobs",
+    getElements: () => page.locator(".cw-joblisting-results").first().locator(".posR").first().locator("a").all(),
+    pageName: "paventia",
+    pageUrl: "https://jobs.paventia.se/jobs/open",
     playwrightPage: page,
-    waitForSelector: "#jobs_list_container",
+    waitForSelector: ".cw-joblisting-results",
   });
 }

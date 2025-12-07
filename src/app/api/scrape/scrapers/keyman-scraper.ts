@@ -4,19 +4,22 @@ import { IAssignment } from "@/lib/scrape-response";
 
 import { scrapeOnePage } from "./libs/scrape-one-page";
 
-export async function scrapeEpico(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
+export async function scrapeKeyman(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
   return scrapeOnePage({
     existingAssignmentIds: existingKeys,
     getAssignmentData: async (element) => {
       const url = await element.getAttribute("href");
-      const id = url?.replace("https://jobs.epico.se/jobs/", "").slice(0, url.lastIndexOf("-"));
+      const id = url;
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#jobs_list_container").first().locator("a").all(),
-    pageName: "epico",
-    pageUrl: "https://jobs.epico.se/jobs",
+    getElements: () => page.locator(".elementor-loop-container").first().locator("a").all(),
+    pageName: "keyman",
+    pageUrl: "https://www.keyman.se/sv/uppdrag/",
     playwrightPage: page,
-    waitForSelector: "#jobs_list_container",
+    preScrapeJob: async () => {
+      await page.getByRole("button", { name: /Visa fler/i }).click();
+    },
+    waitForSelector: ".elementor-loop-container",
   });
 }

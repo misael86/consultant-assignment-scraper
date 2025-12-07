@@ -2,32 +2,25 @@ import { Page } from "playwright";
 
 import { IAssignment } from "@/lib/scrape-response";
 
+import { scrapeOnePage } from "./libs/scrape-one-page";
+
 export async function scrapeCombitech(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
-  await page.goto("https://partnernetworkportal.azurewebsites.net/");
-  await page.waitForSelector('[class*="table-wrap"]');
-
-  return await page.evaluate((keys) => {
-    const assignments: IAssignment[] = [];
-    const elements = [...new Set(document.querySelectorAll('[class*="grid-row"]'))].map((element) =>
-      element.querySelector("a")
-    );
-    if (elements.length === 0) throw new Error("No elements found for Combitech");
-
-    for (const element of elements) {
-      if (!element) break;
-
+  return scrapeOnePage({
+    existingAssignmentIds: existingKeys,
+    getAssignmentData: async (element) => {
       const domain = "https://partnernetworkportal.azurewebsites.net";
-      const url = domain + element.attributes.getNamedItem("href")?.value;
-      const id = url.replace("/assignmentdetails/", "").slice(0, url.lastIndexOf("/"));
-      const source = "combitech";
-      const title = element.textContent?.trim();
-      const scraped = new Date().toLocaleDateString("sv-SE");
-
-      if (keys.includes(`${source}-${id}`)) break;
-
-      assignments.push({ id, scraped, source, title, url });
-    }
-
-    return assignments;
-  }, existingKeys);
+      const anchorElement = element.locator("a").first();
+      const anchorHref = await anchorElement.getAttribute("href");
+      const url = domain + anchorHref;
+      let id = anchorHref?.replace("/assignmentdetails/", "");
+      id = id?.slice(0, id.lastIndexOf("/"));
+      const title = await anchorElement.textContent();
+      return { id, title: title?.trim(), url };
+    },
+    getElements: () => page.locator(".grid-row").all(),
+    pageName: "combitech",
+    pageUrl: "https://partnernetworkportal.azurewebsites.net/",
+    playwrightPage: page,
+    waitForSelector: ".table-wrap",
+  });
 }

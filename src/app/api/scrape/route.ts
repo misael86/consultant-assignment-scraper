@@ -13,6 +13,22 @@ import { scrapeEpico } from "./scrapers/epico-scraper";
 import { scrapeExperis } from "./scrapers/experis-scraper";
 import { scrapeFunctionalSoftware } from "./scrapers/functional-software-scraper";
 import { scrapeGameBoost } from "./scrapers/game-boost-scraper";
+import { scrapeGreateIT } from "./scrapers/great-it-scraper";
+import { scrapeHouseOfSkills } from "./scrapers/house-of-skills-scraper";
+import { scrapeIceberry } from "./scrapers/iceberry-scraper";
+import { scrapeItcNetwork } from "./scrapers/itc-network-scraper";
+import { scrapeKantur } from "./scrapers/kantur-scraper";
+import { scrapeKeyman } from "./scrapers/keyman-scraper";
+import { scrapeKoalitionen } from "./scrapers/koalitionen-scraper";
+import { scrapeKonsultfabriken } from "./scrapers/konsultfabriken-scraper";
+import { scrapeLevigo } from "./scrapers/levigo-scraper";
+import { scrapeNexer } from "./scrapers/nexer-scraper";
+import { scrapePaventia } from "./scrapers/paventia-scraper";
+import { scrapeRandstad } from "./scrapers/randstad-scraper";
+import { scrapeRegent } from "./scrapers/regent-scraper";
+import { scrapeResursbrist } from "./scrapers/resursbrist-scraper";
+import { scrapeSafemind } from "./scrapers/safemind-scraper";
+import { scrapeSenterprise } from "./scrapers/senterprise-scraper";
 import { scrapeVerama } from "./scrapers/verama-scraper";
 
 export async function GET() {
@@ -22,16 +38,32 @@ export async function GET() {
 
   try {
     const results = await Promise.allSettled([
-      runScraper(scrapeASociety, existingKeys, browser),
-      runScraper(scrapeAliant, existingKeys, browser),
-      runScraper(scrapeBiolit, existingKeys, browser),
-      runScraper(scrapeCinode, existingKeys, browser),
-      runScraper(scrapeCombitech, existingKeys, browser),
-      runScraper(scrapeEpico, existingKeys, browser),
-      runScraper(scrapeExperis, existingKeys, browser),
-      runScraper(scrapeFunctionalSoftware, existingKeys, browser),
-      runScraper(scrapeGameBoost, existingKeys, browser),
-      runScraper(scrapeVerama, existingKeys, browser),
+      // runScraper(scrapeASociety, existingKeys, browser),
+      // runScraper(scrapeAliant, existingKeys, browser),
+      // runScraper(scrapeBiolit, existingKeys, browser),
+      // runScraper(scrapeCinode, existingKeys, browser),
+      // runScraper(scrapeCombitech, existingKeys, browser),
+      // runScraper(scrapeEpico, existingKeys, browser),
+      // runScraper(scrapeExperis, existingKeys, browser),
+      // runScraper(scrapeFunctionalSoftware, existingKeys, browser),
+      // runScraper(scrapeGameBoost, existingKeys, browser),
+      // runScraper(scrapeGreateIT, existingKeys, browser),
+      // runScraper(scrapeHouseOfSkills, existingKeys, browser),
+      // runScraper(scrapeIceberry, existingKeys, browser),
+      // runScraper(scrapeItcNetwork, existingKeys, browser),
+      // runScraper(scrapeKantur, existingKeys, browser),
+      // runScraper(scrapeKeyman, existingKeys, browser),
+      // runScraper(scrapeKoalitionen, existingKeys, browser),
+      // runScraper(scrapeKonsultfabriken, existingKeys, browser),
+      // runScraper(scrapeLevigo, existingKeys, browser),
+      // runScraper(scrapeNexer, existingKeys, browser),
+      // runScraper(scrapePaventia, existingKeys, browser),
+      // runScraper(scrapeRandstad, existingKeys, browser),
+      // runScraper(scrapeRegent, existingKeys, browser),
+      // runScraper(scrapeResursbrist, existingKeys, browser),
+      // runScraper(scrapeSafemind, existingKeys, browser),
+      runScraper(scrapeSenterprise, existingKeys, browser),
+      // runScraper(scrapeVerama, existingKeys, browser),
     ]);
     const rejectedAssignments = results.filter((result) => result.status !== "fulfilled");
 

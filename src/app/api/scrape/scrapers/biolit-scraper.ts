@@ -2,27 +2,21 @@ import { Page } from "playwright";
 
 import { IAssignment } from "@/lib/scrape-response";
 
+import { scrapeOnePage } from "./libs/scrape-one-page";
+
 export async function scrapeBiolit(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
-  await page.goto("https://biolit.se/konsultuppdrag/");
-  await page.waitForSelector(".collapsible");
-
-  return await page.evaluate((existingKeys) => {
-    const assignments: IAssignment[] = [];
-    const elements = document.querySelectorAll(".collapsible");
-    if (elements.length === 0) throw new Error("No elements found for Biolit");
-
-    for (const element of elements) {
+  return scrapeOnePage({
+    existingAssignmentIds: existingKeys,
+    getAssignmentData: async (element) => {
       const url = "https://biolit.se/konsultuppdrag/";
-      const id = element.attributes.getNamedItem("id")?.value;
-      const source = "biolit";
-      const title = element.querySelector("b")?.textContent?.trim();
-      const scraped = new Date().toLocaleDateString("sv-SE");
-
-      if (existingKeys.includes(`${source}-${id}`)) break;
-
-      assignments.push({ id, scraped, source, title, url });
-    }
-
-    return assignments;
-  }, existingKeys);
+      const id = await element.getAttribute("id");
+      const title = await element.locator("b").first().textContent();
+      return { id, title: title?.trim(), url };
+    },
+    getElements: () => page.locator(".collapsible").all(),
+    pageName: "biolit",
+    pageUrl: "https://biolit.se/konsultuppdrag/",
+    playwrightPage: page,
+    waitForSelector: ".collapsible",
+  });
 }

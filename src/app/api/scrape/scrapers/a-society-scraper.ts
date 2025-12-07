@@ -2,28 +2,22 @@ import { Page } from "playwright";
 
 import { IAssignment } from "@/lib/scrape-response";
 
+import { scrapeOnePage } from "./libs/scrape-one-page";
+
 export async function scrapeASociety(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
-  await page.goto("https://www.asocietygroup.com/sv/uppdrag?page=100");
-  await page.waitForSelector('[class*="Assignment_assignmentComponent__"]');
-
-  return await page.evaluate((keys) => {
-    const assignments: IAssignment[] = [];
-    const elements = document.querySelectorAll('[class*="Assignment_assignmentComponent__"]');
-    if (elements.length === 0) throw new Error("No elements found for A Society");
-
-    for (const element of elements) {
+  return scrapeOnePage({
+    existingAssignmentIds: existingKeys,
+    getAssignmentData: async (element) => {
       const domain = "https://www.asocietygroup.com";
-      const url = domain + element.querySelector("a")?.attributes.getNamedItem("href")?.value;
+      const url = domain + (await element.locator("a").first().getAttribute("href"));
       const id = url.slice(url.lastIndexOf("-") + 1);
-      const source = "a society";
-      const title = element.querySelector('[class*="Assignment_title__"]')?.textContent?.trim();
-      const scraped = new Date().toLocaleDateString("sv-SE");
-
-      if (keys.includes(`${source}-${id}`)) break;
-
-      assignments.push({ id, scraped, source, title, url });
-    }
-
-    return assignments;
-  }, existingKeys);
+      const title = await element.locator('[class*="Assignment_title__"]').textContent();
+      return { id, title: title?.trim(), url };
+    },
+    getElements: () => page.locator('[class*="Assignment_assignmentComponent__"]').all(),
+    pageName: "a society",
+    pageUrl: "https://www.asocietygroup.com/sv/uppdrag?page=100",
+    playwrightPage: page,
+    waitForSelector: '[class*="Assignment_assignmentComponent__"]',
+  });
 }

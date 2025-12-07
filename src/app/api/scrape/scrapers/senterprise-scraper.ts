@@ -4,18 +4,18 @@ import { IAssignment } from "@/lib/scrape-response";
 
 import { scrapeOnePage } from "./libs/scrape-one-page";
 
-export async function scrapeEpico(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
+export async function scrapeSenterprise(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
   return scrapeOnePage({
     existingAssignmentIds: existingKeys,
     getAssignmentData: async (element) => {
       const url = await element.getAttribute("href");
-      const id = url?.replace("https://jobs.epico.se/jobs/", "").slice(0, url.lastIndexOf("-"));
+      const id = url?.slice(0, url.indexOf("-")).slice(url.lastIndexOf("/") + 1);
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
     getElements: () => page.locator("#jobs_list_container").first().locator("a").all(),
-    pageName: "epico",
-    pageUrl: "https://jobs.epico.se/jobs",
+    pageName: "senterprise",
+    pageUrl: "https://jobb.senterprise.se/jobs?department_id=6559",
     playwrightPage: page,
     waitForSelector: "#jobs_list_container",
   });

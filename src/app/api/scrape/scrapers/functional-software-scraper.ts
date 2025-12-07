@@ -2,30 +2,22 @@ import { Page } from "playwright";
 
 import { IAssignment } from "@/lib/scrape-response";
 
+import { scrapeOnePage } from "./libs/scrape-one-page";
+
 export async function scrapeFunctionalSoftware(page: Page, existingKeys: string[]): Promise<IAssignment[]> {
-  await page.goto("https://functionalsoftware.se/jobs/");
-  await page.waitForSelector(".list-unstyled");
-
-  return await page.evaluate((keys) => {
-    const assignments: IAssignment[] = [];
-    const elements = document.querySelector(".list-unstyled")?.querySelectorAll("a") ?? [];
-    if (elements.length === 0) throw new Error("No elements found for Functional Software");
-
-    for (const element of elements) {
-      if (!element) break;
-
+  return scrapeOnePage({
+    existingAssignmentIds: existingKeys,
+    getAssignmentData: async (element) => {
       const domain = "https://functionalsoftware.se";
-      const url = domain + (element.attributes.getNamedItem("href")?.value ?? "");
+      const url = domain + (await element.getAttribute("href"));
       const id = url?.slice(url.lastIndexOf("/") + 1);
-      const source = "functional software";
-      const title = element.textContent?.trim();
-      const scraped = new Date().toLocaleDateString("sv-SE");
-
-      if (keys.includes(`${source}-${id}`)) break;
-
-      assignments.push({ id, scraped, source, title, url });
-    }
-
-    return assignments;
-  }, existingKeys);
+      const title = await element.textContent();
+      return { id, title: title?.trim(), url };
+    },
+    getElements: () => page.locator(".list-unstyled").first().locator("a").all(),
+    pageName: "functional software",
+    pageUrl: "https://functionalsoftware.se/jobs/",
+    playwrightPage: page,
+    waitForSelector: ".list-unstyled",
+  });
 }
