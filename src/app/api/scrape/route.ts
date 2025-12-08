@@ -6,9 +6,11 @@ import { IAssignment } from "@/lib/scrape-response";
 
 import { scrapeASociety } from "./scrapers/a-society-scraper";
 import { scrapeAliant } from "./scrapers/aliant-scraper";
+import { scrapeAmendo } from "./scrapers/amendo-scraper";
 import { scrapeBiolit } from "./scrapers/biolit-scraper";
 import { scrapeCinode } from "./scrapers/cinode-scraper";
 import { scrapeCombitech } from "./scrapers/combitech-scraper";
+import { scrapeEmagine } from "./scrapers/emagine-scraper";
 import { scrapeEpico } from "./scrapers/epico-scraper";
 import { scrapeExperis } from "./scrapers/experis-scraper";
 import { scrapeFunctionalSoftware } from "./scrapers/functional-software-scraper";
@@ -16,7 +18,9 @@ import { scrapeGameBoost } from "./scrapers/game-boost-scraper";
 import { scrapeGreateIT } from "./scrapers/great-it-scraper";
 import { scrapeHouseOfSkills } from "./scrapers/house-of-skills-scraper";
 import { scrapeIceberry } from "./scrapers/iceberry-scraper";
+import { scrapeInterimSearch } from "./scrapers/interim-search-scraper";
 import { scrapeItcNetwork } from "./scrapers/itc-network-scraper";
+import { scrapeJappa } from "./scrapers/jappa-scraper";
 import { scrapeKantur } from "./scrapers/kantur-scraper";
 import { scrapeKeyman } from "./scrapers/keyman-scraper";
 import { scrapeKoalitionen } from "./scrapers/koalitionen-scraper";
@@ -30,10 +34,13 @@ import { scrapeResursbrist } from "./scrapers/resursbrist-scraper";
 import { scrapeSafemind } from "./scrapers/safemind-scraper";
 import { scrapeSenterprise } from "./scrapers/senterprise-scraper";
 import { scrapeSigma } from "./scrapers/sigma-scraper";
+import { scrapeTeksystems } from "./scrapers/teksystems-scraper";
+import { scrapeUpgraded } from "./scrapers/upgraded-scraper";
 import { scrapeVerama } from "./scrapers/verama-scraper";
+import { scrapeWittedPartners } from "./scrapers/witted-partners-scraper";
 
 export async function GET() {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const database = await JSONFilePreset<IAssignment[]>("./public/assignments.json", []);
   const existingKeys = database.data.map((assignment) => `${assignment.source}-${assignment.id}`);
 
@@ -41,9 +48,11 @@ export async function GET() {
     const results = await Promise.allSettled([
       // runScraper(scrapeASociety, existingKeys, browser),
       // runScraper(scrapeAliant, existingKeys, browser),
+      // runScraper(scrapeAmendo, existingKeys, browser),
       // runScraper(scrapeBiolit, existingKeys, browser),
       // runScraper(scrapeCinode, existingKeys, browser),
       // runScraper(scrapeCombitech, existingKeys, browser),
+      // runScraper(scrapeEmagine, existingKeys, browser),
       // runScraper(scrapeEpico, existingKeys, browser),
       // runScraper(scrapeExperis, existingKeys, browser),
       // runScraper(scrapeFunctionalSoftware, existingKeys, browser),
@@ -52,6 +61,7 @@ export async function GET() {
       // runScraper(scrapeHouseOfSkills, existingKeys, browser),
       // runScraper(scrapeIceberry, existingKeys, browser),
       // runScraper(scrapeItcNetwork, existingKeys, browser),
+      runScraper(scrapeJappa, existingKeys, browser),
       // runScraper(scrapeKantur, existingKeys, browser),
       // runScraper(scrapeKeyman, existingKeys, browser),
       // runScraper(scrapeKoalitionen, existingKeys, browser),
@@ -64,8 +74,11 @@ export async function GET() {
       // runScraper(scrapeResursbrist, existingKeys, browser),
       // runScraper(scrapeSafemind, existingKeys, browser),
       // runScraper(scrapeSenterprise, existingKeys, browser),
-      runScraper(scrapeSigma, existingKeys, browser),
+      // runScraper(scrapeSigma, existingKeys, browser),
+      // runScraper(scrapeTeksystems, existingKeys, browser),
+      // runScraper(scrapeUpgraded, existingKeys, browser),
       // runScraper(scrapeVerama, existingKeys, browser),
+      // runScraper(scrapeWittedPartners, existingKeys, browser),
     ]);
     const rejectedAssignments = results.filter((result) => result.status !== "fulfilled");
 

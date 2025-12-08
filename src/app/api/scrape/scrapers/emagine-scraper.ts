@@ -13,7 +13,10 @@ export async function scrapeEmagine(page: Page, existingKeys: string[]): Promise
       const title = await element.locator("h2").textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("job-grid-item").all(),
+    getElements: async () => {
+      await page.waitForSelector("job-grid-item");
+      return page.locator("job-grid-item").all();
+    },
     goToNextPage: async () => {
       const nextButton = page.locator("button.mat-mdc-paginator-navigation-next").first();
       if (await nextButton.isDisabled()) return;
@@ -27,6 +30,5 @@ export async function scrapeEmagine(page: Page, existingKeys: string[]): Promise
       await page.waitForTimeout(500);
       await page.getByRole("button", { name: /Allow selection/i }).click();
     },
-    waitForSelector: "job-grid-item",
   });
 }

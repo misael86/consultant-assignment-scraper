@@ -14,12 +14,14 @@ export async function scrapeCinode(page: Page, existingKeys: string[]): Promise<
       const title = await element.locator("a").textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("app-list-row").all(),
+    getElements: async () => {
+      await page.waitForSelector("app-list-row");
+      return page.locator("app-list-row").all();
+    },
     goToNextPage: () => page.getByRole("button", { name: /Next page/i }).click(),
     pageName: "cinode",
     pageUrl: "https://cinode.market/requests",
     playwrightPage: page,
     preScrapeJob: () => page.getByRole("button", { name: /Reject/i }).click(),
-    waitForSelector: "app-list",
   });
 }

@@ -14,7 +14,10 @@ export async function scrapeTeksystems(page: Page, existingKeys: string[]): Prom
       const title = await element.locator("a").first().textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".jobs-list-item").all(),
+    getElements: async () => {
+      await page.waitForSelector(".jobs-list-item");
+      return page.locator(".jobs-list-item").all();
+    },
     goToNextPage: async () => {
       const button = page.locator("span.icon-arrow-right").first();
       if (await button.isVisible()) {
@@ -25,6 +28,5 @@ export async function scrapeTeksystems(page: Page, existingKeys: string[]): Prom
     pageName: "teksystems",
     pageUrl: "https://careers.teksystems.com/gb/en/c/developer-jobs",
     playwrightPage: page,
-    waitForSelector: `.jobs-list-item`,
   });
 }

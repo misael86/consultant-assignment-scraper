@@ -13,7 +13,6 @@ interface IProperties {
   pageUrl: string;
   playwrightPage: Page;
   preScrapeJob?: (page: Page) => Promise<void>;
-  waitForSelector: string;
 }
 
 export async function scrapeMultiplePages({
@@ -25,12 +24,10 @@ export async function scrapeMultiplePages({
   pageUrl,
   playwrightPage,
   preScrapeJob,
-  waitForSelector,
 }: IProperties) {
   console.log("scraping", pageName);
 
   await playwrightPage.goto(pageUrl);
-  await playwrightPage.waitForSelector(waitForSelector);
   if (preScrapeJob) await preScrapeJob(playwrightPage);
 
   const assignments: IAssignment[] = [];
@@ -53,7 +50,7 @@ export async function scrapeMultiplePages({
       assignmentIds.push(`${pageName}-${id}`);
     }
 
-    await goToNextPage();
+    if (continueScraping) await goToNextPage();
   }
 
   console.log("scraped", pageName, assignments.length);
