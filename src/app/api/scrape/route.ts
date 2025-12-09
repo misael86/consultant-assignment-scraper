@@ -18,7 +18,6 @@ import { scrapeGameBoost } from "./scrapers/game-boost-scraper";
 import { scrapeGreateIT } from "./scrapers/great-it-scraper";
 import { scrapeHouseOfSkills } from "./scrapers/house-of-skills-scraper";
 import { scrapeIceberry } from "./scrapers/iceberry-scraper";
-import { scrapeInterimSearch } from "./scrapers/interim-search-scraper";
 import { scrapeItcNetwork } from "./scrapers/itc-network-scraper";
 import { scrapeJappa } from "./scrapers/jappa-scraper";
 import { scrapeKantur } from "./scrapers/kantur-scraper";
@@ -45,41 +44,53 @@ export async function GET() {
   const existingKeys = database.data.map((assignment) => `${assignment.source}-${assignment.id}`);
 
   try {
-    const results = await Promise.allSettled([
-      // runScraper(scrapeASociety, existingKeys, browser),
-      // runScraper(scrapeAliant, existingKeys, browser),
-      // runScraper(scrapeAmendo, existingKeys, browser),
-      // runScraper(scrapeBiolit, existingKeys, browser),
-      // runScraper(scrapeCinode, existingKeys, browser),
-      // runScraper(scrapeCombitech, existingKeys, browser),
-      // runScraper(scrapeEmagine, existingKeys, browser),
-      // runScraper(scrapeEpico, existingKeys, browser),
-      // runScraper(scrapeExperis, existingKeys, browser),
-      // runScraper(scrapeFunctionalSoftware, existingKeys, browser),
-      // runScraper(scrapeGameBoost, existingKeys, browser),
-      // runScraper(scrapeGreateIT, existingKeys, browser),
-      // runScraper(scrapeHouseOfSkills, existingKeys, browser),
-      // runScraper(scrapeIceberry, existingKeys, browser),
-      // runScraper(scrapeItcNetwork, existingKeys, browser),
-      runScraper(scrapeJappa, existingKeys, browser),
-      // runScraper(scrapeKantur, existingKeys, browser),
-      // runScraper(scrapeKeyman, existingKeys, browser),
-      // runScraper(scrapeKoalitionen, existingKeys, browser),
-      // runScraper(scrapeKonsultfabriken, existingKeys, browser),
-      // runScraper(scrapeLevigo, existingKeys, browser),
-      // runScraper(scrapeNexer, existingKeys, browser),
-      // runScraper(scrapePaventia, existingKeys, browser),
-      // runScraper(scrapeRandstad, existingKeys, browser),
-      // runScraper(scrapeRegent, existingKeys, browser),
-      // runScraper(scrapeResursbrist, existingKeys, browser),
-      // runScraper(scrapeSafemind, existingKeys, browser),
-      // runScraper(scrapeSenterprise, existingKeys, browser),
-      // runScraper(scrapeSigma, existingKeys, browser),
-      // runScraper(scrapeTeksystems, existingKeys, browser),
-      // runScraper(scrapeUpgraded, existingKeys, browser),
-      // runScraper(scrapeVerama, existingKeys, browser),
-      // runScraper(scrapeWittedPartners, existingKeys, browser),
+    const results1 = await Promise.allSettled([
+      runScraper(scrapeASociety, existingKeys, browser),
+      runScraper(scrapeAliant, existingKeys, browser),
+      runScraper(scrapeAmendo, existingKeys, browser),
+      runScraper(scrapeBiolit, existingKeys, browser),
+      runScraper(scrapeCinode, existingKeys, browser),
+      runScraper(scrapeCombitech, existingKeys, browser),
+      runScraper(scrapeEmagine, existingKeys, browser),
+      runScraper(scrapeEpico, existingKeys, browser),
+      runScraper(scrapeExperis, existingKeys, browser),
+      runScraper(scrapeFunctionalSoftware, existingKeys, browser),
     ]);
+
+    const results2 = await Promise.allSettled([
+      runScraper(scrapeGameBoost, existingKeys, browser),
+      runScraper(scrapeGreateIT, existingKeys, browser),
+      runScraper(scrapeHouseOfSkills, existingKeys, browser),
+      runScraper(scrapeIceberry, existingKeys, browser),
+      runScraper(scrapeItcNetwork, existingKeys, browser),
+      runScraper(scrapeJappa, existingKeys, browser),
+      runScraper(scrapeKantur, existingKeys, browser),
+      runScraper(scrapeKeyman, existingKeys, browser),
+      runScraper(scrapeKoalitionen, existingKeys, browser),
+      runScraper(scrapeKonsultfabriken, existingKeys, browser),
+    ]);
+
+    const results3 = await Promise.allSettled([
+      runScraper(scrapeLevigo, existingKeys, browser),
+      runScraper(scrapeNexer, existingKeys, browser),
+      runScraper(scrapePaventia, existingKeys, browser),
+      runScraper(scrapeRandstad, existingKeys, browser),
+      runScraper(scrapeRegent, existingKeys, browser),
+      runScraper(scrapeResursbrist, existingKeys, browser),
+      runScraper(scrapeSafemind, existingKeys, browser),
+      runScraper(scrapeSenterprise, existingKeys, browser),
+      runScraper(scrapeSigma, existingKeys, browser),
+      runScraper(scrapeTeksystems, existingKeys, browser),
+    ]);
+
+    const results4 = await Promise.allSettled([
+      runScraper(scrapeUpgraded, existingKeys, browser),
+      runScraper(scrapeVerama, existingKeys, browser),
+      runScraper(scrapeWittedPartners, existingKeys, browser),
+    ]);
+
+    const results = [...results1, ...results2, ...results3, ...results4];
+
     const rejectedAssignments = results.filter((result) => result.status !== "fulfilled");
 
     if (rejectedAssignments.length > 0)
