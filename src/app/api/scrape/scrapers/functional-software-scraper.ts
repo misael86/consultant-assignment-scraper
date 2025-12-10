@@ -14,10 +14,12 @@ export async function scrapeFunctionalSoftware(page: Page, existingKeys: string[
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".list-unstyled").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector(".list-unstyled");
+      return page.locator(".list-unstyled").first().locator("a").all();
+    },
     pageName: "functional software",
     pageUrl: "https://functionalsoftware.se/jobs/",
     playwrightPage: page,
-    waitForSelector: ".list-unstyled",
   });
 }

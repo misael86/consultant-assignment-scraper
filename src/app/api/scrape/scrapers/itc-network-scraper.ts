@@ -12,10 +12,12 @@ export async function scrapeItcNetwork(page: Page, existingKeys: string[]): Prom
       const title = await element.locator("h3").textContent();
       return { id: title, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".maf_feed_single").all(),
+    getElements: async () => {
+      await page.waitForSelector(".maf_feed_parent");
+      return page.locator(".maf_feed_single").all();
+    },
     pageName: "itc network",
     pageUrl: "https://itcnetwork.se/uppdrag/",
     playwrightPage: page,
-    waitForSelector: ".maf_feed_parent",
   });
 }

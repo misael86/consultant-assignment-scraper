@@ -14,10 +14,12 @@ export async function scrapePaventia(page: Page, existingKeys: string[]): Promis
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".cw-joblisting-results").first().locator(".posR").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector(".cw-joblisting-results");
+      return page.locator(".cw-joblisting-results").first().locator(".posR").first().locator("a").all();
+    },
     pageName: "paventia",
     pageUrl: "https://jobs.paventia.se/jobs/open",
     playwrightPage: page,
-    waitForSelector: ".cw-joblisting-results",
   });
 }

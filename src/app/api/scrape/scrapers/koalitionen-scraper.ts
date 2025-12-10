@@ -13,10 +13,12 @@ export async function scrapeKoalitionen(page: Page, existingKeys: string[]): Pro
       const title = await element.locator("h3").textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#career-list").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector("#career-list");
+      return page.locator("#career-list").first().locator("a").all();
+    },
     pageName: "koalitionen",
     pageUrl: "https://koalitionen.com/career/",
     playwrightPage: page,
-    waitForSelector: "#career-list",
   });
 }

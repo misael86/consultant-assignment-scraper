@@ -13,10 +13,12 @@ export async function scrapeGameBoost(page: Page, existingKeys: string[]): Promi
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".jobs-list-container").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector(".jobs-list-container");
+      return page.locator(".jobs-list-container").first().locator("a").all();
+    },
     pageName: "game boost",
     pageUrl: "https://www.gameboost.se/jobs",
     playwrightPage: page,
-    waitForSelector: ".jobs-list-container",
   });
 }

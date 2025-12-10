@@ -13,10 +13,12 @@ export async function scrapeBiolit(page: Page, existingKeys: string[]): Promise<
       const title = await element.locator("b").first().textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".collapsible").all(),
+    getElements: async () => {
+      await page.waitForSelector(".collapsible");
+      return page.locator(".collapsible").all();
+    },
     pageName: "biolit",
     pageUrl: "https://biolit.se/konsultuppdrag/",
     playwrightPage: page,
-    waitForSelector: ".collapsible",
   });
 }

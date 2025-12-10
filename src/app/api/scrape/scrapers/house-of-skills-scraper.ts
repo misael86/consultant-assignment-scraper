@@ -15,10 +15,12 @@ export async function scrapeHouseOfSkills(page: Page, existingKeys: string[]): P
       const title = await anchorElement.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".et_pb_posts").first().locator("article").all(),
+    getElements: async () => {
+      await page.waitForSelector(".et_pb_posts");
+      return page.locator(".et_pb_posts").first().locator("article").all();
+    },
     pageName: "house of skills",
     pageUrl: "https://houseofskills.se/konsultuppdrag/",
     playwrightPage: page,
-    waitForSelector: ".et_pb_posts",
   });
 }

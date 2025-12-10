@@ -14,10 +14,12 @@ export async function scrapeRegent(page: Page, existingKeys: string[]): Promise<
       const title = await element.locator("a").first().textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".assignments").first().locator(".assignment-item").all(),
+    getElements: async () => {
+      await page.waitForSelector(".assignments");
+      return page.locator(".assignments").first().locator(".assignment-item").all();
+    },
     pageName: "regent",
     pageUrl: "https://regent.se/uppdrag/",
     playwrightPage: page,
-    waitForSelector: ".assignments",
   });
 }

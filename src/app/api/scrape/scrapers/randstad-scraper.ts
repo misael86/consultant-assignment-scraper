@@ -14,10 +14,12 @@ export async function scrapeRandstad(page: Page, existingKeys: string[]): Promis
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#search-results").first().locator("h3").all(),
+    getElements: async () => {
+      await page.waitForSelector("#search-results");
+      return page.locator("#search-results").first().locator("h3").all();
+    },
     pageName: "randstad",
     pageUrl: "https://www.randstad.se/jobb/jt-konsultuppdrag/",
     playwrightPage: page,
-    waitForSelector: "#search-results",
   });
 }

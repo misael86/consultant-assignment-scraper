@@ -14,10 +14,12 @@ export async function scrapeLevigo(page: Page, existingKeys: string[]): Promise<
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".elementor-shortcode").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector(".elementor-shortcode");
+      return page.locator(".elementor-shortcode").first().locator("a").all();
+    },
     pageName: "levigo",
     pageUrl: "https://levigo.se/assignments/",
     playwrightPage: page,
-    waitForSelector: ".elementor-shortcode",
   });
 }

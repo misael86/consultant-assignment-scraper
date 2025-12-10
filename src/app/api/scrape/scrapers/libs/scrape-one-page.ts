@@ -12,7 +12,6 @@ interface IProperties {
   pageUrl: string;
   playwrightPage: Page;
   preScrapeJob?: () => Promise<void>;
-  waitForSelector: string;
 }
 
 export async function scrapeOnePage({
@@ -23,14 +22,12 @@ export async function scrapeOnePage({
   pageUrl,
   playwrightPage,
   preScrapeJob,
-  waitForSelector,
 }: IProperties): Promise<IAssignment[]> {
   console.log("scraping", pageName);
 
   await playwrightPage.goto(pageUrl);
-  await playwrightPage.waitForSelector(waitForSelector);
-  if (preScrapeJob) await preScrapeJob();
 
+  if (preScrapeJob) await preScrapeJob();
   const elements = await getElements();
   if (elements.length === 0) throw new Error("No elements found for " + pageName);
 

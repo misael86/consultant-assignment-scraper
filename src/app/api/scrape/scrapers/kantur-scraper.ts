@@ -14,10 +14,12 @@ export async function scrapeKantur(page: Page, existingKeys: string[]): Promise<
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".lead-summary").all(),
+    getElements: async () => {
+      await page.waitForSelector(".lead-summary");
+      return page.locator(".lead-summary").all();
+    },
     pageName: "kantur",
     pageUrl: "https://kantur.se/projects",
     playwrightPage: page,
-    waitForSelector: ".lead-summary",
   });
 }

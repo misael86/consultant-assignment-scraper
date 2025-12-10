@@ -12,10 +12,12 @@ export async function scrapeIceberry(page: Page, existingKeys: string[]): Promis
       const title = await element.locator(".header").first().textContent();
       return { id: title, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".flow-card-container").all(),
+    getElements: async () => {
+      await page.waitForSelector(".flow-card-container");
+      return page.locator(".flow-card-container").all();
+    },
     pageName: "iceberry",
     pageUrl: "https://uppdrag.iceberry.se/",
     playwrightPage: page,
-    waitForSelector: ".flow-card-container",
   });
 }

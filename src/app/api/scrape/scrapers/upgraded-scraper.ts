@@ -14,10 +14,12 @@ export async function scrapeUpgraded(page: Page, existingKeys: string[]): Promis
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".konsultuppdrag-table").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector(".konsultuppdrag-table");
+      return page.locator(".konsultuppdrag-table").first().locator("a").all();
+    },
     pageName: "upgraded",
     pageUrl: "https://upgraded.se/lediga-uppdrag/",
     playwrightPage: page,
-    waitForSelector: ".konsultuppdrag-table",
   });
 }

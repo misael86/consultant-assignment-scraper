@@ -13,10 +13,12 @@ export async function scrapeAmendo(page: Page, existingKeys: string[]): Promise<
       const title = await element.locator("span.text-block-base-link").textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".z-career-jobs-list").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector(".z-career-jobs-list");
+      return page.locator(".z-career-jobs-list").first().locator("a").all();
+    },
     pageName: "amendo",
     pageUrl: "https://jobb.amendo.se/jobs",
     playwrightPage: page,
-    waitForSelector: ".z-career-jobs-list",
   });
 }

@@ -13,10 +13,12 @@ export async function scrapeKonsultfabriken(page: Page, existingKeys: string[]):
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#jobs").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector("#jobs");
+      return page.locator("#jobs").first().locator("a").all();
+    },
     pageName: "konsultfabriken",
     pageUrl: "https://konsultfabriken.se/all-assignments.php",
     playwrightPage: page,
-    waitForSelector: "#jobs",
   });
 }

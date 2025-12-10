@@ -13,13 +13,15 @@ export async function scrapeKeyman(page: Page, existingKeys: string[]): Promise<
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".elementor-loop-container").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector(".elementor-loop-container");
+      return page.locator(".elementor-loop-container").first().locator("a").all();
+    },
     pageName: "keyman",
     pageUrl: "https://www.keyman.se/sv/uppdrag/",
     playwrightPage: page,
     preScrapeJob: async () => {
       await page.getByRole("button", { name: /Visa fler/i }).click();
     },
-    waitForSelector: ".elementor-loop-container",
   });
 }

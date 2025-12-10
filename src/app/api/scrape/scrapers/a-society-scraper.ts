@@ -14,10 +14,12 @@ export async function scrapeASociety(page: Page, existingKeys: string[]): Promis
       const title = await element.locator('[class*="Assignment_title__"]').textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator('[class*="Assignment_assignmentComponent__"]').all(),
+    getElements: async () => {
+      await page.waitForSelector('[class*="Assignment_assignmentComponent__"]');
+      return page.locator('[class*="Assignment_assignmentComponent__"]').all();
+    },
     pageName: "a society",
     pageUrl: "https://www.asocietygroup.com/sv/uppdrag?page=100",
     playwrightPage: page,
-    waitForSelector: '[class*="Assignment_assignmentComponent__"]',
   });
 }

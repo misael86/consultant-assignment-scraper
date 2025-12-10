@@ -13,10 +13,12 @@ export async function scrapeWittedPartners(page: Page, existingKeys: string[]): 
       const title = await element.locator("h2").first().textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("ul.wrapper").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector("ul.wrapper");
+      return page.locator("ul.wrapper").first().locator("a").all();
+    },
     pageName: "witted partners",
     pageUrl: "https://wittedpartners.com/projects",
     playwrightPage: page,
-    waitForSelector: "ul.wrapper",
   });
 }

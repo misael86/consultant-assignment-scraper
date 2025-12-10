@@ -13,10 +13,12 @@ export async function scrapeGreateIT(page: Page, existingKeys: string[]): Promis
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#jobs_list_container").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector("#jobs_list_container");
+      return page.locator("#jobs_list_container").first().locator("a").all();
+    },
     pageName: "great it",
     pageUrl: "https://jobb.greatit.se/jobs",
     playwrightPage: page,
-    waitForSelector: "#jobs_list_container",
   });
 }

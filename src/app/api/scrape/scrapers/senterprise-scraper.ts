@@ -13,10 +13,12 @@ export async function scrapeSenterprise(page: Page, existingKeys: string[]): Pro
       const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#jobs_list_container").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector("#jobs_list_container");
+      return page.locator("#jobs_list_container").first().locator("a").all();
+    },
     pageName: "senterprise",
     pageUrl: "https://jobb.senterprise.se/jobs?department_id=6559",
     playwrightPage: page,
-    waitForSelector: "#jobs_list_container",
   });
 }

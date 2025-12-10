@@ -15,10 +15,12 @@ export async function scrapeSafemind(page: Page, existingKeys: string[]): Promis
       const title = await element.locator("a").first().textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#jobs-output").first().locator(".job__content").all(),
+    getElements: async () => {
+      await page.waitForSelector("#jobs-output");
+      return page.locator("#jobs-output").first().locator(".job__content").all();
+    },
     pageName: "safemind",
     pageUrl: "https://www.safemind.se/lediga-jobb-tjanster/?tmp=1",
     playwrightPage: page,
-    waitForSelector: "#jobs-output",
   });
 }

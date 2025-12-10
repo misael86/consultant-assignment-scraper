@@ -14,7 +14,10 @@ export async function scrapeNexer(page: Page, existingKeys: string[]): Promise<I
       const title = await element.locator("h2").first().textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".nexer-all-jobs-wrapper").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector(".nexer-all-jobs-wrapper");
+      return page.locator(".nexer-all-jobs-wrapper").first().locator("a").all();
+    },
     pageName: "nexer",
     pageUrl: "https://nexergroup.com/career/open-positions/",
     playwrightPage: page,
@@ -24,6 +27,5 @@ export async function scrapeNexer(page: Page, existingKeys: string[]): Promise<I
         await loadMoreButton.click();
       }
     },
-    waitForSelector: ".nexer-all-jobs-wrapper",
   });
 }

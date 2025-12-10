@@ -13,7 +13,10 @@ export async function scrapeSigma(page: Page, existingKeys: string[]): Promise<I
       const title = await element.locator("h4").first().textContent();
       return { id: url, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#vm_jobs").first().locator("ul").first().locator("a").all(),
+    getElements: async () => {
+      await page.waitForSelector("a.item--more");
+      return page.locator("#vm_jobs").first().locator("ul").first().locator("a").all();
+    },
     pageName: "sigma",
     pageUrl: "https://www.sigma.se/sv/karriar/partner-uppdrag/",
     playwrightPage: page,
@@ -24,6 +27,5 @@ export async function scrapeSigma(page: Page, existingKeys: string[]): Promise<I
         await page.waitForTimeout(500);
       }
     },
-    waitForSelector: "a.item--more",
   });
 }

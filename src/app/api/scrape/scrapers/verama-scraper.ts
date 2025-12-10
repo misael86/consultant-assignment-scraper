@@ -14,10 +14,12 @@ export async function scrapeVerama(page: Page, existingKeys: string[]): Promise<
       const title = await element.locator(".el-header").first().textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("a.route-section").all(),
+    getElements: async () => {
+      await page.waitForSelector("a.route-section");
+      return page.locator("a.route-section").all();
+    },
     pageName: "verama",
     pageUrl: "https://app.verama.com/app/job-requests?size=500",
     playwrightPage: page,
-    waitForSelector: "a.route-section",
   });
 }

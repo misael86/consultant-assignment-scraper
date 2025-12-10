@@ -16,10 +16,12 @@ export async function scrapeResursbrist(page: Page, existingKeys: string[]): Pro
       const title = await columns.at(1)?.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.frameLocator("iframe").locator(".jobListContainer").locator(".jobDetailRow").all(),
+    getElements: async () => {
+      await page.waitForSelector(".op-custom-html-block");
+      return page.frameLocator("iframe").locator(".jobListContainer").locator(".jobDetailRow").all();
+    },
     pageName: "resursbrist",
     pageUrl: "https://resursbrist.se/aktuella-uppdrag/",
     playwrightPage: page,
-    waitForSelector: ".op-custom-html-block",
   });
 }

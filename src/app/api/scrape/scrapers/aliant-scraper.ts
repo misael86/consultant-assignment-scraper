@@ -15,10 +15,12 @@ export async function scrapeAliant(page: Page, existingKeys: string[]): Promise<
       const title = await element.locator("span").first().textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator("#job-post-listing-box").first().locator(".box").all(),
+    getElements: async () => {
+      await page.waitForSelector("#job-post-listing-box");
+      return page.locator("#job-post-listing-box").first().locator(".box").all();
+    },
     pageName: "aliant",
     pageUrl: "https://aliant.recman.se",
     playwrightPage: page,
-    waitForSelector: "#job-post-listing-box",
   });
 }

@@ -17,10 +17,12 @@ export async function scrapeCombitech(page: Page, existingKeys: string[]): Promi
       const title = await anchorElement.textContent();
       return { id, title: title?.trim(), url };
     },
-    getElements: () => page.locator(".grid-row").all(),
+    getElements: async () => {
+      await page.waitForSelector(".grid-row");
+      return page.locator(".grid-row").all();
+    },
     pageName: "combitech",
     pageUrl: "https://partnernetworkportal.azurewebsites.net/",
     playwrightPage: page,
-    waitForSelector: ".table-wrap",
   });
 }
