@@ -14,13 +14,14 @@ export async function scrapeSigma(page: Page, existingKeys: string[]): Promise<I
       return { id: url, title: title?.trim(), url };
     },
     getElements: async () => {
-      await page.waitForSelector("a.item--more");
+      await page.waitForSelector("#vm_jobs");
       return page.locator("#vm_jobs").first().locator("ul").first().locator("a").all();
     },
     pageName: "sigma",
     pageUrl: "https://www.sigma.se/sv/karriar/partner-uppdrag/",
     playwrightPage: page,
     preScrapeJob: async () => {
+      await page.waitForSelector("a.item--more");
       const loadMoreButton = page.locator("a.item--more").first();
       while (await loadMoreButton.isVisible()) {
         await loadMoreButton.click();

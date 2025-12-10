@@ -35,7 +35,10 @@ export async function scrapeMultiplePages({
   let continueScraping = true;
   while (continueScraping) {
     const elements = await getElements();
-    if (elements.length === 0) throw new Error("No elements found for " + pageName);
+    if (elements.length === 0) {
+      continueScraping = false;
+      continue;
+    }
 
     for (const element of elements) {
       const { id, title, url } = await getAssignmentData(element);
@@ -53,6 +56,7 @@ export async function scrapeMultiplePages({
     if (continueScraping) await goToNextPage();
   }
 
+  if (assignments.length === 0) throw new Error("No elements found for " + pageName);
   console.log("scraped", pageName, assignments.length);
   return assignments;
 }

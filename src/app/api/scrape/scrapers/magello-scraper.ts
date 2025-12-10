@@ -21,7 +21,6 @@ export async function scrapeMagello(page: Page, existingKeys: string[]): Promise
       const links = await page.locator("a.page-numbers").all();
       for (const link of links) {
         const text = await link.textContent();
-        console.log("visited", visitedPages, "next", text);
         if (!visitedPages.includes(text ?? "")) {
           visitedPages.push(text ?? "");
           await link.click();
