@@ -37,3 +37,7 @@ Normally in nextjs projects you have one app folder in the root and then have al
 - prisma: database files
 - styles: global CSS
 - tests: e2e tests
+
+## Links
+
+- https://annaleijon.se/lista-pa-konsultmaklare-i-stockholm.html

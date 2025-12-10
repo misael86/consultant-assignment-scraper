@@ -27,13 +27,17 @@ import { scrapeKonsultfabriken } from "./scrapers/konsultfabriken-scraper";
 import { scrapeLevigo } from "./scrapers/levigo-scraper";
 import { scrapeMagello } from "./scrapers/magello-scraper";
 import { scrapeNexer } from "./scrapers/nexer-scraper";
+import { scrapeNikita } from "./scrapers/nikita-scraper";
 import { scrapePaventia } from "./scrapers/paventia-scraper";
+import { scrapeProfinder } from "./scrapers/profinder-scraper";
 import { scrapeRandstad } from "./scrapers/randstad-scraper";
 import { scrapeRegent } from "./scrapers/regent-scraper";
 import { scrapeResursbrist } from "./scrapers/resursbrist-scraper";
 import { scrapeSafemind } from "./scrapers/safemind-scraper";
+import { scrapeSeequaly } from "./scrapers/seequaly-scraper";
 import { scrapeSenterprise } from "./scrapers/senterprise-scraper";
 import { scrapeSigma } from "./scrapers/sigma-scraper";
+import { scrapeTechrelations } from "./scrapers/techrelations-scraper";
 import { scrapeTeksystems } from "./scrapers/teksystems-scraper";
 import { scrapeUpgraded } from "./scrapers/upgraded-scraper";
 import { scrapeVerama } from "./scrapers/verama-scraper";
@@ -67,15 +71,19 @@ export async function GET() {
       // runScraper(scrapeKoalitionen, existingKeys, browser),
       // runScraper(scrapeKonsultfabriken, existingKeys, browser),
       // runScraper(scrapeLevigo, existingKeys, browser),
-      runScraper(scrapeMagello, existingKeys, browser),
+      // runScraper(scrapeMagello, existingKeys, browser),
       // runScraper(scrapeNexer, existingKeys, browser),
+      // runScraper(scrapeNikita, existingKeys, browser),
       // runScraper(scrapePaventia, existingKeys, browser),
+      // runScraper(scrapeProfinder, existingKeys, browser),
       // runScraper(scrapeRandstad, existingKeys, browser),
       // runScraper(scrapeRegent, existingKeys, browser),
       // runScraper(scrapeResursbrist, existingKeys, browser),
       // runScraper(scrapeSafemind, existingKeys, browser),
       // runScraper(scrapeSenterprise, existingKeys, browser),
+      // runScraper(scrapeSeequaly, existingKeys, browser),
       // runScraper(scrapeSigma, existingKeys, browser),
+      runScraper(scrapeTechrelations, existingKeys, browser),
       // runScraper(scrapeTeksystems, existingKeys, browser),
       // runScraper(scrapeUpgraded, existingKeys, browser),
       // runScraper(scrapeVerama, existingKeys, browser),
