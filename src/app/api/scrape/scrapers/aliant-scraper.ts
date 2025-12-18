@@ -8,16 +8,14 @@ export async function scrapeAliant(page: Page, existingKeys: string[]): Promise<
   return scrapeOnePage({
     existingAssignmentIds: existingKeys,
     getAssignmentData: async (element) => {
-      const domain = "https://aliant.recman.se/";
-      const onClick = await element.getAttribute("onclick");
-      const url = domain + onClick?.replaceAll("'", "").replace("location.href=", "");
-      const id = url.slice(url.lastIndexOf("=") + 1);
-      const title = await element.locator("span").first().textContent();
+      const url = await element.getAttribute("href");
+      const id = url?.slice(url.lastIndexOf("/") + 1);
+      const title = await element.textContent();
       return { id, title: title?.trim(), url };
     },
     getElements: async () => {
-      await page.waitForSelector("#job-post-listing-box");
-      return page.locator("#job-post-listing-box").first().locator(".box").all();
+      await page.waitForSelector(".PostsList-wrap");
+      return page.locator(".PostsList-wrap").locator("a").all();
     },
     pageName: "aliant",
     pageUrl: "https://aliant.recman.se",
