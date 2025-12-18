@@ -36,28 +36,37 @@ export default function Home() {
 
   return (
     <StrictMode>
-      <main className="m-10 mt-5 mb-20">
-        <Header size={1}>Consultant Assignment Scraper</Header>
+      <main className="m-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center">
+            <Header size={1}>Consultant Assignment Scraper</Header>
+          </div>
 
-        <div className="mt-2.5">
-          <Button onClick={scrapeAssignments}>Scrape assignments</Button>
-          {isScrapingAssignments && <span className="ml-5">Loading...</span>}
+          <div className="mt-2.5 text-center">
+            <Button onClick={scrapeAssignments}>Scrape assignments</Button>
+            {isScrapingAssignments && <span className="ml-5">Loading...</span>}
+          </div>
+
+          <AssignmentFilters />
+
+          <AssignmentList assignmentCount={filteredAssignmentsNew.length} title="Scraped assignments">
+            {filteredAssignmentsNew.map((assignment) => {
+              return <AssignmentItem assignment={assignment} key={`${assignment.source}-${assignment.id}`} />;
+            })}
+          </AssignmentList>
+
+          <AssignmentList
+            assignmentCount={filteredAssignmentsAll.length}
+            title="Previously scraped assignments"
+            toggle
+            toggleAriaLabel="Toggle display old assignments"
+          >
+            {filteredAssignmentsAll.map((assignment) => {
+              return <AssignmentItem assignment={assignment} key={`${assignment.source}-${assignment.id}`} />;
+            })}
+            {isLoadingAssignments && <li>Loading...</li>}
+          </AssignmentList>
         </div>
-
-        <AssignmentFilters />
-
-        <AssignmentList assignmentCount={filteredAssignmentsNew.length} title="New assignments">
-          {filteredAssignmentsNew.map((assignment) => {
-            return <AssignmentItem assignment={assignment} key={`${assignment.source}-${assignment.id}`} />;
-          })}
-        </AssignmentList>
-
-        <AssignmentList assignmentCount={filteredAssignmentsAll.length} title="Old assignments">
-          {filteredAssignmentsAll.map((assignment) => {
-            return <AssignmentItem assignment={assignment} key={`${assignment.source}-${assignment.id}`} />;
-          })}
-          {isLoadingAssignments && <li>Loading...</li>}
-        </AssignmentList>
       </main>
     </StrictMode>
   );

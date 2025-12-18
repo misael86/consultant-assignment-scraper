@@ -25,13 +25,14 @@ export async function scrapeOnePage({
 }: IProperties): Promise<IAssignment[]> {
   console.log("scraping", pageName);
 
+  const assignments: IAssignment[] = [];
+
   await playwrightPage.goto(pageUrl);
 
   if (preScrapeJob) await preScrapeJob();
   const elements = await getElements();
   if (elements.length === 0) throw new Error("No elements found for " + pageName);
 
-  const assignments: IAssignment[] = [];
   for (const element of elements) {
     const { id, title, url } = await getAssignmentData(element);
     if (existingAssignmentIds.includes(`${pageName}-${id}`)) break;
