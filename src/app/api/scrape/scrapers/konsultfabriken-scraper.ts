@@ -8,7 +8,8 @@ export async function scrapeKonsultfabriken(page: Page, existingKeys: string[]):
   return scrapeOnePage({
     existingAssignmentIds: existingKeys,
     getAssignmentData: async (element) => {
-      const url = await element.getAttribute("href");
+      const domain = "https://konsultfabriken.se/";
+      const url = domain + (await element.getAttribute("href"));
       const id = url?.slice(url.indexOf("="));
       const title = await element.textContent();
       return { id, title: title?.trim(), url };

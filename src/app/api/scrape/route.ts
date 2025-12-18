@@ -33,6 +33,7 @@ import { scrapeProfinder } from "./scrapers/profinder-scraper";
 import { scrapeRandstad } from "./scrapers/randstad-scraper";
 import { scrapeRegent } from "./scrapers/regent-scraper";
 import { scrapeResursbrist } from "./scrapers/resursbrist-scraper";
+import { scrapeRightPeopleGroup } from "./scrapers/right-people-group-scraper";
 import { scrapeSafemind } from "./scrapers/safemind-scraper";
 import { scrapeSeequaly } from "./scrapers/seequaly-scraper";
 import { scrapeSenterprise } from "./scrapers/senterprise-scraper";
@@ -43,55 +44,58 @@ import { scrapeTingent } from "./scrapers/tingent-scraper";
 import { scrapeTogetherTech } from "./scrapers/together-tech-scraper";
 import { scrapeUpgraded } from "./scrapers/upgraded-scraper";
 import { scrapeVerama } from "./scrapers/verama-scraper";
+import { scrapeWiseIT } from "./scrapers/wise-it-scraper";
 import { scrapeWittedPartners } from "./scrapers/witted-partners-scraper";
 
 export async function GET() {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const database = await JSONFilePreset<IAssignment[]>("./public/assignments.json", []);
   const existingKeys = database.data.map((assignment) => `${assignment.source}-${assignment.id}`);
 
   try {
     const results = await Promise.allSettled([
-      runScraper(scrapeASociety, existingKeys, browser),
-      runScraper(scrapeAliant, existingKeys, browser),
-      runScraper(scrapeAmendo, existingKeys, browser),
-      runScraper(scrapeBiolit, existingKeys, browser),
-      runScraper(scrapeCinode, existingKeys, browser),
-      runScraper(scrapeCombitech, existingKeys, browser),
-      runScraper(scrapeEmagine, existingKeys, browser),
-      runScraper(scrapeEpico, existingKeys, browser),
-      runScraper(scrapeExperis, existingKeys, browser),
-      runScraper(scrapeFunctionalSoftware, existingKeys, browser),
-      runScraper(scrapeGameBoost, existingKeys, browser),
-      runScraper(scrapeGreateIT, existingKeys, browser),
-      runScraper(scrapeHouseOfSkills, existingKeys, browser),
-      runScraper(scrapeIceberry, existingKeys, browser),
-      runScraper(scrapeItcNetwork, existingKeys, browser),
-      runScraper(scrapeJappa, existingKeys, browser),
-      runScraper(scrapeKantur, existingKeys, browser),
-      runScraper(scrapeKeyman, existingKeys, browser),
-      runScraper(scrapeKoalitionen, existingKeys, browser),
-      runScraper(scrapeKonsultfabriken, existingKeys, browser),
-      runScraper(scrapeLevigo, existingKeys, browser),
-      runScraper(scrapeMagello, existingKeys, browser),
-      runScraper(scrapeNexer, existingKeys, browser),
-      runScraper(scrapeNikita, existingKeys, browser),
-      runScraper(scrapePaventia, existingKeys, browser),
-      runScraper(scrapeProfinder, existingKeys, browser),
-      runScraper(scrapeRandstad, existingKeys, browser),
-      runScraper(scrapeRegent, existingKeys, browser),
-      runScraper(scrapeResursbrist, existingKeys, browser),
-      runScraper(scrapeSafemind, existingKeys, browser),
-      runScraper(scrapeSenterprise, existingKeys, browser),
+      // runScraper(scrapeASociety, existingKeys, browser),
+      // runScraper(scrapeAliant, existingKeys, browser),
+      // runScraper(scrapeAmendo, existingKeys, browser),
+      // runScraper(scrapeBiolit, existingKeys, browser),
+      // runScraper(scrapeCinode, existingKeys, browser),
+      // runScraper(scrapeCombitech, existingKeys, browser),
+      // runScraper(scrapeEmagine, existingKeys, browser),
+      // runScraper(scrapeEpico, existingKeys, browser),
+      // runScraper(scrapeExperis, existingKeys, browser),
+      // runScraper(scrapeFunctionalSoftware, existingKeys, browser),
+      // runScraper(scrapeGameBoost, existingKeys, browser),
+      // runScraper(scrapeGreateIT, existingKeys, browser),
+      // runScraper(scrapeHouseOfSkills, existingKeys, browser),
+      // runScraper(scrapeIceberry, existingKeys, browser),
+      // runScraper(scrapeItcNetwork, existingKeys, browser),
+      // runScraper(scrapeJappa, existingKeys, browser),
+      // runScraper(scrapeKantur, existingKeys, browser),
+      // runScraper(scrapeKeyman, existingKeys, browser),
+      // runScraper(scrapeKoalitionen, existingKeys, browser),
+      // runScraper(scrapeKonsultfabriken, existingKeys, browser),
+      // runScraper(scrapeLevigo, existingKeys, browser),
+      // runScraper(scrapeMagello, existingKeys, browser),
+      // runScraper(scrapeNexer, existingKeys, browser),
+      // runScraper(scrapeNikita, existingKeys, browser),
+      // runScraper(scrapePaventia, existingKeys, browser),
+      // runScraper(scrapeProfinder, existingKeys, browser),
+      // runScraper(scrapeRandstad, existingKeys, browser),
+      // runScraper(scrapeRegent, existingKeys, browser),
+      // runScraper(scrapeResursbrist, existingKeys, browser),
+      // runScraper(scrapeRightPeopleGroup, existingKeys, browser),
+      // runScraper(scrapeSafemind, existingKeys, browser),
+      // runScraper(scrapeSenterprise, existingKeys, browser),
       runScraper(scrapeSeequaly, existingKeys, browser),
-      runScraper(scrapeSigma, existingKeys, browser),
-      runScraper(scrapeTechrelations, existingKeys, browser),
-      runScraper(scrapeTeksystems, existingKeys, browser),
-      runScraper(scrapeTingent, existingKeys, browser),
-      runScraper(scrapeTogetherTech, existingKeys, browser),
-      runScraper(scrapeUpgraded, existingKeys, browser),
-      runScraper(scrapeVerama, existingKeys, browser),
-      runScraper(scrapeWittedPartners, existingKeys, browser),
+      // runScraper(scrapeSigma, existingKeys, browser),
+      // runScraper(scrapeTechrelations, existingKeys, browser),
+      // runScraper(scrapeTeksystems, existingKeys, browser),
+      // runScraper(scrapeTingent, existingKeys, browser),
+      // runScraper(scrapeTogetherTech, existingKeys, browser),
+      // runScraper(scrapeUpgraded, existingKeys, browser),
+      // runScraper(scrapeVerama, existingKeys, browser),
+      // runScraper(scrapeWiseIT, existingKeys, browser),
+      // runScraper(scrapeWittedPartners, existingKeys, browser),
     ]);
 
     const rejectedAssignments = results.filter((result) => result.status !== "fulfilled");
@@ -122,10 +126,22 @@ async function runScraper(
   existingKeys: string[],
   browser: Browser
 ) {
-  const page = await browser.newPage();
-  const assingments = await scraper(page, existingKeys);
-  await page.close();
-  return assingments;
+  let assignments: IAssignment[] = [];
+  let retry = true;
+  let retryCount = 3;
+  while (retry && retryCount > 0) {
+    try {
+      retry = false;
+      const page = await browser.newPage();
+      assignments = await scraper(page, existingKeys);
+      await page.close();
+    } catch (error) {
+      retry = true;
+      retryCount--;
+      if (retryCount === 0) throw error;
+    }
+  }
+  return assignments;
 }
 
 async function store(assignments: IAssignment[], database: Low<IAssignment[]>): Promise<void> {
