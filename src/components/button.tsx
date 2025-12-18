@@ -1,16 +1,18 @@
 import { MouseEventHandler } from "react";
 
 interface IProperties {
+  ariaLabel?: string;
   children: React.ReactNode;
   isActive?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-export function Button({ children, isActive, onClick }: Readonly<IProperties>) {
-  let style = "border-1 rounded-lg p-2 pt-1 pb-1 cursor-pointer";
+export function Button({ ariaLabel, children, isActive, onClick }: Readonly<IProperties>) {
+  let style =
+    "border-1 rounded-lg p-2 pt-1 pb-1 cursor-pointer focus-visible:outline-2 hover:outline-2 focus-visible:outline-yellow-100 hover:outline-yellow-100 focus-visible:outline-offset-2 hover:outline-offset-2 transition-all duration-200";
   if (isActive) style += " bg-yellow-100 text-black";
   return (
-    <button className={style} onClick={onClick}>
+    <button aria-label={ariaLabel} className={style} onClick={onClick}>
       {children}
     </button>
   );

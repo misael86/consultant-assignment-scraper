@@ -9,7 +9,7 @@ export function AssignmentFilters() {
   const { activeFilters, assignments, clearActiveFilters, toggleActiveFilter } = useStore(
     useShallow((state) => ({
       activeFilters: state.activeFilters,
-      assignments: state.assignments.all,
+      assignments: state.assignments.new,
       clearActiveFilters: state.clearActiveFilters,
       toggleActiveFilter: state.toggleActiveFilter,
     }))
@@ -19,39 +19,36 @@ export function AssignmentFilters() {
   const toggleUx = () => toggleActiveFilter("ux");
   const toggleA11y = () => toggleActiveFilter("a11y");
 
+  const sources = [...new Set(assignments?.map((assignment) => assignment.source))].toSorted((a, b) =>
+    a.localeCompare(b)
+  );
+
   return (
     <div>
       <div className="mt-10">
-        <Header size={2}>Filters</Header>
+        <Header size={2}>Filter assignment type</Header>
       </div>
 
-      <div className="flex flex-row gap-5 items-center">
-        <span>Type:</span>
-        <div className="flex flex-row gap-5">
-          <Button isActive={activeFilters.development} onClick={toggleDevelopment}>
-            Development ({assignments?.filter((assignment) => assignment.isDevelopment).length})
-          </Button>
-          <Button isActive={activeFilters.ux} onClick={toggleUx}>
-            User Experience ({assignments?.filter((assignment) => assignment.isUX).length})
-          </Button>
-          <Button isActive={activeFilters.a11y} onClick={toggleA11y}>
-            Accessibility ({assignments?.filter((assignment) => assignment.isA11y).length})
-          </Button>
-          <Button onClick={clearActiveFilters}>Show all</Button>
-        </div>
+      <div className="flex flex-row flex-wrap gap-5 items-center mt-2.5 mb-10">
+        <Button isActive={activeFilters.development} onClick={toggleDevelopment}>
+          Development ({assignments?.filter((assignment) => assignment.isDevelopment).length})
+        </Button>
+        <Button isActive={activeFilters.ux} onClick={toggleUx}>
+          User Experience ({assignments?.filter((assignment) => assignment.isUX).length})
+        </Button>
+        <Button isActive={activeFilters.a11y} onClick={toggleA11y}>
+          Accessibility ({assignments?.filter((assignment) => assignment.isA11y).length})
+        </Button>
+        <Button onClick={clearActiveFilters}>Clear filters</Button>
       </div>
 
-      <div className="flex flex-row gap-5 items-center mt-5">
-        <span>Source:</span>
-        <div className="flex flex-row flex-wrap gap-5">
-          {[...new Set(assignments?.map((assignment) => assignment.source))]
-            .toSorted((a, b) => a.localeCompare(b))
-            .map((source) => (
-              <span key={source}>
-                {source} ({assignments?.filter((assignment) => assignment.source === source).length})
-              </span>
-            ))}
-        </div>
+      <Header size={2}>Assignment sources ({sources.length})</Header>
+      <div className="flex flex-row flex-wrap gap-5">
+        {sources.map((source) => (
+          <span key={source}>
+            {source} ({assignments?.filter((assignment) => assignment.source === source).length})
+          </span>
+        ))}
       </div>
     </div>
   );
