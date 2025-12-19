@@ -139,10 +139,9 @@ async function runScraper(
       retryCount--;
       if (retryCount === 0) throw error;
     }
-
     await page.close();
   }
-  return assignments;
+  return assignments.toReversed();
 }
 
 async function store(assignments: IAssignment[], database: Low<IAssignment[]>): Promise<void> {
