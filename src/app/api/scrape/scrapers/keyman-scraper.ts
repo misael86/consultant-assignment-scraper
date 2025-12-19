@@ -20,8 +20,8 @@ export async function scrapeKeyman(page: Page, existingKeys: string[]): Promise<
     pageName: "keyman",
     pageUrl: "https://www.keyman.se/sv/uppdrag/",
     playwrightPage: page,
-    preScrapeJob: async () => {
-      await page.getByRole("button", { name: /Visa fler/i }).click();
-    },
+    // preScrapeJob: async () => {
+    //   await page.getByRole("button", { name: /Visa fler/i }).click();
+    // },
   });
 }

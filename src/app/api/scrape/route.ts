@@ -52,51 +52,53 @@ export async function GET() {
   const database = await JSONFilePreset<IAssignment[]>("./public/assignments.json", []);
   const existingKeys = database.data.map((assignment) => `${assignment.source}-${assignment.id}`);
 
+  const scrapers = [
+    scrapeASociety,
+    scrapeAliant,
+    scrapeAmendo,
+    scrapeBiolit,
+    scrapeCinode,
+    scrapeCombitech,
+    scrapeEmagine,
+    scrapeEpico,
+    scrapeExperis,
+    scrapeFunctionalSoftware,
+    scrapeGameBoost,
+    scrapeGreateIT,
+    scrapeHouseOfSkills,
+    scrapeIceberry,
+    scrapeItcNetwork,
+    scrapeJappa,
+    scrapeKantur,
+    scrapeKeyman,
+    scrapeKoalitionen,
+    scrapeKonsultfabriken,
+    scrapeLevigo,
+    scrapeMagello,
+    scrapeNexer,
+    scrapeNikita,
+    scrapePaventia,
+    scrapeProfinder,
+    scrapeRandstad,
+    scrapeRegent,
+    scrapeResursbrist,
+    scrapeRightPeopleGroup,
+    scrapeSafemind,
+    scrapeSenterprise,
+    scrapeSeequaly,
+    scrapeSigma,
+    scrapeTechrelations,
+    scrapeTeksystems,
+    scrapeTingent,
+    scrapeTogetherTech,
+    scrapeUpgraded,
+    scrapeVerama,
+    scrapeWiseIT,
+    scrapeWittedPartners,
+  ];
+
   try {
-    const results = await Promise.allSettled([
-      runScraper(scrapeASociety, existingKeys, browser),
-      runScraper(scrapeAliant, existingKeys, browser),
-      runScraper(scrapeAmendo, existingKeys, browser),
-      runScraper(scrapeBiolit, existingKeys, browser),
-      runScraper(scrapeCinode, existingKeys, browser),
-      runScraper(scrapeCombitech, existingKeys, browser),
-      runScraper(scrapeEmagine, existingKeys, browser),
-      runScraper(scrapeEpico, existingKeys, browser),
-      runScraper(scrapeExperis, existingKeys, browser),
-      runScraper(scrapeFunctionalSoftware, existingKeys, browser),
-      runScraper(scrapeGameBoost, existingKeys, browser),
-      runScraper(scrapeGreateIT, existingKeys, browser),
-      runScraper(scrapeHouseOfSkills, existingKeys, browser),
-      runScraper(scrapeIceberry, existingKeys, browser),
-      runScraper(scrapeItcNetwork, existingKeys, browser),
-      runScraper(scrapeJappa, existingKeys, browser),
-      runScraper(scrapeKantur, existingKeys, browser),
-      runScraper(scrapeKeyman, existingKeys, browser),
-      runScraper(scrapeKoalitionen, existingKeys, browser),
-      runScraper(scrapeKonsultfabriken, existingKeys, browser),
-      runScraper(scrapeLevigo, existingKeys, browser),
-      runScraper(scrapeMagello, existingKeys, browser),
-      runScraper(scrapeNexer, existingKeys, browser),
-      runScraper(scrapeNikita, existingKeys, browser),
-      runScraper(scrapePaventia, existingKeys, browser),
-      runScraper(scrapeProfinder, existingKeys, browser),
-      runScraper(scrapeRandstad, existingKeys, browser),
-      runScraper(scrapeRegent, existingKeys, browser),
-      runScraper(scrapeResursbrist, existingKeys, browser),
-      runScraper(scrapeRightPeopleGroup, existingKeys, browser),
-      runScraper(scrapeSafemind, existingKeys, browser),
-      runScraper(scrapeSenterprise, existingKeys, browser),
-      runScraper(scrapeSeequaly, existingKeys, browser),
-      runScraper(scrapeSigma, existingKeys, browser),
-      runScraper(scrapeTechrelations, existingKeys, browser),
-      runScraper(scrapeTeksystems, existingKeys, browser),
-      runScraper(scrapeTingent, existingKeys, browser),
-      runScraper(scrapeTogetherTech, existingKeys, browser),
-      runScraper(scrapeUpgraded, existingKeys, browser),
-      runScraper(scrapeVerama, existingKeys, browser),
-      runScraper(scrapeWiseIT, existingKeys, browser),
-      runScraper(scrapeWittedPartners, existingKeys, browser),
-    ]);
+    const results = await runScrapersInParallell(scrapers, existingKeys, browser);
 
     const rejectedAssignments = results.filter((result) => result.status !== "fulfilled");
 
@@ -142,6 +144,44 @@ async function runScraper(
     await page.close();
   }
   return assignments.toReversed();
+}
+
+async function runScrapersInParallell(
+  scrapers: ((page: Page, existingKeys: string[]) => Promise<IAssignment[]>)[],
+  existingKeys: string[],
+  browser: Browser
+) {
+  const results = [];
+
+  let index = 0;
+  const nrScrapers = scrapers.length;
+  while (index < nrScrapers) {
+    const promises = scrapers.slice(index, index + 10).map((scraper) => runScraper(scraper, existingKeys, browser));
+    const partialResults = await Promise.allSettled(promises);
+    results.push(...partialResults);
+    index += 10;
+  }
+
+  return results;
+}
+
+async function runScrapersSequentially(
+  scrapers: ((page: Page, existingKeys: string[]) => Promise<IAssignment[]>)[],
+  existingKeys: string[],
+  browser: Browser
+) {
+  const results = [];
+
+  for (const scraper of scrapers) {
+    try {
+      const value = await runScraper(scraper, existingKeys, browser);
+      results.push({ status: "fulfilled", value });
+    } catch (error) {
+      results.push({ reason: error, status: "rejected", value: [] });
+    }
+  }
+
+  return results;
 }
 
 async function store(assignments: IAssignment[], database: Low<IAssignment[]>): Promise<void> {

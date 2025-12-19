@@ -21,6 +21,6 @@ export async function scrapeExperis(page: Page, existingKeys: string[]): Promise
     pageName: "experis",
     pageUrl: "https://www.experis.se/sv/sok",
     playwrightPage: page,
-    preScrapeJob: () => page.getByRole("button", { name: /Avvisa alla/i }).click(),
+    // preScrapeJob: () => page.getByRole("button", { name: /Avvisa alla/i }).click(),
   });
 }
