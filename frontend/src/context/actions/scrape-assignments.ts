@@ -30,8 +30,8 @@ export function createScrapeAssignments(set: IStoreSet) {
           return {
             assignments: {
               ...state.assignments,
-              filteredNew: filterAssignments(taggedAssignments, state.activeFilters),
-              new: taggedAssignments,
+              filteredNew: [...state.assignments.filteredNew, ...filterAssignments(taggedAssignments, state.activeFilters)],
+              new: [...state.assignments.new, ...taggedAssignments],
             },
           };
         });
