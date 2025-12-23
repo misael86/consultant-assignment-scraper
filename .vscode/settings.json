@@ -12,7 +12,9 @@
     "typescript": "typescriptreact"
   },
   "eslint.format.enable": true,
+  "eslint.nodePath": "node_modules",
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte", "json", "jsonc"],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
   // Save file when tab focus is changed, no avoid unsaved files
   "files.autoSave": "onFocusChange",
   // Use linux file ending as default

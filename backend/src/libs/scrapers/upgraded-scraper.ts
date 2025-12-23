@@ -1,6 +1,5 @@
+import { IAssignment } from "models/assignment.js";
 import { Page } from "playwright";
-
-import { IAssignment } from "../types";
 
 import { scrapeOnePage } from "./libs/scrape-one-page";
 

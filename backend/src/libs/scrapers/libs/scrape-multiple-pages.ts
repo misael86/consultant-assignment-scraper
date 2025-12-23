@@ -1,6 +1,6 @@
 import { Locator, Page } from "playwright";
 
-import { IAssignment } from "../../types";
+import { IAssignment } from "../../../models/assignment.js";
 
 interface IProperties {
   existingAssignmentIds: string[];

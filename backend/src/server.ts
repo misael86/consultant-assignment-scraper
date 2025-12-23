@@ -1,15 +1,16 @@
-import { WebSocketServer, WebSocket } from "ws";
-import { chromium, Browser, Page } from "playwright";
-import { scrapers } from "./libs/scrapers/index.js";
-import { getDatabase, storeAssignments } from "./store/index.js";
-import { IAssignment } from "./models/assignment.js";
 import { Low } from "lowdb";
-import { sendScrapingCompleted } from "./libs/socketResponses/sendScrapingCompleted.js";
-import { sendScrapingError } from "./libs/socketResponses/sendScrapingError.js";
-import { sendScrapingNewAssignments } from "./libs/socketResponses/sendScrapingNewAssignments.js";
-import { sendScrapingProgressInit } from "./libs/socketResponses/sendScrapingProgressInit.js";
-import { sendScrapingProgressUpdate } from "./libs/socketResponses/sendScrapingProgressUpdate.js";
-import { sendScrapingStarted } from "./libs/socketResponses/sendScrapingStarted.js";
+import { Browser, chromium, Page } from "playwright";
+import { WebSocket, WebSocketServer } from "ws";
+
+import { scrapers } from "./libs/scrapers/index";
+import { sendScrapingCompleted } from "./libs/socketResponses/send-scraping-completed";
+import { sendScrapingError } from "./libs/socketResponses/send-scraping-error";
+import { sendScrapingNewAssignments } from "./libs/socketResponses/send-scraping-new-assignments";
+import { sendScrapingProgressInit } from "./libs/socketResponses/send-scraping-progress-init";
+import { sendScrapingProgressUpdate } from "./libs/socketResponses/send-scraping-progress-update";
+import { sendScrapingStarted } from "./libs/socketResponses/send-scraping-started";
+import { IAssignment } from "./models/assignment";
+import { getDatabase, storeAssignments } from "./store/index";
 
 const PORT = 8080;
 const webSocketServer = new WebSocketServer({ port: PORT });
@@ -19,15 +20,13 @@ console.log(`WebSocket server started on port ${PORT}`);
 webSocketServer.on("connection", (webSocket) => {
   console.log("Client connected");
 
-  webSocket.on("message", async (message) => {
+  webSocket.on("message", (message) => {
     try {
       const data = JSON.parse(message.toString());
       if (data.type === "start_scrape") {
         console.log("Starting scrape...");
         sendScrapingStarted(webSocket);
-
-        await runScrapingProcess(webSocket);
-
+        runScrapingProcess(webSocket);
         sendScrapingCompleted(webSocket);
       }
     } catch (error) {
@@ -40,20 +39,6 @@ webSocketServer.on("connection", (webSocket) => {
     console.log("Client disconnected");
   });
 });
-
-async function runScrapingProcess(webSocket: WebSocket) {
-  const browser = await chromium.launch({ headless: true });
-  try {
-    const database = await getDatabase();
-    const existingKeys = database.data.map((assignment) => `${assignment.source}-${assignment.id}`);
-    await runScrapers(scrapers, existingKeys, browser, webSocket, database);
-  } catch (error) {
-    console.error("Scraping process failed:", error);
-    sendScrapingError(webSocket, "Scraping process failed");
-  } finally {
-    await browser.close();
-  }
-}
 
 async function runScraper(
   scraper: (page: Page, existingKeys: string[]) => Promise<IAssignment[]>,
@@ -75,7 +60,7 @@ async function runScraper(
     }
     await page.close();
   }
-  return [...assignments].reverse(); // Check if strict mode allows toReversed (ES2023)
+  return [...assignments].toReversed(); // Check if strict mode allows toReversed (ES2023)
 }
 
 async function runScrapers(
@@ -95,10 +80,25 @@ async function runScrapers(
       sendScrapingProgressUpdate(webSocket, 1);
       sendScrapingNewAssignments(webSocket, assignments);
       await storeAssignments(assignments, database);
-    } catch (e) {
-      throw e;
+    } catch (error) {
+      sendScrapingProgressUpdate(webSocket, 1);
+      throw error;
     }
   });
 
   await Promise.all(promises);
+}
+
+async function runScrapingProcess(webSocket: WebSocket) {
+  const browser = await chromium.launch({ headless: true });
+  try {
+    const database = await getDatabase();
+    const existingKeys = database.data.map((assignment) => `${assignment.source}-${assignment.id}`);
+    await runScrapers(scrapers, existingKeys, browser, webSocket, database);
+  } catch (error) {
+    console.error("Scraping process failed:", error);
+    sendScrapingError(webSocket, "Scraping process failed");
+  } finally {
+    await browser.close();
+  }
 }

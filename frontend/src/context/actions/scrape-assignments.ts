@@ -7,7 +7,7 @@ import { SocketService } from "@/lib/socket";
 import { filterAssignments } from "./toggle-active-filter";
 
 export function createScrapeAssignments(set: IStoreSet) {
-  return async () => {
+  return () => {
     set((state: IState) => ({
       assignments: {
         ...state.assignments,
@@ -20,17 +20,20 @@ export function createScrapeAssignments(set: IStoreSet) {
     }));
 
     const socketService = SocketService.getInstance();
-    
+
     const unsubscribe = socketService.subscribe((data) => {
       if (data.type === "new_assignments") {
         const newAssignments: IAssignment[] = data.assignments;
-        
+
         set((state: IState) => {
           const taggedAssignments = sortAssignments(tagAssignments(newAssignments, state.filters));
           return {
             assignments: {
               ...state.assignments,
-              filteredNew: [...state.assignments.filteredNew, ...filterAssignments(taggedAssignments, state.activeFilters)],
+              filteredNew: [
+                ...state.assignments.filteredNew,
+                ...filterAssignments(taggedAssignments, state.activeFilters),
+              ],
               new: [...state.assignments.new, ...taggedAssignments],
             },
           };
@@ -41,7 +44,7 @@ export function createScrapeAssignments(set: IStoreSet) {
         set(() => ({ isScrapingAssignments: false }));
         unsubscribe();
       }
-      
+
       if (data.type === "error") {
         console.error("Scraping error:", data.message);
         set(() => ({ isScrapingAssignments: false }));

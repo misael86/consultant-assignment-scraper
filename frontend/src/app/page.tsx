@@ -13,9 +13,9 @@ import { useStore } from "@/context/store";
 
 export default function Home() {
   const {
+    isLoadingAssignments,
     filteredAssignmentsAll,
     filteredAssignmentsNew,
-    isLoadingAssignments,
     isScrapingAssignments,
     loadStoredAssignments,
     scrapeAssignments,
