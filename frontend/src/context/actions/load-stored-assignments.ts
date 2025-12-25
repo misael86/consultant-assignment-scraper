@@ -1,9 +1,9 @@
+import { IAssignment } from "@shared/assignment";
 import axios from "axios";
 
 import { sortAssignments, tagAssignments } from "@/context/libs";
 import { IState } from "@/context/state";
 import { IStoreSet } from "@/context/store";
-import { IAssignment } from "@/lib/scrape-response";
 
 import { filterAssignments } from "./toggle-active-filter";
 

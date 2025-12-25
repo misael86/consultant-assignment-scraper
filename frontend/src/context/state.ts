@@ -1,4 +1,4 @@
-import { IAssignment } from "@/lib/scrape-response";
+import { IAssignment } from "@shared/assignment";
 
 export interface IActiveFilterState {
   a11y: boolean;

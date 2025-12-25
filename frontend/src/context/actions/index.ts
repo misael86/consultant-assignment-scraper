@@ -9,7 +9,7 @@ import { createToggleActiveFilter } from "./toggle-active-filter";
 export interface IActions {
   clearActiveFilters: () => void;
   loadStoredAssignments: () => Promise<void>;
-  scrapeAssignments: () => Promise<void>;
+  scrapeAssignments: () => void;
   toggleActiveFilter: (filter: keyof IFilterState) => void;
 }
 

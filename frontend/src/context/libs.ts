@@ -1,4 +1,4 @@
-import { IAssignment } from "@/lib/scrape-response";
+import { IAssignment } from "@shared/assignment";
 
 import { IAssignmentWithTags, IFilterState } from "./state";
 

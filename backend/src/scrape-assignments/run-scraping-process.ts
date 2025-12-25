@@ -1,11 +1,10 @@
+import { sendEvent } from "@backend/libs/send-event";
+import { scrapers } from "@backend/scrape-assignments/scrapers";
 import { IAssignment } from "@shared/assignment";
 import { Low } from "lowdb";
 import { JSONFilePreset } from "lowdb/node";
 import { Browser, chromium, Page } from "playwright";
 import { WebSocket } from "ws";
-
-import { sendEvent } from "@/libs/send-event";
-import { scrapers } from "@/scrape-assignments/scrapers";
 
 export async function runScrapingProcess(webSocket: WebSocket) {
   const browser = await chromium.launch({ headless: true });

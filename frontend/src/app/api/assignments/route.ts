@@ -1,11 +1,10 @@
+import { IAssignment } from "@shared/assignment";
 import { Low } from "lowdb";
 import { JSONFilePreset } from "lowdb/node";
 
-import { IAssignment } from "@/lib/scrape-response";
-
 export async function GET() {
   console.log("GET assignments");
-  const database = await JSONFilePreset<IAssignment[]>("./public/assignments.json", []);
+  const database = await JSONFilePreset<IAssignment[]>("../../../../../shared/assignments.json", []);
   await removeOldAssignments(database);
   return Response.json(database.data);
 }

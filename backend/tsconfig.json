@@ -7,7 +7,7 @@
     "moduleResolution": "NodeNext",
     "outDir": "./dist",
     "paths": {
-      "@/*": ["./src/*"],
+      "@backend/*": ["./src/*"],
       "@shared/*": ["../shared/*"]
     },
     "skipLibCheck": true,

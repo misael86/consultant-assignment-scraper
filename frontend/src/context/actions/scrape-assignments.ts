@@ -1,7 +1,8 @@
+import { IAssignment } from "@shared/assignment";
+
 import { sortAssignments, tagAssignments } from "@/context/libs";
 import { IState } from "@/context/state";
 import { IStoreSet } from "@/context/store";
-import { IAssignment } from "@/lib/scrape-response";
 import { SocketService } from "@/lib/socket";
 
 import { filterAssignments } from "./toggle-active-filter";
@@ -40,7 +41,7 @@ export function createScrapeAssignments(set: IStoreSet) {
         });
       }
 
-      if (data.type === "status" && data.status === "scraping_completed") {
+      if (data.type === "scraping_completed") {
         set(() => ({ isScrapingAssignments: false }));
         unsubscribe();
       }

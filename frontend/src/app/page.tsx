@@ -1,21 +1,19 @@
-/* eslint-disable @typescript-eslint/no-misused-promises */
 "use client";
 
+import { AssignmentFilters } from "@frontend/components/assignment-filters";
+import { AssignmentItem } from "@frontend/components/assignment-item";
+import { AssignmentList } from "@frontend/components/assignment-list";
+import { Button } from "@frontend/components/button";
+import { Header } from "@frontend/components/header";
+import { useStore } from "@frontend/context/store";
 import { StrictMode, useEffect } from "react";
 import { useShallow } from "zustand/shallow";
 
-import { AssignmentFilters } from "@/components/assignment-filters";
-import { AssignmentItem } from "@/components/assignment-item";
-import { AssignmentList } from "@/components/assignment-list";
-import { Button } from "@/components/button";
-import { Header } from "@/components/header";
-import { useStore } from "@/context/store";
-
 export default function Home() {
   const {
-    isLoadingAssignments,
     filteredAssignmentsAll,
     filteredAssignmentsNew,
+    isLoadingAssignments,
     isScrapingAssignments,
     loadStoredAssignments,
     scrapeAssignments,
