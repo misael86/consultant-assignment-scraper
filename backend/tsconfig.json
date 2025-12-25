@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "./dist",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@shared/*": ["../shared/*"]
     },
-    "rootDir": "./src",
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2022",
+    "target": "ES2022"
   },
   "extends": "../tsconfig.json",
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "../shared/**/*"]
 }
