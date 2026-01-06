@@ -14,7 +14,7 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
         target="_blank"
       >
         <div className="flex flex-row gap-5">
-          <h3 className="font-bold">{assignment.title}</h3>
+          <h3 className="font-bold text-highlight-4">{assignment.title}</h3>
         </div>
         <div className="flex flex-wrap">
           <span className="pr-5">
@@ -34,13 +34,13 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
 }
 
 function A11yLabel({ display }: { display?: boolean }) {
-  return display ? <span className="text-orange-300">[ a11y ]</span> : undefined;
+  return display ? <span className="text-highlight-1">[ a11y ]</span> : undefined;
 }
 
 function DevelopmentLabel({ display }: { display?: boolean }) {
-  return display ? <span className="text-green-300">[ dev ]</span> : undefined;
+  return display ? <span className="text-highlight-2">[ dev ]</span> : undefined;
 }
 
 function UxLabel({ display }: { display?: boolean }) {
-  return display ? <span className="text-blue-300">[ ux ]</span> : undefined;
+  return display ? <span className="text-highlight-3">[ ux ]</span> : undefined;
 }
