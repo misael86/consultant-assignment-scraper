@@ -4,4 +4,7 @@ export interface IAssignment {
   source: string;
   title?: string;
   url: string;
+  city?: string;
+  lastDate?: string;
+  period?: string;
 }

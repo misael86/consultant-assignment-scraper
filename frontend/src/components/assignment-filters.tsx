@@ -19,9 +19,9 @@ export function AssignmentFilters() {
   const toggleUx = () => toggleActiveFilter("ux");
   const toggleA11y = () => toggleActiveFilter("a11y");
 
-  const sources = [...new Set(assignments?.map((assignment) => assignment.source))].toSorted((a, b) =>
-    a.localeCompare(b)
-  );
+  // const sources = [...new Set(assignments?.map((assignment) => assignment.source))].toSorted((a, b) =>
+  //   a.localeCompare(b)
+  // );
 
   return (
     <div>
@@ -42,14 +42,14 @@ export function AssignmentFilters() {
         <Button onClick={clearActiveFilters}>Clear filters</Button>
       </div>
 
-      <Header size={2}>Assignment sources ({sources.length})</Header>
+      {/* <Header size={2}>Assignment sources ({sources.length})</Header>
       <div className="flex flex-row flex-wrap gap-5">
         {sources.map((source) => (
           <span key={source}>
             {source} ({assignments?.filter((assignment) => assignment.source === source).length})
           </span>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

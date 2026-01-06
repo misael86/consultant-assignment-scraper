@@ -17,6 +17,35 @@ export async function scrapeASociety(page: Page, existingKeys: string[]): Promis
       await page.waitForSelector('[class*="Assignment_assignmentComponent__"]');
       return page.locator('[class*="Assignment_assignmentComponent__"]').all();
     },
+    getMoreAssignmentData: async (url: string) => {
+      await page.goto(url);
+      await page.waitForSelector('[class*="AssignmentContent_keyPoints__"]');
+      const keyPoints = await page
+        .locator('[class*="AssignmentContent_keyPoints__"]')
+        .locator('[class*="AssignmentContent_point__"]')
+        .all();
+
+      let city = "N/A";
+      let period = "N/A";
+      let lastDate = "N/A";
+
+      for (const keyPoint of keyPoints) {
+        const text = await keyPoint.textContent();
+        if (text?.includes("Arbetsort")) {
+          city = text?.replace("Arbetsort", "").trim();
+        }
+
+        if (text?.includes("Period")) {
+          period = text?.replace("Period", "").trim();
+        }
+
+        if (text?.includes("Sista ansökningsdag")) {
+          lastDate = text?.replace("Sista ansökningsdag", "").trim();
+        }
+      }
+
+      return { city, lastDate, period };
+    },
     pageName: "a society",
     pageUrl: "https://www.asocietygroup.com/sv/uppdrag?page=100",
     playwrightPage: page,
