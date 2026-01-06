@@ -35,7 +35,13 @@ async function runAllScrapers(webSocket: WebSocket, browser: Browser) {
     await storeAssignments(assignments, database);
   });
 
-  await Promise.allSettled(promises);
+  const results = await Promise.allSettled(promises);
+  const failedScrapers = results.filter((result) => result.status === "rejected");
+
+  if (failedScrapers.length > 0) {
+    console.error("Some scrapers failed:", failedScrapers);
+    sendEvent(webSocket, { message: "Some scrapers failed", type: "error" });
+  }
 }
 
 async function runScraper(
@@ -44,7 +50,7 @@ async function runScraper(
   browser: Browser
 ) {
   let assignments: IAssignment[] = [];
-  let retryCount = 10;
+  let retryCount = 3;
   const page = await browser.newPage();
 
   while (retryCount > 0) {

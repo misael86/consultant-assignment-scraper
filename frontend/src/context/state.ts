@@ -29,8 +29,10 @@ export interface IState {
     new: IAssignmentWithTags[];
   };
   filters: IFilterState;
+  hasScrapedNrAssignments: number;
   isLoadingAssignments: boolean;
   isScrapingAssignments: boolean;
+  isScrapingNrAssignments: number;
 }
 
 export const initialState: IState = {
@@ -59,6 +61,8 @@ export const initialState: IState = {
     ],
     ux: ["ux"],
   },
+  hasScrapedNrAssignments: 0,
   isLoadingAssignments: false,
   isScrapingAssignments: false,
+  isScrapingNrAssignments: 0,
 };

@@ -15,9 +15,13 @@ export function createScrapeAssignments(set: IStoreSet) {
         all: [...state.assignments.new, ...state.assignments.all],
         filteredAll: [...state.assignments.filteredNew, ...state.assignments.filteredAll],
         filteredNew: [],
+        hasScrapedNrAssignments: 0,
+        isScrapingNrAssignments: 0,
         new: [],
       },
+      hasScrapedNrAssignments: 0,
       isScrapingAssignments: true,
+      isScrapingNrAssignments: 0,
     }));
 
     const socketService = SocketService.getInstance();
@@ -37,6 +41,7 @@ export function createScrapeAssignments(set: IStoreSet) {
               ],
               new: [...state.assignments.new, ...taggedAssignments],
             },
+            hasScrapedNrAssignments: state.hasScrapedNrAssignments + 1,
           };
         });
       }
@@ -44,6 +49,10 @@ export function createScrapeAssignments(set: IStoreSet) {
       if (data.type === "scraping_completed") {
         set(() => ({ isScrapingAssignments: false }));
         unsubscribe();
+      }
+
+      if (data.type === "scraping_started") {
+        set(() => ({ isScrapingNrAssignments: data.totalScrapers }));
       }
 
       if (data.type === "error") {

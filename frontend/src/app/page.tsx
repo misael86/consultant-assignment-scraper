@@ -13,16 +13,20 @@ export default function Home() {
   const {
     filteredAssignmentsAll,
     filteredAssignmentsNew,
+    hasScrapedNrAssignments,
     isLoadingAssignments,
     isScrapingAssignments,
+    isScrapingNrAssignments,
     loadStoredAssignments,
     scrapeAssignments,
   } = useStore(
     useShallow((state) => ({
       filteredAssignmentsAll: state.assignments.filteredAll,
       filteredAssignmentsNew: state.assignments.filteredNew,
+      hasScrapedNrAssignments: state.hasScrapedNrAssignments,
       isLoadingAssignments: state.isLoadingAssignments,
       isScrapingAssignments: state.isScrapingAssignments,
+      isScrapingNrAssignments: state.isScrapingNrAssignments,
       loadStoredAssignments: state.loadStoredAssignments,
       scrapeAssignments: state.scrapeAssignments,
     }))
@@ -42,7 +46,14 @@ export default function Home() {
 
           <div className="mt-2.5 text-center">
             <Button onClick={scrapeAssignments}>Scrape assignments</Button>
-            {isScrapingAssignments && <span className="ml-5">Loading...</span>}
+            {isScrapingAssignments && (
+              <div className="mx-auto mt-5">
+                <progress className="ml-5" max={isScrapingNrAssignments} value={hasScrapedNrAssignments} />
+                <span className="ml-2.5">
+                  Scraping ({hasScrapedNrAssignments}/{isScrapingNrAssignments})...
+                </span>
+              </div>
+            )}
           </div>
 
           <AssignmentFilters />
