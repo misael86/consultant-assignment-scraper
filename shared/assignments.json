@@ -189,27 +189,6 @@
     "url": "https://career.togethertech.com/jobs/6976036-software-engineer-backend-cloud-mobility"
   },
   {
-    "id": "14984",
-    "scraped": "2026-01-01",
-    "source": "a society",
-    "title": "Kontrollberedare",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/kontrollberedare-14984"
-  },
-  {
-    "id": "14985",
-    "scraped": "2026-01-03",
-    "source": "a society",
-    "title": "Software Quality Assurance Engineer",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/software-quality-assurance-engineer-14985"
-  },
-  {
-    "id": "14986",
-    "scraped": "2026-01-03",
-    "source": "a society",
-    "title": "Senior Configuration Manager",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-configuration-manager-14986"
-  },
-  {
     "id": "18730",
     "scraped": "2026-01-03",
     "source": "cinode",
@@ -516,27 +495,6 @@
     "source": "experis",
     "title": "Testare av lastbilsmjukvara och hårdvara",
     "url": "https://www.experis.se/sv/jobb/7bcbabec-8369-45e1-ad59-23aaf5d2205b/testare-av-lastbilsmjukvara-och-hardvara"
-  },
-  {
-    "id": "11430",
-    "scraped": "2026-01-05",
-    "source": "a society",
-    "title": "Embedded utvecklare",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/embedded-utvecklare-11430"
-  },
-  {
-    "id": "14795",
-    "scraped": "2026-01-05",
-    "source": "a society",
-    "title": "Teknisk skribent - Illustration",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/teknisk-skribent-illustration-14795"
-  },
-  {
-    "id": "14987",
-    "scraped": "2026-01-05",
-    "source": "a society",
-    "title": "Delprojektledare hårdvara",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/delprojektledare-hrdvara-14987"
   },
   {
     "id": "6999626",
@@ -1029,27 +987,6 @@
     "url": "https://app.verama.com/job-requests/74811"
   },
   {
-    "id": "14988",
-    "scraped": "2026-01-05",
-    "source": "a society",
-    "title": "Integration- och testkoordinator MSB Stockholm/remote 100%",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/integration-och-testkoordinator-msb-stockholmremote-100-14988"
-  },
-  {
-    "id": "14989",
-    "scraped": "2026-01-05",
-    "source": "a society",
-    "title": "IT-arkitekt Trafikverket Borlänge 100%",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/it-arkitekt-trafikverket-borlnge-100-14989"
-  },
-  {
-    "id": "14990",
-    "scraped": "2026-01-05",
-    "source": "a society",
-    "title": "Junior mjukvaruutvecklare",
-    "url": "https://www.asocietygroup.com/sv/uppdrag/junior-mjukvaruutvecklare-14990"
-  },
-  {
     "id": "18743",
     "scraped": "2026-01-05",
     "source": "cinode",
@@ -1412,5 +1349,166 @@
     "source": "verama",
     "title": "Product Management and Growth Support Consultant - HASTER!",
     "url": "https://app.verama.com/job-requests/74827"
+  },
+  {
+    "id": "/",
+    "scraped": "2026-01-06",
+    "source": "veritaz",
+    "title": "Senior Embedded Linux OS Developer  – 14870",
+    "url": "https://veritaz.se/jobs/senior-embedded-linux-os-developer-14870/"
+  },
+  {
+    "id": "#232105",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Arkitekt og udvikler med erfaring i BI Løsninger, Azure og Fabric",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232127",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Prozessplaner (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "https://rightpeoplegroup.com/sv/open-assignments/konsulentopgave-business-central-support-specialist-remote-hybrid",
+    "scraped": "2026-01-06",
+    "source": "right people group",
+    "title": "Konsulentopgave – Business Central Support Specialist – Remote/HybridRemote projects English ERP, CRM and CMS",
+    "url": "https://rightpeoplegroup.com/sv/open-assignments/konsulentopgave-business-central-support-specialist-remote-hybrid"
+  },
+  {
+    "id": "#232122",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "DevOps Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232134",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Data Architect- Aviation",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232138",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Senior Infrastructure Project Manager",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232139",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Sikkerhedskonsulent til Sikkerheds,- og tekniske risikovurderinger",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232110",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Product Owner til OT Program",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232141",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Prosessleder",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232140",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Consultant Admin Service Now (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232142",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Senior Data Scientist With focus on A/B testing and Experimentation",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232128",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "ServiceNow Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232136",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Senior Outsystems Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232144",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "PMO Lead with project governance experience",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232145",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Projektleder – ITSM Implementering",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232146",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "PMO konsulent",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232147",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Media Delivery & AI Governance Manager",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "74828",
+    "scraped": "2026-01-06",
+    "source": "verama",
+    "title": "PMO Lead",
+    "url": "https://app.verama.com/job-requests/74828"
+  },
+  {
+    "id": "#232135",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Mid Outsystems Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232150",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "Infrastructure Transition Lead / Project Manager (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232153",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "IT Asset Manager",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232154",
+    "scraped": "2026-01-06",
+    "source": "emagine",
+    "title": "DevOps-Engineer (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
   }
 ]
