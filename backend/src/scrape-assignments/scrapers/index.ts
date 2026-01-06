@@ -38,6 +38,7 @@ import { scrapeTingent } from "./tingent-scraper.js";
 import { scrapeTogetherTech } from "./together-tech-scraper.js";
 import { scrapeUpgraded } from "./upgraded-scraper.js";
 import { scrapeVerama } from "./verama-scraper.js";
+import { scrapeVeritaz } from "./veritaz-scraper.js";
 import { scrapeWiseIT } from "./wise-it-scraper.js";
 import { scrapeWittedPartners } from "./witted-partners-scraper.js";
 
@@ -82,6 +83,7 @@ export const scrapers = [
   scrapeTogetherTech,
   scrapeUpgraded,
   scrapeVerama,
+  scrapeVeritaz,
   scrapeWiseIT,
   scrapeWittedPartners,
 ];
