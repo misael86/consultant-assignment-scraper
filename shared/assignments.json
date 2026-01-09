@@ -1,19 +1,5 @@
 [
   {
-    "id": "461220",
-    "scraped": "2025-12-20",
-    "source": "aliant",
-    "title": "Asset Manager - Energianläggningar",
-    "url": "https://aliant.recman.io/job/461220"
-  },
-  {
-    "id": "100004712",
-    "scraped": "2025-12-20",
-    "source": "combitech",
-    "title": "MySQL-konsult",
-    "url": "https://partnernetworkportal.azurewebsites.net/assignmentdetails/100004712/e30-"
-  },
-  {
     "id": "1776175-register-your-cv-here-for-future-opportunities",
     "scraped": "2025-12-20",
     "source": "epico",
@@ -63,13 +49,6 @@
     "url": "https://careers.koalitionen.com/jobs/6852207-testare-systemanalytiker-servicenow"
   },
   {
-    "id": "=2092",
-    "scraped": "2025-12-20",
-    "source": "konsultfabriken",
-    "title": "Lösningsarkitekt - Solna",
-    "url": "https://konsultfabriken.se/job.php?id=2092"
-  },
-  {
     "id": "https://connect.magello.se/aktuella-avrop/team-till-avdelningen-digitala-tjanster-arbetsformedlingen/",
     "scraped": "2025-12-20",
     "source": "magello",
@@ -98,60 +77,11 @@
     "url": "https://www.safemind.se/lediga-jobb/1536-game-server-developer-2/"
   },
   {
-    "id": "https://www.techrelations.se//konsultuppdrag/senior-systemutvecklare-episerver-net-6-man-heltidsuppdrag-arlanda",
-    "scraped": "2025-12-20",
-    "source": "techrelations",
-    "title": "Senior systemutvecklare (Episerver, net) 6 mån heltidsuppdrag, Arlanda",
-    "url": "https://www.techrelations.se//konsultuppdrag/senior-systemutvecklare-episerver-net-6-man-heltidsuppdrag-arlanda"
-  },
-  {
-    "id": " Senior DevOps and Infrastructure Consultant ",
-    "scraped": "2025-12-20",
-    "source": "iceberry",
-    "title": "Senior DevOps and Infrastructure Consultant",
-    "url": "https://uppdrag.iceberry.se/"
-  },
-  {
-    "id": "aK9EZUFH",
-    "scraped": "2025-12-22",
-    "source": "levigo",
-    "title": "Interimschef interoperabilitet\n                        Stockholm",
-    "url": "https://assignment.levigo.se/aK9EZUFH/interimschef-interoperabilitet"
-  },
-  {
-    "id": "https://rightpeoplegroup.com/sv/open-assignments/konsulentopgave-konsulent-til-net-suite-implementering-koge-22-12-2025",
-    "scraped": "2025-12-22",
-    "source": "right people group",
-    "title": "Konsulentopgave – Konsulent til NetSuite implementering – Køge (22.12.2025)Denmark Danish ERP, CRM and CMS",
-    "url": "https://rightpeoplegroup.com/sv/open-assignments/konsulentopgave-konsulent-til-net-suite-implementering-koge-22-12-2025"
-  },
-  {
-    "id": "https://www.sigma.se/sv/assignment/spontanansokan-testutvecklare-qa-engineer-stockholms-lan-sv-20251222/",
-    "scraped": "2025-12-22",
-    "source": "sigma",
-    "title": "Spontanansökan: Testutvecklare / QA Engineer",
-    "url": "https://www.sigma.se/sv/assignment/spontanansokan-testutvecklare-qa-engineer-stockholms-lan-sv-20251222/"
-  },
-  {
-    "id": "Build Engineer - Bazel",
-    "scraped": "2025-12-22",
-    "source": "tingent",
-    "title": "Build Engineer - Bazel",
-    "url": "https://tingent.se/jobs"
-  },
-  {
     "id": "8XXRXW33",
     "scraped": "2025-12-23",
     "source": "seequaly",
     "title": "Spontanansökan",
     "url": "/seequaly/job/8XXRXW33"
-  },
-  {
-    "id": "ITC söker expertis inom affärs- och verksamhetsutveckling till RISE Västerås",
-    "scraped": "2025-12-23",
-    "source": "itc network",
-    "title": "ITC söker expertis inom affärs- och verksamhetsutveckling till RISE Västerås",
-    "url": "https://itc.inkopio.se/vms/Login"
   },
   {
     "id": "6901587",
@@ -161,32 +91,11 @@
     "url": "https://jobb.amendo.se/jobs/6901587-senior-privatradgivare-inom-spara-och-pension-orusts-sparbank"
   },
   {
-    "id": "1291",
-    "scraped": "2025-12-30",
-    "source": "biolit",
-    "title": "Linux Engineer",
-    "url": "https://biolit.se/konsultuppdrag/"
-  },
-  {
-    "id": "6542846/",
-    "scraped": "2025-12-30",
-    "source": "wise it",
-    "title": "Head of Customer Service to Speeron!",
-    "url": "https://www.wise.se/jobb/head-of-customer-service-to-speeron-6542846/"
-  },
-  {
     "id": "55480000002193448",
     "scraped": "2025-12-30",
     "source": "paventia",
     "title": "General Application to Job Openings",
     "url": "https://jobs.paventia.se/jobs/open/55480000002193448/General-Application-to-Job-Openings?source=CareerSite"
-  },
-  {
-    "id": "6976036",
-    "scraped": "2025-12-30",
-    "source": "together tech",
-    "title": "Software Engineer – Backend & Cloud | Mobility",
-    "url": "https://career.togethertech.com/jobs/6976036-software-engineer-backend-cloud-mobility"
   },
   {
     "id": "18730",
@@ -1510,5 +1419,3891 @@
     "source": "emagine",
     "title": "DevOps-Engineer (m/w/d)",
     "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "14620",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Strategisk inköpare – med affärsperspektiv och tekniskt intresse",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/strategisk-inkpare-med-affrsperspektiv-och-tekniskt-intresse-14620",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "2025-12-01 - 2027-01-31"
+  },
+  {
+    "id": "14677",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Kvalitetsingenjör (PQE) med erfarenhet av industrialisering – försvarsindustrin",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/kvalitetsingenjr-pqe-med-erfarenhet-av-industrialisering-frsvarsindustrin-14677",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14498",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Hårdvarunära Embeddedprogrammerare – inriktning mot mjukvara",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/hrdvarunra-embeddedprogrammerare-inriktning-mot-mjukvara-14498",
+    "city": "Göteborg",
+    "lastDate": "28 februari 2026",
+    "period": "2026-01-01 - 2026-06-30"
+  },
+  {
+    "id": "14809",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "BI-konsult för systemutveckling i QlikSense till Statens servicecenter, 50%, Gävle",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/bi-konsult-fr-systemutveckling-i-qliksense-till-statens-servicecenter-50-gvle-14809",
+    "city": "Gävle",
+    "lastDate": "7 januari 2026",
+    "period": "2026-01-19 - 2027-01-18"
+  },
+  {
+    "id": "14815",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Teknikinformatör – Junior eller Senior – Radarprodukter",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/teknikinformatr-junior-eller-senior-radarprodukter-14815",
+    "city": "Göteborg",
+    "lastDate": "20 januari 2026",
+    "period": "2026-02-01 - 2026-06-30"
+  },
+  {
+    "id": "14827",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Software Developer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/software-developer-14827",
+    "city": "Stockholm",
+    "lastDate": "13 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14830",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Fullstackutvecklare till produktutveckling inom avancerad videoanalys",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/fullstackutvecklare-till-produktutveckling-inom-avancerad-videoanalys-14830",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14835",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Systemadministratör / IT-Drifttekniker – Linux & KVM-virtualisering",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/systemadministratr-it-drifttekniker-linux-kvm-virtualisering-14835",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "2026-03-30 - 2027-03-02"
+  },
+  {
+    "id": "14445",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Systems Engineer Radio – Konsultuppdrag inom radioteknik",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/systems-engineer-radio-konsultuppdrag-inom-radioteknik-14445",
+    "city": "Arboga",
+    "lastDate": "31 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14499",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Konsult inom Additiv Tillverkning (AM) – Karlskoga",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/konsult-inom-additiv-tillverkning-am-karlskoga-14499",
+    "city": "Karlskoga",
+    "lastDate": "31 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14617",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Test & Verifieringsingenjör",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/test-verifieringsingenjr-14617",
+    "city": "Arboga",
+    "lastDate": "31 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14869",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Mekanikkonstruktör – Konstruktion och installationsstöd för marina fartyg",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/mekanikkonstruktr-konstruktion-och-installationsstd-fr-marina-fartyg-14869",
+    "city": "Malmö/Lund",
+    "lastDate": "16 januari 2026",
+    "period": "2026-04-01 - 2026-09-30"
+  },
+  {
+    "id": "14877",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Investeringsprojektledare (Produktionsteknik)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/investeringsprojektledare-produktionsteknik-14877",
+    "city": "Karlskrona",
+    "lastDate": "27 januari 2026",
+    "period": "2026-01-01 - 2026-07-31"
+  },
+  {
+    "id": "14878",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Investeringsprojektledare (Produktionsteknik)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/investeringsprojektledare-produktionsteknik-14878",
+    "city": "Landskrona",
+    "lastDate": "27 januari 2026",
+    "period": "2026-01-01 - 2026-07-31"
+  },
+  {
+    "id": "14881",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Teknikspecialist - Exchangekonsult Stockholms Universitet 50%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/teknikspecialist-exchangekonsult-stockholms-universitet-50-14881",
+    "city": "Stockholm",
+    "lastDate": "6 januari 2026",
+    "period": "2026-02-02 - 2026-12-31"
+  },
+  {
+    "id": "14883",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior Systemadministratör M365 Stockholms Universitet 70-100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-systemadministratr-m365-stockholms-universitet-70-100-14883",
+    "city": "Stockholm",
+    "lastDate": "6 januari 2026",
+    "period": "2026-02-02 - 2026-12-31"
+  },
+  {
+    "id": "14884",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior Java Backend Developer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-java-backend-developer-14884",
+    "city": "Karlskrona",
+    "lastDate": "7 januari 2026",
+    "period": "2026-01-07 - 2027-03-31"
+  },
+  {
+    "id": "14886",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Teknikinformatör",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/teknikinformatr-14886",
+    "city": "Malmö/Lund",
+    "lastDate": "9 januari 2026",
+    "period": "2026-02-15 - 2026-08-31"
+  },
+  {
+    "id": "14887",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior Full-stack Developer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-full-stack-developer-14887",
+    "city": "Karlskrona",
+    "lastDate": "7 januari 2026",
+    "period": "2026-01-07 - 2027-03-31"
+  },
+  {
+    "id": "14890",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior Transformationsledare Produktutveckling",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-transformationsledare-produktutveckling-14890",
+    "city": "Stockholm",
+    "lastDate": "9 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14892",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Project Manager",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/project-manager-14892",
+    "city": "Boden",
+    "lastDate": "21 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14903",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "SW Engineer – Cloud/DevOps & Rust (R&D-team)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/sw-engineer-clouddevops-rust-rd-team-14903",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "2026-01-31 - 2026-09-30"
+  },
+  {
+    "id": "14904",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Konsultannons – Frontendutvecklare (React/TypeScript) till R&D-team",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/konsultannons-frontendutvecklare-reacttypescript-till-rd-team-14904",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "2026-01-12 - 2026-10-01"
+  },
+  {
+    "id": "14905",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Systemingenjör",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/systemingenjr-14905",
+    "city": "Stockholm",
+    "lastDate": "18 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14119",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior Database Specialist",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-database-specialist-14119",
+    "city": "Malmö/Lund",
+    "lastDate": "16 januari 2026",
+    "period": "2026-02-02 - 2026-09-30"
+  },
+  {
+    "id": "14907",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "S4E Capability Team Lead – SAP Finance / Project Management - Finspång",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/s4e-capability-team-lead-sap-finance-project-management-finspng-14907",
+    "city": "Finspång",
+    "lastDate": "12 januari 2026",
+    "period": "2026-01-19 - 2027-01-18"
+  },
+  {
+    "id": "14864",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior System Developer – Simulering av Sensorsystem",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-system-developer-simulering-av-sensorsystem-14864",
+    "city": "Göteborg",
+    "lastDate": "14 januari 2026",
+    "period": "2026-01-05 - 2026-07-01"
+  },
+  {
+    "id": "14754",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Embedded developer, 1-3års erfarenhet",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/embedded-developer-1-3rs-erfarenhet-14754",
+    "city": "Jönköping",
+    "lastDate": "11 januari 2026",
+    "period": "2026-01-15 - 2026-11-29"
+  },
+  {
+    "id": "14913",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Brandsäkerhetsingenjör",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/brandskerhetsingenjr-14913",
+    "city": "Karlskrona",
+    "lastDate": "31 januari 2026",
+    "period": "2026-02-01 - 2026-07-31"
+  },
+  {
+    "id": "14914",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Team Lead HW and Systems Engineer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/team-lead-hw-and-systems-engineer-14914",
+    "city": "Stockholm",
+    "lastDate": "16 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14915",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Delprojektledare - Produktion",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/delprojektledare-produktion-14915",
+    "city": "Stockholm",
+    "lastDate": "16 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14916",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Application Security Analyst",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/application-security-analyst-14916",
+    "city": "Stockholm",
+    "lastDate": "9 januari 2026",
+    "period": "2026-02-02 - 2027-01-31"
+  },
+  {
+    "id": "14919",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Digital Hardware Designer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/digital-hardware-designer-14919",
+    "city": "Göteborg",
+    "lastDate": "30 januari 2026",
+    "period": "2026-01-30 - 2026-06-30"
+  },
+  {
+    "id": "14920",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "CAD Konstruktör",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/cad-konstruktr-14920",
+    "city": "Karlskrona",
+    "lastDate": "16 januari 2026",
+    "period": "2026-01-12 - 2026-06-30"
+  },
+  {
+    "id": "14921",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Kravanalytiker (Senior)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/kravanalytiker-senior-14921",
+    "city": "Karlskrona",
+    "lastDate": "30 januari 2026",
+    "period": "2026-02-01 - 2026-08-31"
+  },
+  {
+    "id": "14717",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Elektronikingenjör – Utveckling och systemering av avancerade elektroniksystem",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/elektronikingenjr-utveckling-och-systemering-av-avancerade-elektroniksystem-14717",
+    "city": "Karlskoga",
+    "lastDate": "15 januari 2026",
+    "period": "2026-03-16 - 2027-03-15"
+  },
+  {
+    "id": "14925",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "IT-tekniker E-hälsomyndigheten Distans/Stockholm/Kalmar 100h",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/it-tekniker-e-hlsomyndigheten-distansstockholmkalmar-100h-14925",
+    "city": "Stockholm",
+    "lastDate": "9 januari 2026",
+    "period": "2026-02-02 - 2026-04-01"
+  },
+  {
+    "id": "14929",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Mjukvaruutvecklare – Kamerakalibrering & Funktionssäkerhet (Linköping)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/mjukvaruutvecklare-kamerakalibrering-funktionsskerhet-linkping-14929",
+    "city": "Linköping",
+    "lastDate": "11 januari 2026",
+    "period": "2026-01-08 - 2026-09-25"
+  },
+  {
+    "id": "14931",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Mjukvaruutvecklare med erfarenhet av AI",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/mjukvaruutvecklare-med-erfarenhet-av-ai-14931",
+    "city": "Karlskoga",
+    "lastDate": "16 januari 2026",
+    "period": "2026-03-16 - 2027-03-15"
+  },
+  {
+    "id": "14719",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Environmental Coordinator – Miljö- och kemikaliearbete inom försvarsindustrin",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/environmental-coordinator-milj-och-kemikaliearbete-inom-frsvarsindustrin-14719",
+    "city": "Karlskoga",
+    "lastDate": "16 januari 2026",
+    "period": "2026-03-02 - 2026-09-02"
+  },
+  {
+    "id": "14932",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Contract Quality Manager",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/contract-quality-manager-14932",
+    "city": "Karlskoga",
+    "lastDate": "9 januari 2026",
+    "period": "2026-03-02 - 2027-02-28"
+  },
+  {
+    "id": "14850",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Mjukvaruutvecklare - C++, Machine Learning - Linköping",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/mjukvaruutvecklare-c-machine-learning-linkping-14850",
+    "city": "Linköping",
+    "lastDate": "18 januari 2026",
+    "period": "2026-02-02 - 2026-09-25"
+  },
+  {
+    "id": "14933",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Intune & Endpoint Management Specialist (Mid to Senior level)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/intune-endpoint-management-specialist-mid-to-senior-level-14933",
+    "city": "Malmö/Lund",
+    "lastDate": "16 januari 2026",
+    "period": "2026-02-02 - 2026-08-02"
+  },
+  {
+    "id": "14934",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Technical Publications - S1000D Specialist",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/technical-publications-s1000d-specialist-14934",
+    "city": "Stockholm",
+    "lastDate": "9 januari 2026",
+    "period": "2026-02-02 - 2026-06-30"
+  },
+  {
+    "id": "14935",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Cybersecurity Engineer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/cybersecurity-engineer-14935",
+    "city": "Västerås",
+    "lastDate": "18 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14940",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Indus Lead inom Industrialisation – Konsultuppdrag",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/indus-lead-inom-industrialisation-konsultuppdrag-14940",
+    "city": "Linköping",
+    "lastDate": "28 februari 2026",
+    "period": "2026-03-02 - 2026-09-30"
+  },
+  {
+    "id": "14941",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior IT-Security Analyst (100% på plats, Linköping)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-it-security-analyst-100-p-plats-linkping-14941",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "2026-03-09 - 2026-12-31"
+  },
+  {
+    "id": "14943",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Delsystemingenjör för mjukvara, Linux & C++",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/delsystemingenjr-fr-mjukvara-linux-c-14943",
+    "city": "Göteborg",
+    "lastDate": "14 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14944",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "IT-säkerhetshandläggare",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/it-skerhetshandlggare-14944",
+    "city": "Stockholm",
+    "lastDate": "9 januari 2026",
+    "period": "2026-02-02 - 2026-06-30"
+  },
+  {
+    "id": "14945",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Kravanalytiker E-arkiv Finansinspektionen Stockholm 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/kravanalytiker-e-arkiv-finansinspektionen-stockholm-100-14945",
+    "city": "Stockholm",
+    "lastDate": "15 januari 2026",
+    "period": "2026-02-01 - 2027-01-31"
+  },
+  {
+    "id": "14946",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "IT-arkitekt E-arkiv Finansinspektionen Stockholm 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/it-arkitekt-e-arkiv-finansinspektionen-stockholm-100-14946",
+    "city": "Stockholm",
+    "lastDate": "15 januari 2026",
+    "period": "2026-02-01 - 2027-01-31"
+  },
+  {
+    "id": "14950",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "DevSecOps - senior",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/devsecops-senior-14950",
+    "city": "Jönköping",
+    "lastDate": "11 januari 2026",
+    "period": "2026-02-01 - 2026-12-31"
+  },
+  {
+    "id": "14951",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior DevOps Engineer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-devops-engineer-14951",
+    "city": "Stockholm",
+    "lastDate": "16 januari 2026",
+    "period": "2026-03-02 - 2026-06-30"
+  },
+  {
+    "id": "14952",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Systemsäkerhetsingenjör",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/systemskerhetsingenjr-14952",
+    "city": "Karlskoga",
+    "lastDate": "16 januari 2026",
+    "period": "2026-03-02 - 2027-03-01"
+  },
+  {
+    "id": "14954",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Junior elektronikkonstruktör/lödning",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/junior-elektronikkonstruktrldning-14954",
+    "city": "Stockholm",
+    "lastDate": "9 januari 2026",
+    "period": "2026-02-02 - 2026-06-30"
+  },
+  {
+    "id": "14796",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Provningsingenjör",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/provningsingenjr-14796",
+    "city": "Jönköping",
+    "lastDate": "2 februari 2026",
+    "period": "2026-02-02 - 2027-02-02"
+  },
+  {
+    "id": "14959",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Strategisk Inköpare - Nivå 3",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/strategisk-inkpare-niv-3-14959",
+    "city": "Göteborg",
+    "lastDate": "9 januari 2026",
+    "period": "2026-03-02 - 2026-12-31"
+  },
+  {
+    "id": "14960",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Projektledare  - Nivå 3",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/projektledare-niv-3-14960",
+    "city": "Göteborg",
+    "lastDate": "14 januari 2026",
+    "period": "2026-02-02 - 2026-06-30"
+  },
+  {
+    "id": "14961",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Projektledare Framtidens Fastighetssystem - Nivå 4",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/projektledare-framtidens-fastighetssystem-niv-4-14961",
+    "city": "Göteborg",
+    "lastDate": "21 januari 2026",
+    "period": "2026-02-02 - 2027-06-30"
+  },
+  {
+    "id": "14962",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "IT Projektledare",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/it-projektledare-14962",
+    "city": "Jönköping",
+    "lastDate": "12 januari 2026",
+    "period": "2026-02-28 - 2027-12-31"
+  },
+  {
+    "id": "14963",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Systemtekniker Riksdagsförvaltningen Stockholm 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/systemtekniker-riksdagsfrvaltningen-stockholm-100-14963",
+    "city": "Stockholm",
+    "lastDate": "9 januari 2026",
+    "period": "2026-04-01 - 2028-03-31"
+  },
+  {
+    "id": "14964",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "SAP Functional Specialist",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/sap-functional-specialist-14964",
+    "city": "Stockholm",
+    "lastDate": "25 januari 2026",
+    "period": "2026-01-26 - 2026-09-30"
+  },
+  {
+    "id": "14965",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Facility Manager – Karlstad och Karlskoga",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/facility-manager-karlstad-och-karlskoga-14965",
+    "city": "Karlstad",
+    "lastDate": "16 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14966",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Fullstack Javautvecklare (Hyrköp)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/fullstack-javautvecklare-hyrkp-14966",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "2026-02-02 - 2027-02-01"
+  },
+  {
+    "id": "14967",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Program Manager",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/program-manager-14967",
+    "city": "Västerås",
+    "lastDate": "11 januari 2026",
+    "period": "2026-01-11 - 2026-08-31"
+  },
+  {
+    "id": "14968",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Strategic Purchaser – Mechanical",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/strategic-purchaser-mechanical-14968",
+    "city": "Jönköping",
+    "lastDate": "12 januari 2026",
+    "period": "2026-02-02 - 2026-12-31"
+  },
+  {
+    "id": "14972",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Delprojektledare Inköp",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/delprojektledare-inkp-14972",
+    "city": "Karlskoga",
+    "lastDate": "23 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14973",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Mechanical Designer – Railway Industry",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/mechanical-designer-railway-industry-14973",
+    "city": "Västerås",
+    "lastDate": "19 januari 2026",
+    "period": "2026-01-19 - 2026-06-19"
+  },
+  {
+    "id": "14974",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "S/4HANA Conversion Expert",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/s4hana-conversion-expert-14974",
+    "city": "Stockholm",
+    "lastDate": "31 januari 2026",
+    "period": "2026-02-02 - 2026-07-31"
+  },
+  {
+    "id": "14975",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "SAP VIM Expert",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/sap-vim-expert-14975",
+    "city": "Stockholm",
+    "lastDate": "31 januari 2026",
+    "period": "2026-02-02 - 2026-07-31"
+  },
+  {
+    "id": "14976",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Consultant - Redovisningsekonom/Accountant",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/consultant-redovisningsekonomaccountant-14976",
+    "city": "Stockholm",
+    "lastDate": "9 januari 2026",
+    "period": "2026-01-27 - 2026-07-27"
+  },
+  {
+    "id": "14977",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "We are looking for 4 SAP Enterprise / Solution Architects",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/we-are-looking-for-4-sap-enterprise-solution-architects-14977",
+    "city": "Stockholm",
+    "lastDate": "11 januari 2026",
+    "period": "2026-01-12 - 2026-08-31"
+  },
+  {
+    "id": "14978",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Mjukvarudelprojektledare",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/mjukvarudelprojektledare-14978",
+    "city": "Stockholm",
+    "lastDate": "23 januari 2026",
+    "period": "2026-03-02 - 2026-12-31"
+  },
+  {
+    "id": "14979",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Agile Program Coach / Delivery Coach med teknisk skärpa.",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/agile-program-coach-delivery-coach-med-teknisk-skrpa-14979",
+    "city": "Stockholm",
+    "lastDate": "31 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14980",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "CAD Design Engineer - Power & Propulsion",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/cad-design-engineer-power-propulsion-14980",
+    "city": "Göteborg",
+    "lastDate": "8 januari 2026",
+    "period": "2026-01-12 - 2026-06-30"
+  },
+  {
+    "id": "14981",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "ILS Ingenjör (Analys)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/ils-ingenjr-analys-14981",
+    "city": "Halmstad",
+    "lastDate": "19 januari 2026",
+    "period": "2026-02-02 - 2026-06-30"
+  },
+  {
+    "id": "14982",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Elektronikkonstruktör",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/elektronikkonstruktr-14982",
+    "city": "Stockholm",
+    "lastDate": "16 januari 2026",
+    "period": "2026-02-16 - 2026-06-30"
+  },
+  {
+    "id": "14983",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Junior Configuration Manager",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/junior-configuration-manager-14983",
+    "city": "Stockholm",
+    "lastDate": "16 januari 2026",
+    "period": "2026-02-16 - 2026-06-30"
+  },
+  {
+    "id": "14984",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Kontrollberedare",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/kontrollberedare-14984",
+    "city": "Karlskrona",
+    "lastDate": "3 februari 2026",
+    "period": "2026-04-01 - 2027-03-31"
+  },
+  {
+    "id": "14985",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Software Quality Assurance Engineer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/software-quality-assurance-engineer-14985",
+    "city": "Stockholm",
+    "lastDate": "30 januari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14986",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Senior Configuration Manager",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-configuration-manager-14986",
+    "city": "Halmstad",
+    "lastDate": "9 januari 2026",
+    "period": "2026-02-02 - 2026-06-30"
+  },
+  {
+    "id": "11430",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Embedded utvecklare",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/embedded-utvecklare-11430",
+    "city": "Jönköping",
+    "lastDate": "17 januari 2026",
+    "period": "2026-02-01 - 2026-12-31"
+  },
+  {
+    "id": "14795",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Teknisk skribent - Illustration",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/teknisk-skribent-illustration-14795",
+    "city": "Jönköping",
+    "lastDate": "16 januari 2026",
+    "period": "2026-03-01 - 2027-03-08"
+  },
+  {
+    "id": "14987",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Delprojektledare hårdvara",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/delprojektledare-hrdvara-14987",
+    "city": "Stockholm",
+    "lastDate": "16 januari 2026",
+    "period": "2026-02-16 - 2026-07-31"
+  },
+  {
+    "id": "14988",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Integration- och testkoordinator MSB Stockholm/remote 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/integration-och-testkoordinator-msb-stockholmremote-100-14988",
+    "city": "Stockholm",
+    "lastDate": "15 januari 2026",
+    "period": "2026-02-09 - 2026-06-30"
+  },
+  {
+    "id": "14989",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "IT-arkitekt Trafikverket Borlänge 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/it-arkitekt-trafikverket-borlnge-100-14989",
+    "city": "Borlänge",
+    "lastDate": "6 januari 2026",
+    "period": "2026-02-01 - 2027-02-01"
+  },
+  {
+    "id": "14990",
+    "scraped": "2026-01-06",
+    "source": "a society",
+    "title": "Junior mjukvaruutvecklare",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/junior-mjukvaruutvecklare-14990",
+    "city": "Stockholm",
+    "lastDate": "16 januari 2026",
+    "period": "2026-02-16 - 2026-08-31"
+  },
+  {
+    "id": "14239",
+    "scraped": "2026-01-07",
+    "source": "a society",
+    "title": "Strategisk inköpare – konsultuppdrag i Linköping",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/strategisk-inkpare-konsultuppdrag-i-linkping-14239",
+    "city": "Linköping",
+    "lastDate": "31 oktober 2025",
+    "period": "2025-12-01 - 2026-11-30"
+  },
+  {
+    "id": "14839",
+    "scraped": "2026-01-07",
+    "source": "a society",
+    "title": "Delprojektledare inom Verifiering",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/delprojektledare-inom-verifiering-14839",
+    "city": "Karlskrona",
+    "lastDate": "2 januari 2026",
+    "period": "2026-01-01 - 2026-12-02"
+  },
+  {
+    "id": "1292",
+    "scraped": "2026-01-07",
+    "source": "biolit",
+    "title": "Testledare på halvtid",
+    "url": "https://biolit.se/konsultuppdrag/"
+  },
+  {
+    "id": "7009865",
+    "scraped": "2026-01-07",
+    "source": "senterprise",
+    "title": "Konsultuppdrag |  Senior Intranet developer - Optimizely",
+    "url": "https://jobb.senterprise.se/jobs/7009865-konsultuppdrag-senior-intranet-developer-optimizely"
+  },
+  {
+    "id": "7010425",
+    "scraped": "2026-01-07",
+    "source": "senterprise",
+    "title": "Konsultuppdrag |  Senior Data Engineer",
+    "url": "https://jobb.senterprise.se/jobs/7010425-konsultuppdrag-senior-data-engineer"
+  },
+  {
+    "id": "7010527",
+    "scraped": "2026-01-07",
+    "source": "senterprise",
+    "title": "Konsultuppdrag | Senior Fullstack Software Engineer (Java/React)",
+    "url": "https://jobb.senterprise.se/jobs/7010527-konsultuppdrag-senior-fullstack-software-engineer-java-react"
+  },
+  {
+    "id": "7012517",
+    "scraped": "2026-01-07",
+    "source": "senterprise",
+    "title": "Konsultuppdrag | Backend-utvecklare (Go)",
+    "url": "https://jobb.senterprise.se/jobs/7012517-konsultuppdrag-backend-utvecklare-go"
+  },
+  {
+    "id": "7012589",
+    "scraped": "2026-01-07",
+    "source": "senterprise",
+    "title": "Konsultuppdrag | Team-lead för ett av två plattforms-team",
+    "url": "https://jobb.senterprise.se/jobs/7012589-konsultuppdrag-team-lead-for-ett-av-tva-plattforms-team"
+  },
+  {
+    "id": "7014276",
+    "scraped": "2026-01-07",
+    "source": "senterprise",
+    "title": "Konsultuppdrag |",
+    "url": "https://jobb.senterprise.se/jobs/7014276-konsultuppdrag"
+  },
+  {
+    "id": "18757",
+    "scraped": "2026-01-07",
+    "source": "cinode",
+    "title": "Senior intranet developer",
+    "url": "https://cinode.market/requests/18757"
+  },
+  {
+    "id": "18758",
+    "scraped": "2026-01-07",
+    "source": "cinode",
+    "title": "Senior .Net-utvecklare (backend) till kund inom offentlig sektor (nivå 5)",
+    "url": "https://cinode.market/requests/18758"
+  },
+  {
+    "id": "18759",
+    "scraped": "2026-01-07",
+    "source": "cinode",
+    "title": "Senior .Net-utvecklare (backend) med DevOps-erfarenhet till offentlig sektor (nivå 5)",
+    "url": "https://cinode.market/requests/18759"
+  },
+  {
+    "id": "18760",
+    "scraped": "2026-01-07",
+    "source": "cinode",
+    "title": "Ledarskapsutveckling och transformation - ramavtalskund Stockholm",
+    "url": "https://cinode.market/requests/18760"
+  },
+  {
+    "id": "18761",
+    "scraped": "2026-01-07",
+    "source": "cinode",
+    "title": "Krav- och verksamhetsanalytiker SDA, nivå 4 - ramavtalskund",
+    "url": "https://cinode.market/requests/18761"
+  },
+  {
+    "id": "18762",
+    "scraped": "2026-01-07",
+    "source": "cinode",
+    "title": "System Engineer within OpenShift",
+    "url": "https://cinode.market/requests/18762"
+  },
+  {
+    "id": "18763",
+    "scraped": "2026-01-07",
+    "source": "cinode",
+    "title": "GCP Developer",
+    "url": "https://cinode.market/requests/18763"
+  },
+  {
+    "id": "18764",
+    "scraped": "2026-01-07",
+    "source": "cinode",
+    "title": "Electrical System Engineer – Control Equipment and Measurement",
+    "url": "https://cinode.market/requests/18764"
+  },
+  {
+    "id": "https://www.techrelations.se//konsultuppdrag/kravanalytiker-till-forsakringskunddirektavtal-start-nu-langt-heltidsuppdrag",
+    "scraped": "2026-01-07",
+    "source": "techrelations",
+    "title": "Kravanalytiker till försäkringskund, start dec",
+    "url": "https://www.techrelations.se//konsultuppdrag/kravanalytiker-till-forsakringskunddirektavtal-start-nu-langt-heltidsuppdrag"
+  },
+  {
+    "id": "https://www.techrelations.se//konsultuppdrag/forstudie-dora-start-januari-hos-direktkund",
+    "scraped": "2026-01-07",
+    "source": "techrelations",
+    "title": "Förstudie DORA och CMDB, troligen start under senare Q1 (försäkring)",
+    "url": "https://www.techrelations.se//konsultuppdrag/forstudie-dora-start-januari-hos-direktkund"
+  },
+  {
+    "id": "https://www.techrelations.se//konsultuppdrag/forstudieledare-for-nytt-crm-system-till-retailkund-start-1-april",
+    "scraped": "2026-01-07",
+    "source": "techrelations",
+    "title": "Förstudieledare för nytt CRM system till kund inom resor, start 1 april",
+    "url": "https://www.techrelations.se//konsultuppdrag/forstudieledare-for-nytt-crm-system-till-retailkund-start-1-april"
+  },
+  {
+    "id": "https://www.techrelations.se//konsultuppdrag/projektledare-med-tung-bi-och-sap-erfarenhet-start-feb-2026",
+    "scraped": "2026-01-07",
+    "source": "techrelations",
+    "title": "Projektledare med tung BI och SAP erfarenhet, start feb 2026, timpris 1260kr till konsult",
+    "url": "https://www.techrelations.se//konsultuppdrag/projektledare-med-tung-bi-och-sap-erfarenhet-start-feb-2026"
+  },
+  {
+    "id": "https://www.techrelations.se//konsultuppdrag/behov-av-en-senior-fullstack-software-engineer-java-react",
+    "scraped": "2026-01-07",
+    "source": "techrelations",
+    "title": "Behov av en Senior Fullstack Software Engineer (Java/React) 900kr/h till konsult, city, hybrid ok",
+    "url": "https://www.techrelations.se//konsultuppdrag/behov-av-en-senior-fullstack-software-engineer-java-react"
+  },
+  {
+    "id": "https://www.techrelations.se//konsultuppdrag/soker-en-aws-devops-deltid-8-10h-i-manaden-start-omgaende",
+    "scraped": "2026-01-07",
+    "source": "techrelations",
+    "title": "Söker en AWS DevOps deltid (8-10h i månaden) start omgående",
+    "url": "https://www.techrelations.se//konsultuppdrag/soker-en-aws-devops-deltid-8-10h-i-manaden-start-omgaende"
+  },
+  {
+    "id": "ITC söker en Miljökonsult (inventering Råckstaberget) till Stockholm Stads Parkering",
+    "scraped": "2026-01-07",
+    "source": "itc network",
+    "title": "ITC söker en Miljökonsult (inventering Råckstaberget) till Stockholm Stads Parkering",
+    "url": "https://itc.inkopio.se/vms/Login"
+  },
+  {
+    "id": "100004713",
+    "scraped": "2026-01-07",
+    "source": "combitech",
+    "title": "Utvecklare Backend .NET",
+    "url": "https://partnernetworkportal.azurewebsites.net/assignmentdetails/100004713/e30-"
+  },
+  {
+    "id": "100004714",
+    "scraped": "2026-01-07",
+    "source": "combitech",
+    "title": "Systemintegratör",
+    "url": "https://partnernetworkportal.azurewebsites.net/assignmentdetails/100004714/e30-"
+  },
+  {
+    "id": "100004715",
+    "scraped": "2026-01-07",
+    "source": "combitech",
+    "title": "IT-projektledare",
+    "url": "https://partnernetworkportal.azurewebsites.net/assignmentdetails/100004715/e30-"
+  },
+  {
+    "id": "82664",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "FPGA & Electronics Developer",
+    "url": "https://wittedpartners.com/projects/82664-fpga-electronics-developer"
+  },
+  {
+    "id": "88739",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "Senior Test Lab Engineer within Electronics",
+    "url": "https://wittedpartners.com/projects/88739-senior-test-lab-engineer-within-electronics"
+  },
+  {
+    "id": "89192",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "AWS Infrastructure specialist",
+    "url": "https://wittedpartners.com/projects/89192-aws-infrastructure-specialist"
+  },
+  {
+    "id": "95303",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "Senior utvikler / teknisk arkitekt (C++ / C#)",
+    "url": "https://wittedpartners.com/projects/95303-senior-utvikler-teknisk-arkitekt-c-c"
+  },
+  {
+    "id": "95306",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "Prosjektledelse og -støtte til innføring av sikkerhet og arkitektur verktøy",
+    "url": "https://wittedpartners.com/projects/95306-prosjektledelse-og-stotte-til-innforing-av-sikkerhet-og-arkitektur-verktoy"
+  },
+  {
+    "id": "95317",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "Senior Electronics Consultants",
+    "url": "https://wittedpartners.com/projects/95317-senior-electronics-consultants"
+  },
+  {
+    "id": "95334",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "C++ developer",
+    "url": "https://wittedpartners.com/projects/95334-c-developer"
+  },
+  {
+    "id": "95342",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "Bred elektronikk-profil",
+    "url": "https://wittedpartners.com/projects/95342-bred-elektronikk-profil"
+  },
+  {
+    "id": "95396",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "QA Lead",
+    "url": "https://wittedpartners.com/projects/95396-qa-lead"
+  },
+  {
+    "id": "95399",
+    "scraped": "2026-01-07",
+    "source": "witted partners",
+    "title": "Platform / Backend Developer",
+    "url": "https://wittedpartners.com/projects/95399-platform-devops-developer"
+  },
+  {
+    "id": " Senior fullstackutvecklare (Java/React) ",
+    "scraped": "2026-01-07",
+    "source": "iceberry",
+    "title": "Senior fullstackutvecklare (Java/React)",
+    "url": "https://uppdrag.iceberry.se/"
+  },
+  {
+    "id": "User researcher",
+    "scraped": "2026-01-07",
+    "source": "tingent",
+    "title": "User researcher",
+    "url": "https://tingent.se/jobs"
+  },
+  {
+    "id": "https://www.nikita.se/lediga-uppdrag/teknisk-skribent-systemdokumentation-microsoft-c-net/",
+    "scraped": "2026-01-07",
+    "source": "nikita",
+    "title": "Teknisk skribent – Systemdokumentation (Microsoft C#/.NET)",
+    "url": "https://www.nikita.se/lediga-uppdrag/teknisk-skribent-systemdokumentation-microsoft-c-net/"
+  },
+  {
+    "id": "https://www.nikita.se/lediga-uppdrag/inventory-optimization-pre-study-lead/",
+    "scraped": "2026-01-07",
+    "source": "nikita",
+    "title": "Inventory Optimization Pre-Study Lead",
+    "url": "https://www.nikita.se/lediga-uppdrag/inventory-optimization-pre-study-lead/"
+  },
+  {
+    "id": "https://www.nikita.se/lediga-uppdrag/testledare-31/",
+    "scraped": "2026-01-07",
+    "source": "nikita",
+    "title": "Testledare till organisation inom finans",
+    "url": "https://www.nikita.se/lediga-uppdrag/testledare-31/"
+  },
+  {
+    "id": "https://www.nikita.se/lediga-uppdrag/agil-uppdragssamordnare-inom-systemutveckling/",
+    "scraped": "2026-01-07",
+    "source": "nikita",
+    "title": "Agil uppdragssamordnare inom systemutveckling",
+    "url": "https://www.nikita.se/lediga-uppdrag/agil-uppdragssamordnare-inom-systemutveckling/"
+  },
+  {
+    "id": "https://rightpeoplegroup.com/sv/open-assignments/konsulentoppgave-s-4-inbound-team-member-oslo",
+    "scraped": "2026-01-07",
+    "source": "right people group",
+    "title": "Konsulentoppgave- S/4 Inbound Team Member - OsloNorway Norwegian ERP, CRM and CMS",
+    "url": "https://rightpeoplegroup.com/sv/open-assignments/konsulentoppgave-s-4-inbound-team-member-oslo"
+  },
+  {
+    "id": "https://rightpeoplegroup.com/sv/open-assignments/konsulentopgave-teknisk-business-analyst-kobenhavn-07-01-2026",
+    "scraped": "2026-01-07",
+    "source": "right people group",
+    "title": "Konsulentopgave – Teknisk Business Analyst – København (07.01.2026)Denmark Danish IT and management consulting",
+    "url": "https://rightpeoplegroup.com/sv/open-assignments/konsulentopgave-teknisk-business-analyst-kobenhavn-07-01-2026"
+  },
+  {
+    "id": "150439",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Data Scientist / Analyst",
+    "url": "https://upgraded.se/konsultuppdrag/150439-data-scientist-analyst/"
+  },
+  {
+    "id": "148418",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Backend Developer",
+    "url": "https://upgraded.se/konsultuppdrag/148418-backend-developer-18/"
+  },
+  {
+    "id": "150103",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "App & Business Analyst",
+    "url": "https://upgraded.se/konsultuppdrag/150103-app-business-analyst/"
+  },
+  {
+    "id": "150108",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Business Analyst",
+    "url": "https://upgraded.se/konsultuppdrag/150108-business-analyst-58/"
+  },
+  {
+    "id": "148005",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Applikationsutvecklare med fokus på Cloud och Microtjänster",
+    "url": "https://upgraded.se/konsultuppdrag/148005-applikationsutvecklare-med-fokus-pa-cloud-och-microtjanster/"
+  },
+  {
+    "id": "146422",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Senior Engineer (AI/Agentic Framework)",
+    "url": "https://upgraded.se/konsultuppdrag/146422-senior-engineer-ai-agentic-framework/"
+  },
+  {
+    "id": "150462",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Business/Data Analyst",
+    "url": "https://upgraded.se/konsultuppdrag/150462-business-data-analyst/"
+  },
+  {
+    "id": "150464",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "IT-infrastruktursarkitekt",
+    "url": "https://upgraded.se/konsultuppdrag/150464-it-infrastruktursarkitekt/"
+  },
+  {
+    "id": "150495",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Senior Ontologist",
+    "url": "https://upgraded.se/konsultuppdrag/150495-senior-ontologist-3/"
+  },
+  {
+    "id": "150553",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Teknisk Projektledare med IFS kompetens",
+    "url": "https://upgraded.se/konsultuppdrag/150553-teknisk-projektledare-med-ifs-kompetens/"
+  },
+  {
+    "id": "150600",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Konsultstöd för förstudie om digital kompetens i Sundbybergs stad",
+    "url": "https://upgraded.se/konsultuppdrag/150600-konsultstod-for-forstudie-om-digital-kompetens-i-sundbybergs-stad/"
+  },
+  {
+    "id": "150601",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Senior fullstackutvecklare till projekten Skånes Digitala Arkiv och Lab-data, Region Skåne avrop 2330",
+    "url": "https://upgraded.se/konsultuppdrag/150601-senior-fullstackutvecklare-till-projekten-skanes-digitala-arkiv-och-lab-data-region-skane-avrop-2330/"
+  },
+  {
+    "id": "150648",
+    "scraped": "2026-01-07",
+    "source": "upgraded",
+    "title": "Utredare med kommunikationskompetens",
+    "url": "https://upgraded.se/konsultuppdrag/150648-utredare-med-kommunikationskompetens/"
+  },
+  {
+    "id": "https://www.experis.sef5001baf-c9ca-4816-b7a8-2f7918a8c51c/utveckla",
+    "scraped": "2026-01-07",
+    "source": "experis",
+    "title": "Utvecklare inom ServiceNow",
+    "url": "https://www.experis.se/sv/jobb/f5001baf-c9ca-4816-b7a8-2f7918a8c51c/utvecklare-inom-servicenow"
+  },
+  {
+    "id": "https://www.experis.se0f066cc5-c6ea-4823-a4fc-21cfb47cb76a/producto",
+    "scraped": "2026-01-07",
+    "source": "experis",
+    "title": "Product Owner - Digital Sales (B2C)",
+    "url": "https://www.experis.se/sv/jobb/0f066cc5-c6ea-4823-a4fc-21cfb47cb76a/productownerdigitalsalesb2c"
+  },
+  {
+    "id": "1021",
+    "scraped": "2026-01-07",
+    "source": "regent",
+    "title": "Kammarkollegiet-Senior Oracle SOA Integrationskonsult (Konsultteam)",
+    "url": "https://regent.se/uppdrag/1021"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005748662ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "Full Stack Java Developer",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005748662ENGB/Full-Stack-Java-Developer"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005356204ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "Lead AI Engineer",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005356204ENGB/Lead-AI-Engineer"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005493285ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "Dynamics 365 Consultant",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005493285ENGB/Dynamics-365-Consultant"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005617893ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "Visual Designer",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005617893ENGB/Visual-Designer"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005353258ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "Senior Developer",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005353258ENGB/Senior-Developer"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005752666ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "Fidessa Developer",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005752666ENGB/Fidessa-Developer"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005753183ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "Game Balance Specialist",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005753183ENGB/Game-Balance-Specialist"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005748145ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "SRE/Devops Engineer - Digital Assets",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005748145ENGB/SRE-Devops-Engineer-Digital-Assets"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005621426ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "FX Developer",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005621426ENGB/FX-Developer"
+  },
+  {
+    "id": "https://careers.teksystems.com/gb/en/job/TESYUSJP005552774ENGB",
+    "scraped": "2026-01-07",
+    "source": "teksystems",
+    "title": "Fidessa/Java Developer",
+    "url": "https://careers.teksystems.com/gb/en/job/TESYUSJP005552774ENGB/Fidessa-Java-Developer"
+  },
+  {
+    "id": "https://www.keyman.se/sv/data-it/system-owner-learning-system-till-cambio-intervjuer-kommer-att-ske-lopande/",
+    "scraped": "2026-01-07",
+    "source": "keyman",
+    "title": "System Owner Learning system till Cambio – Intervjuer kommer att ske löpande",
+    "url": "https://www.keyman.se/sv/data-it/system-owner-learning-system-till-cambio-intervjuer-kommer-att-ske-lopande/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/data-it/system-engineer-within-openshift-to-cambio-vi-gar-igenom-kandidater-lopande/",
+    "scraped": "2026-01-07",
+    "source": "keyman",
+    "title": "System Engineer within OpenShift to Cambio – Vi går igenom kandidater löpande!",
+    "url": "https://www.keyman.se/sv/data-it/system-engineer-within-openshift-to-cambio-vi-gar-igenom-kandidater-lopande/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/management/se_strategic-sourcing-senior-professional-till-hitachi-energy-sweden-ab-16440/",
+    "scraped": "2026-01-07",
+    "source": "keyman",
+    "title": "SE_Strategic Sourcing Senior Professional till Hitachi Energy Sweden AB (16440)",
+    "url": "https://www.keyman.se/sv/management/se_strategic-sourcing-senior-professional-till-hitachi-energy-sweden-ab-16440/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/sakerhetsarbete/se_security-threat-assessment-analysis-experienced-professional-till-hitachi-energy-sweden-ab-16436-job-posting-updated/",
+    "scraped": "2026-01-07",
+    "source": "keyman",
+    "title": "SE_Security Threat Assessment & Analysis Experienced Professional till Hitachi Energy Sweden AB (16436) – JOB POSTING UPDATED",
+    "url": "https://www.keyman.se/sv/sakerhetsarbete/se_security-threat-assessment-analysis-experienced-professional-till-hitachi-energy-sweden-ab-16436-job-posting-updated/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/data-it/inventory-optimization-pre-study-lead-source-to-pay/",
+    "scraped": "2026-01-07",
+    "source": "keyman",
+    "title": "Inventory Optimization Pre-Study Lead – Source to Pay",
+    "url": "https://www.keyman.se/sv/data-it/inventory-optimization-pre-study-lead-source-to-pay/"
+  },
+  {
+    "id": "74831",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "IBMi Application Operations Expert",
+    "url": "https://app.verama.com/job-requests/74831"
+  },
+  {
+    "id": "74684",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Operativ Förhandlingschef",
+    "url": "https://app.verama.com/job-requests/74684"
+  },
+  {
+    "id": "74604",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Systemutvecklare .NET",
+    "url": "https://app.verama.com/job-requests/74604"
+  },
+  {
+    "id": "74832",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Data Analysts",
+    "url": "https://app.verama.com/job-requests/74832"
+  },
+  {
+    "id": "74833",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Advanced Warehouse Streamlead",
+    "url": "https://app.verama.com/job-requests/74833"
+  },
+  {
+    "id": "74834",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Product Manager",
+    "url": "https://app.verama.com/job-requests/74834"
+  },
+  {
+    "id": "74836",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Senior Javautvecklare - Jordbruksverket",
+    "url": "https://app.verama.com/job-requests/74836"
+  },
+  {
+    "id": "74476",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Inventering av naturvärden och arter",
+    "url": "https://app.verama.com/job-requests/74476"
+  },
+  {
+    "id": "74545",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Utveckling och drift av säkerhetsskyddsklassat IT-system",
+    "url": "https://app.verama.com/job-requests/74545"
+  },
+  {
+    "id": "74842",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Design Engineer - Mechatronics",
+    "url": "https://app.verama.com/job-requests/74842"
+  },
+  {
+    "id": "74846",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Payroll to Finance Expert, Modernized Core HR and Payroll",
+    "url": "https://app.verama.com/job-requests/74846"
+  },
+  {
+    "id": "74847",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Systemutvikler - Sodir",
+    "url": "https://app.verama.com/job-requests/74847"
+  },
+  {
+    "id": "74848",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Senior Tech Lead Utvikler",
+    "url": "https://app.verama.com/job-requests/74848"
+  },
+  {
+    "id": "74851",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Interior Lighting Designer",
+    "url": "https://app.verama.com/job-requests/74851"
+  },
+  {
+    "id": "74852",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Digital Assessment and  Ongoing Optimization support",
+    "url": "https://app.verama.com/job-requests/74852"
+  },
+  {
+    "id": "74854",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "IT Application Support",
+    "url": "https://app.verama.com/job-requests/74854"
+  },
+  {
+    "id": "74855",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Senior .NET Developer with Azure & Kafka - Gothenburg",
+    "url": "https://app.verama.com/job-requests/74855"
+  },
+  {
+    "id": "74859",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Data Architect with Azure",
+    "url": "https://app.verama.com/job-requests/74859"
+  },
+  {
+    "id": "74860",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "UX/UI Designer",
+    "url": "https://app.verama.com/job-requests/74860"
+  },
+  {
+    "id": "74862",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Azure Data Architect in Platform Ingestion",
+    "url": "https://app.verama.com/job-requests/74862"
+  },
+  {
+    "id": "74863",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Senior IT Project Manager",
+    "url": "https://app.verama.com/job-requests/74863"
+  },
+  {
+    "id": "74864",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Systemförvaltare Nivå 3",
+    "url": "https://app.verama.com/job-requests/74864"
+  },
+  {
+    "id": "74865",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Senior Developer (Data Engineering)",
+    "url": "https://app.verama.com/job-requests/74865"
+  },
+  {
+    "id": "74866",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Konstruktör/statiker för utredning av lokal till lägenheter",
+    "url": "https://app.verama.com/job-requests/74866"
+  },
+  {
+    "id": "74867",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Senior Data Engineer",
+    "url": "https://app.verama.com/job-requests/74867"
+  },
+  {
+    "id": "74868",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Utvärdering av genomförande av arrangemang i bolagsform",
+    "url": "https://app.verama.com/job-requests/74868"
+  },
+  {
+    "id": "74870",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Fullstack Data Engineer i projekt",
+    "url": "https://app.verama.com/job-requests/74870"
+  },
+  {
+    "id": "74871",
+    "scraped": "2026-01-07",
+    "source": "verama",
+    "title": "Fullstack Data Engineer inom nyutveckling och förvaltning",
+    "url": "https://app.verama.com/job-requests/74871"
+  },
+  {
+    "id": "5689da9d-abbd-48ac-9bfb-164721bdf994",
+    "scraped": "2026-01-07",
+    "source": "randstad",
+    "title": "category buyer direct materials (10778)",
+    "url": "https://www.randstad.se/jobb/category-buyer-direct-materials-10778_stockholm_5689da9d-abbd-48ac-9bfb-164721bdf994/"
+  },
+  {
+    "id": "368485e9-5cb0-463f-bfda-4af1908a0ae4",
+    "scraped": "2026-01-07",
+    "source": "randstad",
+    "title": "industriarbetare",
+    "url": "https://www.randstad.se/jobb/industriarbetare_ludvika_368485e9-5cb0-463f-bfda-4af1908a0ae4/"
+  },
+  {
+    "id": "#217063",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Onsite Consultant - Vikar",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#216943",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Security Consultant",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232168",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Principal AI Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232165",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Cloud/BRD Transition Lead",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232167",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Fullstack (Angular, Java / Kotlin & Springboot) Softwareentwickler (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232172",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "DevOps Engineer (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232171",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "MLOps / ML Platform Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232164",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Engineering & Architecture Lead",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232156",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Senior Oracle Solutions Architect",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232169",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Frontend Developer (React, NextJS)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232175",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Business Analyst – Market Data CIB ou Asset Management (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232170",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Senior / Lead Developer (Python & Azure Cloud Environment)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#219661",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Développeur C++ Senior / Expert – Simulation Numérique (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232162",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "QA/Technical Tester",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232176",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "DATA ENGINEER Scala, Spark, AWS (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232066",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Consultant Reprise de Données ERP (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#218370",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Program Manager",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232178",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Technicien Workplace Confirmé (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232166",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Payroll to Finance Expert",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232160",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Website Developer (Intermediate, Remote)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232007",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Développeur Semarchy (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232159",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Senior Database System Administrator",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232129",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "IT Support/ Workplace Consultant (part-time from Ontario)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#231979",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Développeur Cobol (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232179",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Senior IT Analyst",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#215968",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Project Manager",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232151",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "KI-Entwickler (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232184",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Consultant Change (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232186",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Senior UX/UI Designer (6507)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#219554",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Dataanalytiker med SQL erfaring og udarbejdelse af tekniske specifikationer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232183",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Customer Demand Owner (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232188",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Développeur C++ / Ingénieur Mathématiques Appliquées (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232187",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Senior IT PM with SAP EWM Implementation Experience from Production Sites",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232181",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Experience BI Specialists / Data Engineers",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232189",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Senior Service Delivery Manager – M365 Collaboration Services - (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232193",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Analityk IT",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232182",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Data Analyst with strong Power BI skills",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232195",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Big Data Engineer (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232192",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Programista Android Senior 163/25",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232201",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Expert Axway - Secure Transport (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#219640",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Production Support Analyst – Fixed Income",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232131",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "IT Workplace",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232197",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Teilprojektleitung Tief- und Ingenieuerbau (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232203",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Architekt OT I Cyberbezpieczeństwa",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232202",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Project Manager",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232207",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Senior Backend / Data engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232208",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "AI Safety Researcher",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232210",
+    "scraped": "2026-01-07",
+    "source": "emagine",
+    "title": "Forretningsarkitekt x2 til Norges Bank",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "Devops/IT engineer - gaming",
+    "scraped": "2026-01-08",
+    "source": "tingent",
+    "title": "Devops/IT engineer - gaming",
+    "url": "https://tingent.se/jobs"
+  },
+  {
+    "id": "18770",
+    "scraped": "2026-01-08",
+    "source": "cinode",
+    "title": "Dynamics-utvecklare",
+    "url": "https://cinode.market/requests/18770"
+  },
+  {
+    "id": "18771",
+    "scraped": "2026-01-08",
+    "source": "cinode",
+    "title": "Handledare i IL-utbildningar",
+    "url": "https://cinode.market/requests/18771"
+  },
+  {
+    "id": "14994",
+    "scraped": "2026-01-08",
+    "source": "a society",
+    "title": "Senior Javautvecklare - Jordbruksverket",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-javautvecklare-jordbruksverket-14994",
+    "city": "Jönköping",
+    "lastDate": "15 januari 2026",
+    "period": "2026-01-19 - 2028-01-16"
+  },
+  {
+    "id": "14926",
+    "scraped": "2026-01-08",
+    "source": "a society",
+    "title": "Senior Red Hat OpenShift Engineer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/senior-red-hat-openshift-engineer-14926",
+    "city": "Stockholm",
+    "lastDate": "18 januari 2026",
+    "period": "2026-01-19 - 2026-04-30"
+  },
+  {
+    "id": "14995",
+    "scraped": "2026-01-08",
+    "source": "a society",
+    "title": "Konstruktör / Teknisk projektledare",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/konstruktr-teknisk-projektledare-14995",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "2026-01-26 - 2026-07-31"
+  },
+  {
+    "id": "d2cd300f-2cc3-40b2-9d36-7f0d0c348c7f",
+    "scraped": "2026-01-08",
+    "source": "randstad",
+    "title": "laboratorieingenjör qc- strängnäs",
+    "url": "https://www.randstad.se/jobb/laboratorieingenjor-qc-strangnas_strangnas_d2cd300f-2cc3-40b2-9d36-7f0d0c348c7f/"
+  },
+  {
+    "id": "ITC söker en Junior handläggare Clearingen för Nivå 1",
+    "scraped": "2026-01-08",
+    "source": "itc network",
+    "title": "ITC söker en Junior handläggare Clearingen för Nivå 1",
+    "url": "https://itc.inkopio.se/vms/Login"
+  },
+  {
+    "id": "150705",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "AI Safety Researcher",
+    "url": "https://upgraded.se/konsultuppdrag/150705-ai-safety-researcher/"
+  },
+  {
+    "id": "150707",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Senior Data-/BackEnd Engineer",
+    "url": "https://upgraded.se/konsultuppdrag/150707-senior-data-backend-engineer/"
+  },
+  {
+    "id": "150712",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Projektledare Informationssystem inom sjukvård",
+    "url": "https://upgraded.se/konsultuppdrag/150712-projektledare-informationssystem-inom-sjukvard/"
+  },
+  {
+    "id": "150713",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Systemutvecklare ServiceNow",
+    "url": "https://upgraded.se/konsultuppdrag/150713-systemutvecklare-servicenow-8/"
+  },
+  {
+    "id": "150724",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "GCP-utvecklare",
+    "url": "https://upgraded.se/konsultuppdrag/150724-gcp-utvecklare/"
+  },
+  {
+    "id": "147146",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "System Engineer",
+    "url": "https://upgraded.se/konsultuppdrag/147146-system-engineer-15/"
+  },
+  {
+    "id": "150750",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Ledarskapscoach",
+    "url": "https://upgraded.se/konsultuppdrag/150750-ledarskapscoach/"
+  },
+  {
+    "id": "150755",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Teknisk projektledare – Vitec systemsupport",
+    "url": "https://upgraded.se/konsultuppdrag/150755-teknisk-projektledare-vitec-systemsupport/"
+  },
+  {
+    "id": "150762",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "UX writer",
+    "url": "https://upgraded.se/konsultuppdrag/150762-ux-writer-2/"
+  },
+  {
+    "id": "150768",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Systemutvecklare Backend",
+    "url": "https://upgraded.se/konsultuppdrag/150768-systemutvecklare-backend-3/"
+  },
+  {
+    "id": "150771",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Senior UX/service designer, Region Skåne avrop 2332",
+    "url": "https://upgraded.se/konsultuppdrag/150771-senior-ux-service-designer-region-skane-avrop-2332/"
+  },
+  {
+    "id": "p",
+    "scraped": "2026-01-08",
+    "source": "konsultfabriken",
+    "title": "»List of closed assignments",
+    "url": "https://konsultfabriken.se/old-assignments.php"
+  },
+  {
+    "id": "=2093",
+    "scraped": "2026-01-08",
+    "source": "konsultfabriken",
+    "title": "Teknisk Teknisk Projektledare Migrering IFS Cloud - Stockholm, with some work from distance.",
+    "url": "https://konsultfabriken.se/job.php?id=2093"
+  },
+  {
+    "id": "462282",
+    "scraped": "2026-01-08",
+    "source": "aliant",
+    "title": "Dynamics-utvecklare",
+    "url": "https://aliant.recman.io/job/462282"
+  },
+  {
+    "id": "6946806/",
+    "scraped": "2026-01-08",
+    "source": "wise it",
+    "title": "Intregrationsspecialist till Sweco!",
+    "url": "https://www.wise.se/jobb/intregrationsspecialist-till-sweco-6946806/"
+  },
+  {
+    "id": "6964308/",
+    "scraped": "2026-01-08",
+    "source": "wise it",
+    "title": "Engineering Manager Developer Platform",
+    "url": "https://www.wise.se/jobb/engineering-manager-developer-platform-6964308/"
+  },
+  {
+    "id": "6943947/",
+    "scraped": "2026-01-08",
+    "source": "wise it",
+    "title": "Group IT Director till Bruks Siwertell Group!",
+    "url": "https://www.wise.se/jobb/group-it-director-till-bruks-siwertell-group-6943947/"
+  },
+  {
+    "id": "7013457/",
+    "scraped": "2026-01-08",
+    "source": "wise it",
+    "title": "IT ansvarig (Göteborg)",
+    "url": "https://www.wise.se/jobb/it-ansvarig-goteborg-7013457/"
+  },
+  {
+    "id": "6712025/",
+    "scraped": "2026-01-08",
+    "source": "wise it",
+    "title": "Principal Software Engineer till Breas Medical!",
+    "url": "https://www.wise.se/jobb/principal-software-engineer-till-breas-medical-6712025/"
+  },
+  {
+    "id": "6718056/",
+    "scraped": "2026-01-08",
+    "source": "wise it",
+    "title": "IT-drifttekniker till Skola24!",
+    "url": "https://www.wise.se/jobb/it-drifttekniker-till-skola24-6718056/"
+  },
+  {
+    "id": "7000377",
+    "scraped": "2026-01-08",
+    "source": "together tech",
+    "title": "Elektronikkonstruktör | Jönköping",
+    "url": "https://career.togethertech.com/jobs/7000377-elektronikkonstruktor-jonkoping"
+  },
+  {
+    "id": "74677",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Kravanalytiker",
+    "url": "https://app.verama.com/job-requests/74677"
+  },
+  {
+    "id": "74874",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Payroll to Finance Expert",
+    "url": "https://app.verama.com/job-requests/74874"
+  },
+  {
+    "id": "74875",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Solution Architect",
+    "url": "https://app.verama.com/job-requests/74875"
+  },
+  {
+    "id": "74876",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "HR-Generalist",
+    "url": "https://app.verama.com/job-requests/74876"
+  },
+  {
+    "id": "74879",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Embedded Linux OS Developer",
+    "url": "https://app.verama.com/job-requests/74879"
+  },
+  {
+    "id": "74880",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Projektledare",
+    "url": "https://app.verama.com/job-requests/74880"
+  },
+  {
+    "id": "74881",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Senior Ontologist",
+    "url": "https://app.verama.com/job-requests/74881"
+  },
+  {
+    "id": "74883",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Front Arena Expert",
+    "url": "https://app.verama.com/job-requests/74883"
+  },
+  {
+    "id": "74885",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Besiktningsorganisation- Ubbhult skola och förskola",
+    "url": "https://app.verama.com/job-requests/74885"
+  },
+  {
+    "id": "74886",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Big Data Developer",
+    "url": "https://app.verama.com/job-requests/74886"
+  },
+  {
+    "id": "74887",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Expert IT Architect",
+    "url": "https://app.verama.com/job-requests/74887"
+  },
+  {
+    "id": "74888",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Senior Java Developer",
+    "url": "https://app.verama.com/job-requests/74888"
+  },
+  {
+    "id": "74890",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Finance Platform Solution Engineer",
+    "url": "https://app.verama.com/job-requests/74890"
+  },
+  {
+    "id": "74891",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Senior Data Engineer",
+    "url": "https://app.verama.com/job-requests/74891"
+  },
+  {
+    "id": "74892",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Senior NFT Automation Tester",
+    "url": "https://app.verama.com/job-requests/74892"
+  },
+  {
+    "id": "74894",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Uppförande av säkerhetsskyddsklassificerat IT-system",
+    "url": "https://app.verama.com/job-requests/74894"
+  },
+  {
+    "id": "OS platform Expert/ zOS integration",
+    "scraped": "2026-01-08",
+    "source": "tingent",
+    "title": "OS platform Expert/ zOS integration",
+    "url": "https://tingent.se/jobs"
+  },
+  {
+    "id": "MySQL DBA / Databasoptimeringsspecialist",
+    "scraped": "2026-01-08",
+    "source": "tingent",
+    "title": "MySQL DBA / Databasoptimeringsspecialist",
+    "url": "https://tingent.se/jobs"
+  },
+  {
+    "id": "14996",
+    "scraped": "2026-01-08",
+    "source": "a society",
+    "title": "Solution Architect Physical Security System",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/solution-architect-physical-security-system-14996",
+    "city": "Stockholm",
+    "lastDate": "13 januari 2026",
+    "period": "2026-01-30 - 2026-07-01"
+  },
+  {
+    "id": "100004716",
+    "scraped": "2026-01-08",
+    "source": "combitech",
+    "title": "BizTalkutvecklare",
+    "url": "https://partnernetworkportal.azurewebsites.net/assignmentdetails/100004716/e30-"
+  },
+  {
+    "id": "100004717",
+    "scraped": "2026-01-08",
+    "source": "combitech",
+    "title": "Projektledare Informationssystem och IT (SU)",
+    "url": "https://partnernetworkportal.azurewebsites.net/assignmentdetails/100004717/e30-"
+  },
+  {
+    "id": "18772",
+    "scraped": "2026-01-08",
+    "source": "cinode",
+    "title": "Verksamhetsutvecklare",
+    "url": "https://cinode.market/requests/18772"
+  },
+  {
+    "id": "18773",
+    "scraped": "2026-01-08",
+    "source": "cinode",
+    "title": "GCP Developer – Cloud & Data (Senior nivå)",
+    "url": "https://cinode.market/requests/18773"
+  },
+  {
+    "id": "18774",
+    "scraped": "2026-01-08",
+    "source": "cinode",
+    "title": "Finance Team Lead (SAP)",
+    "url": "https://cinode.market/requests/18774"
+  },
+  {
+    "id": "18776",
+    "scraped": "2026-01-08",
+    "source": "cinode",
+    "title": "Verksamhetsutvecklare/Insatsägare",
+    "url": "https://cinode.market/requests/18776"
+  },
+  {
+    "id": "18777",
+    "scraped": "2026-01-08",
+    "source": "cinode",
+    "title": "Senior Data Engineer - Göteborg",
+    "url": "https://cinode.market/requests/18777"
+  },
+  {
+    "id": "=2094",
+    "scraped": "2026-01-08",
+    "source": "konsultfabriken",
+    "title": "Backendutvecklare - Stockholm, with most of the time on site. Some work from distance.",
+    "url": "https://konsultfabriken.se/job.php?id=2094"
+  },
+  {
+    "id": "=2095",
+    "scraped": "2026-01-08",
+    "source": "konsultfabriken",
+    "title": "Backendutvecklare - Stockholm. At least 2 days per week on site. Some work from distance.",
+    "url": "https://konsultfabriken.se/job.php?id=2095"
+  },
+  {
+    "id": "=2096",
+    "scraped": "2026-01-08",
+    "source": "konsultfabriken",
+    "title": "Projektledare Informationssystem och IT - Mölndal",
+    "url": "https://konsultfabriken.se/job.php?id=2096"
+  },
+  {
+    "id": "95405",
+    "scraped": "2026-01-08",
+    "source": "witted partners",
+    "title": "Business / Enterprise Architects",
+    "url": "https://wittedpartners.com/projects/95405-business-enterprise-architects"
+  },
+  {
+    "id": "95407",
+    "scraped": "2026-01-08",
+    "source": "witted partners",
+    "title": "Development Lead (Short Deadline)",
+    "url": "https://wittedpartners.com/projects/95407-development-lead-short-deadline"
+  },
+  {
+    "id": "95410",
+    "scraped": "2026-01-08",
+    "source": "witted partners",
+    "title": "Project Manager (Short deadline)",
+    "url": "https://wittedpartners.com/projects/95410-project-manager"
+  },
+  {
+    "id": "https://www.experis.se8d29a358-ab2b-4735-a822-e793cf2d17c6/software",
+    "scraped": "2026-01-08",
+    "source": "experis",
+    "title": "Software Developer | Linköping | Experis",
+    "url": "https://www.experis.se/sv/jobb/8d29a358-ab2b-4735-a822-e793cf2d17c6/software-developer-linkoping-experis"
+  },
+  {
+    "id": "https://www.experis.sed6b18e4d-2beb-45a1-be41-dab214de51ea/software",
+    "scraped": "2026-01-08",
+    "source": "experis",
+    "title": "Software Developer | Stockholm | Experis",
+    "url": "https://www.experis.se/sv/jobb/d6b18e4d-2beb-45a1-be41-dab214de51ea/software-developer-stockholm-experis"
+  },
+  {
+    "id": "https://www.experis.sec2b277d7-10dd-4aed-9322-2ffcc5e64ec2/software",
+    "scraped": "2026-01-08",
+    "source": "experis",
+    "title": "Software Developer | Göteborg | Experis",
+    "url": "https://www.experis.se/sv/jobb/c2b277d7-10dd-4aed-9322-2ffcc5e64ec2/software-developer-goteborg-experis"
+  },
+  {
+    "id": "150794",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Storage & Backup Specialist",
+    "url": "https://upgraded.se/konsultuppdrag/150794-storage-backup-specialist/"
+  },
+  {
+    "id": "150800",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Konsultstöd för kravställande av upphandling inom drift och underhåll, med god erfarenhet av ABFF.",
+    "url": "https://upgraded.se/konsultuppdrag/150800-konsultstod-for-kravstallande-av-upphandling-inom-drift-och-underhall-med-god-erfarenhet-av-abff/"
+  },
+  {
+    "id": "150801",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Verktygsspecialist – Atlassian",
+    "url": "https://upgraded.se/konsultuppdrag/150801-verktygsspecialist-atlassian-2/"
+  },
+  {
+    "id": "150802",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Teknisk specialist E-arkiv",
+    "url": "https://upgraded.se/konsultuppdrag/150802-teknisk-specialist-e-arkiv/"
+  },
+  {
+    "id": "150824",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Senior Införandeledare SDV, Region Skåne avrop 2333",
+    "url": "https://upgraded.se/konsultuppdrag/150824-senior-inforandeledare-sdv-region-skane-avrop-2333/"
+  },
+  {
+    "id": "150849",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Förvaltningsledare – ERP",
+    "url": "https://upgraded.se/konsultuppdrag/150849-forvaltningsledare-erp/"
+  },
+  {
+    "id": "150860",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "Systemutvecklare Backend",
+    "url": "https://upgraded.se/konsultuppdrag/150860-systemutvecklare-backend-4/"
+  },
+  {
+    "id": "150871",
+    "scraped": "2026-01-08",
+    "source": "upgraded",
+    "title": "2x Embedded C Developer",
+    "url": "https://upgraded.se/konsultuppdrag/150871-2x-embedded-c-developer/"
+  },
+  {
+    "id": "https://www.nikita.se/lediga-uppdrag/process-och-visiokonsult/",
+    "scraped": "2026-01-08",
+    "source": "nikita",
+    "title": "Process- och Visiokonsult",
+    "url": "https://www.nikita.se/lediga-uppdrag/process-och-visiokonsult/"
+  },
+  {
+    "id": "005755525",
+    "scraped": "2026-01-08",
+    "source": "teksystems",
+    "title": "Senior Full Stack Developer",
+    "url": "https://careers.teksystems.com/gb/en/job/JP-005755525/Senior-Full-Stack-Developer"
+  },
+  {
+    "id": "LEAD-5177",
+    "scraped": "2026-01-08",
+    "source": "kantur",
+    "title": "Solution Architect - Stockholm",
+    "url": "https://kantur.se/projects"
+  },
+  {
+    "id": "74895",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Program Manager (Expert Professional / Principal Manager)",
+    "url": "https://app.verama.com/job-requests/74895"
+  },
+  {
+    "id": "74900",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Senior UX/UI Designer for digital innovation",
+    "url": "https://app.verama.com/job-requests/74900"
+  },
+  {
+    "id": "74903",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Analysis Engineer - EDL Component Testing",
+    "url": "https://app.verama.com/job-requests/74903"
+  },
+  {
+    "id": "74905",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Data Architect with Azure",
+    "url": "https://app.verama.com/job-requests/74905"
+  },
+  {
+    "id": "74906",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "SAP Integration Developer",
+    "url": "https://app.verama.com/job-requests/74906"
+  },
+  {
+    "id": "74907",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "System Test Engineer – Vehicle Data Collection",
+    "url": "https://app.verama.com/job-requests/74907"
+  },
+  {
+    "id": "74909",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Senior Frontend Developer",
+    "url": "https://app.verama.com/job-requests/74909"
+  },
+  {
+    "id": "74911",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Agil uppdragssamordnare IT",
+    "url": "https://app.verama.com/job-requests/74911"
+  },
+  {
+    "id": "74912",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Besiktningstjänster - Bygg och anläggningsentreprenader",
+    "url": "https://app.verama.com/job-requests/74912"
+  },
+  {
+    "id": "74913",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "Security Architect - WirelessCar",
+    "url": "https://app.verama.com/job-requests/74913"
+  },
+  {
+    "id": "74916",
+    "scraped": "2026-01-08",
+    "source": "verama",
+    "title": "HR-Generalist",
+    "url": "https://app.verama.com/job-requests/74916"
+  },
+  {
+    "id": "340e6034-4fdb-49fb-be30-4a71af289871",
+    "scraped": "2026-01-08",
+    "source": "randstad",
+    "title": "truckförare",
+    "url": "https://www.randstad.se/jobb/truckforare_goteborg_340e6034-4fdb-49fb-be30-4a71af289871/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/tekniskt-arbete/se_rd-hardware-development-engineer-level-2-till-hitachi-energy-sweden-ab-16428/",
+    "scraped": "2026-01-08",
+    "source": "keyman",
+    "title": "SE_R&D Hardware Development – Engineer (Level 2) till Hitachi Energy Sweden AB (16428)",
+    "url": "https://www.keyman.se/sv/tekniskt-arbete/se_rd-hardware-development-engineer-level-2-till-hitachi-energy-sweden-ab-16428/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/data-it/konsult-vdi-med-omnissa-horizon-till-karolinska-institutet/",
+    "scraped": "2026-01-08",
+    "source": "keyman",
+    "title": "Konsult VDI med Omnissa Horizon till Karolinska Institutet",
+    "url": "https://www.keyman.se/sv/data-it/konsult-vdi-med-omnissa-horizon-till-karolinska-institutet/"
+  },
+  {
+    "id": "1293",
+    "scraped": "2026-01-09",
+    "source": "biolit",
+    "title": "Test Manager",
+    "url": "https://biolit.se/konsultuppdrag/"
+  },
+  {
+    "id": "1294",
+    "scraped": "2026-01-09",
+    "source": "biolit",
+    "title": "Data Engineer",
+    "url": "https://biolit.se/konsultuppdrag/"
+  },
+  {
+    "id": "1295",
+    "scraped": "2026-01-09",
+    "source": "biolit",
+    "title": "Lead Data Engineer / Tech Lead",
+    "url": "https://biolit.se/konsultuppdrag/"
+  },
+  {
+    "id": "1296",
+    "scraped": "2026-01-09",
+    "source": "biolit",
+    "title": "Senior Verksamhetsutvecklare",
+    "url": "https://biolit.se/konsultuppdrag/"
+  },
+  {
+    "id": "1297",
+    "scraped": "2026-01-09",
+    "source": "biolit",
+    "title": ".NET backendutvecklare",
+    "url": "https://biolit.se/konsultuppdrag/"
+  },
+  {
+    "id": "Data Engineer – Azure Databricks",
+    "scraped": "2026-01-09",
+    "source": "tingent",
+    "title": "Data Engineer – Azure Databricks",
+    "url": "https://tingent.se/jobs"
+  },
+  {
+    "id": "Lead Data Engineer/Tech Lead – Azure Databricks",
+    "scraped": "2026-01-09",
+    "source": "tingent",
+    "title": "Lead Data Engineer/Tech Lead – Azure Databricks",
+    "url": "https://tingent.se/jobs"
+  },
+  {
+    "id": "ITC söker två Data Engineer – Azure Databricks för Nivå 4",
+    "scraped": "2026-01-09",
+    "source": "itc network",
+    "title": "ITC söker två Data Engineer – Azure Databricks för Nivå 4",
+    "url": "https://itc.inkopio.se/vms/Login"
+  },
+  {
+    "id": "ITC söker en Lead Data Engineer/Tech Lead – Azure Databricks för Nivå 4",
+    "scraped": "2026-01-09",
+    "source": "itc network",
+    "title": "ITC söker en Lead Data Engineer/Tech Lead – Azure Databricks för Nivå 4",
+    "url": "https://itc.inkopio.se/vms/Login"
+  },
+  {
+    "id": "ITC söker projektteam för framtagande av faktabaserade policyförslag till RE:Source/RISE",
+    "scraped": "2026-01-09",
+    "source": "itc network",
+    "title": "ITC söker projektteam för framtagande av faktabaserade policyförslag till RE:Source/RISE",
+    "url": "https://itc.inkopio.se/vms/Login"
+  },
+  {
+    "id": "ITC söker en Förvaltnings- och utvecklingsledare (sjöfart) till Stockholms Hamnar",
+    "scraped": "2026-01-09",
+    "source": "itc network",
+    "title": "ITC söker en Förvaltnings- och utvecklingsledare (sjöfart) till Stockholms Hamnar",
+    "url": "https://itc.inkopio.se/vms/Login"
+  },
+  {
+    "id": "7022999",
+    "scraped": "2026-01-09",
+    "source": "senterprise",
+    "title": "Konsultuppdrag | Senior Verksamhetsutvecklare",
+    "url": "https://jobb.senterprise.se/jobs/7022999-konsultuppdrag-senior-verksamhetsutvecklare"
+  },
+  {
+    "id": "7026145",
+    "scraped": "2026-01-09",
+    "source": "senterprise",
+    "title": "Konsultuppdrag | Next Generation Custody - Test Analyst",
+    "url": "https://jobb.senterprise.se/jobs/7026145-konsultuppdrag-next-generation-custody-test-analyst"
+  },
+  {
+    "id": "17PdEOTH",
+    "scraped": "2026-01-09",
+    "source": "levigo",
+    "title": "Cybersecurity Manager\n                        Stockholm (Solna)",
+    "url": "https://assignment.levigo.se/17PdEOTH/cybersecurity-manager"
+  },
+  {
+    "id": "tfZD02Ez",
+    "scraped": "2026-01-09",
+    "source": "levigo",
+    "title": "Verktygsspecialist - Atlassian (3.2.3-2025-2828)\n                        Norrköping",
+    "url": "https://assignment.levigo.se/tfZD02Ez/verktygsspecialist-atlassian-323-2025-2828"
+  },
+  {
+    "id": "462514",
+    "scraped": "2026-01-09",
+    "source": "aliant",
+    "title": "Teamlead & Business Analyst",
+    "url": "https://aliant.recman.io/job/462514"
+  },
+  {
+    "id": "1022",
+    "scraped": "2026-01-09",
+    "source": "regent",
+    "title": "Datacenter konsult nivå 4-5",
+    "url": "https://regent.se/uppdrag/1022"
+  },
+  {
+    "id": "https://www.nikita.se/lediga-uppdrag/9661/",
+    "scraped": "2026-01-09",
+    "source": "nikita",
+    "title": "Senior QA/Test Engineer – Finansiella system",
+    "url": "https://www.nikita.se/lediga-uppdrag/9661/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/data-it/konsultstod-for-inforande-av-bestallningsportal-till-karolinska-institutet/",
+    "scraped": "2026-01-09",
+    "source": "keyman",
+    "title": "Konsultstöd för införande av beställningsportal till Karolinska Institutet",
+    "url": "https://www.keyman.se/sv/data-it/konsultstod-for-inforande-av-bestallningsportal-till-karolinska-institutet/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/data-it/teknisk-projektledare-till-forstudie-inom-automation-av-cad-vi-gar-igenom-offerter-lopande/",
+    "scraped": "2026-01-09",
+    "source": "keyman",
+    "title": "Teknisk projektledare till förstudie inom automation av CAD – Vi går igenom offerter löpande!",
+    "url": "https://www.keyman.se/sv/data-it/teknisk-projektledare-till-forstudie-inom-automation-av-cad-vi-gar-igenom-offerter-lopande/"
+  },
+  {
+    "id": "https://www.keyman.se/sv/data-it/sme-expert-ncc-filemaster-sharepoint-nordics-se-dk-fi-no-development/",
+    "scraped": "2026-01-09",
+    "source": "keyman",
+    "title": "SME expert – NCC Filemaster Sharepoint Nordics (SE, DK, FI, NO) development",
+    "url": "https://www.keyman.se/sv/data-it/sme-expert-ncc-filemaster-sharepoint-nordics-se-dk-fi-no-development/"
+  },
+  {
+    "id": "03d9e08b-778d-47a8-b83b-ff7f4ef6354c",
+    "scraped": "2026-01-09",
+    "source": "randstad",
+    "title": "receptionist",
+    "url": "https://www.randstad.se/jobb/receptionist_solna_03d9e08b-778d-47a8-b83b-ff7f4ef6354c/"
+  },
+  {
+    "id": "739e951b-86d6-4935-8bd5-24e30103835c",
+    "scraped": "2026-01-09",
+    "source": "randstad",
+    "title": "maskinoperatör i sandviken",
+    "url": "https://www.randstad.se/jobb/maskinoperator-i-sandviken_sandviken_739e951b-86d6-4935-8bd5-24e30103835c/"
+  },
+  {
+    "id": "5b26aef1-e144-451f-88bb-83b48019ce7a",
+    "scraped": "2026-01-09",
+    "source": "randstad",
+    "title": "hrbp",
+    "url": "https://www.randstad.se/jobb/hrbp_stockholm_5b26aef1-e144-451f-88bb-83b48019ce7a/"
+  },
+  {
+    "id": "2e9b241e-ed36-4cb9-b801-b66824d2acdf",
+    "scraped": "2026-01-09",
+    "source": "randstad",
+    "title": "junior rekryterare",
+    "url": "https://www.randstad.se/jobb/junior-rekryterare_gavle_2e9b241e-ed36-4cb9-b801-b66824d2acdf/"
+  },
+  {
+    "id": "18780",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Data Engineer för Beslutsstöd",
+    "url": "https://cinode.market/requests/18780"
+  },
+  {
+    "id": "18781",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Verksamhetsutvecklare",
+    "url": "https://cinode.market/requests/18781"
+  },
+  {
+    "id": "18782",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Test Manager till företag inom bank och försäkring",
+    "url": "https://cinode.market/requests/18782"
+  },
+  {
+    "id": "18783",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Senior Verksamhetsutvecklare (IT) – konsultuppdrag hos kund",
+    "url": "https://cinode.market/requests/18783"
+  },
+  {
+    "id": "18785",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "2 Biztalkutvecklare 2025-11616",
+    "url": "https://cinode.market/requests/18785"
+  },
+  {
+    "id": "18788",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Data Engineer – Långt uppdrag hos Finansinspektionen",
+    "url": "https://cinode.market/requests/18788"
+  },
+  {
+    "id": "18789",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Junior AI Business Developer – konsultuppdrag",
+    "url": "https://cinode.market/requests/18789"
+  },
+  {
+    "id": "18790",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "System Owner Learning system",
+    "url": "https://cinode.market/requests/18790"
+  },
+  {
+    "id": "18791",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Verktygsspecialist - Atlassian",
+    "url": "https://cinode.market/requests/18791"
+  },
+  {
+    "id": "18792",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "RPA Projekt",
+    "url": "https://cinode.market/requests/18792"
+  },
+  {
+    "id": "18793",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Test Analyst",
+    "url": "https://cinode.market/requests/18793"
+  },
+  {
+    "id": "18795",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Projektledare Informationssystem inom sjukvård",
+    "url": "https://cinode.market/requests/18795"
+  },
+  {
+    "id": "18796",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Teamlead & Business Analyst",
+    "url": "https://cinode.market/requests/18796"
+  },
+  {
+    "id": "18797",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Lösningsarkitekt",
+    "url": "https://cinode.market/requests/18797"
+  },
+  {
+    "id": "18798",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Grafisk formgivare",
+    "url": "https://cinode.market/requests/18798"
+  },
+  {
+    "id": "18799",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "BI Specialist/SASutvecklare",
+    "url": "https://cinode.market/requests/18799"
+  },
+  {
+    "id": "18800",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Uppdragssamordnare agil IT",
+    "url": "https://cinode.market/requests/18800"
+  },
+  {
+    "id": "18801",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "BI-specialist / SAS-utvecklare",
+    "url": "https://cinode.market/requests/18801"
+  },
+  {
+    "id": "18802",
+    "scraped": "2026-01-09",
+    "source": "cinode",
+    "title": "Lösningsarkitekt inom bilddiagnostik på 50%",
+    "url": "https://cinode.market/requests/18802"
+  },
+  {
+    "id": "150929",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "IT​-supporttekniker",
+    "url": "https://upgraded.se/konsultuppdrag/150929-it-supporttekniker-5/"
+  },
+  {
+    "id": "150989",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Frontendutvecklare",
+    "url": "https://upgraded.se/konsultuppdrag/150989-frontendutvecklare-10/"
+  },
+  {
+    "id": "150994",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Data Engineers – Azure Databricks",
+    "url": "https://upgraded.se/konsultuppdrag/150994-data-engineers/"
+  },
+  {
+    "id": "149168",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Sakkunnig inom psykiatri",
+    "url": "https://upgraded.se/konsultuppdrag/149168-sakkunnig-inom-psykiatri/"
+  },
+  {
+    "id": "149160",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Specialistläkare i barn- och ungdomspsykiatri",
+    "url": "https://upgraded.se/konsultuppdrag/149160-specialistlakare-i-barn-och-ungdomspsykiatri/"
+  },
+  {
+    "id": "151010",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Tech Lead – Azure Databricks",
+    "url": "https://upgraded.se/konsultuppdrag/151010-tech-lead-azure-databricks/"
+  },
+  {
+    "id": "143178",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Backend Developer / Engineer",
+    "url": "https://upgraded.se/konsultuppdrag/143178-backend-developer-engineer-2/"
+  },
+  {
+    "id": "151036",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Datacenterspecialist",
+    "url": "https://upgraded.se/konsultuppdrag/151036-datacenterspecialist/"
+  },
+  {
+    "id": "142340",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Senior informationssäkerhets- och dataskyddsspecialist, Region Skåne avrop 2205",
+    "url": "https://upgraded.se/konsultuppdrag/142340-senior-informationssakerhets-och-dataskyddsspecialist-region-skane-avrop-2205/"
+  },
+  {
+    "id": "151071",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Team med Oracle",
+    "url": "https://upgraded.se/konsultuppdrag/151071-team-med-oracle/"
+  },
+  {
+    "id": "151072",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Specialist inom strategisk kommunikation",
+    "url": "https://upgraded.se/konsultuppdrag/151072-specialist-inom-strategisk-kommunikation/"
+  },
+  {
+    "id": "150102",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Business Process Modelling Specialist/Analyst",
+    "url": "https://upgraded.se/konsultuppdrag/150102-business-process-modelling-specialist-analyst/"
+  },
+  {
+    "id": "151124",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Integrationsutvecklare",
+    "url": "https://upgraded.se/konsultuppdrag/151124-integrationsutvecklare-13/"
+  },
+  {
+    "id": "151126",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Senior Helpdesk/IT-konsult, Region Skåne avrop 2334",
+    "url": "https://upgraded.se/konsultuppdrag/151126-senior-helpdesk-it-konsult-region-skane-avrop-2334/"
+  },
+  {
+    "id": "151140",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Senior Helpdesk/IT-konsult, Region Skåne avrop 2335",
+    "url": "https://upgraded.se/konsultuppdrag/151140-senior-helpdesk-it-konsult-region-skane-avrop-2335/"
+  },
+  {
+    "id": "151147",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Test Engineer",
+    "url": "https://upgraded.se/konsultuppdrag/151147-test-engineer-31/"
+  },
+  {
+    "id": "151155",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Test analyst",
+    "url": "https://upgraded.se/konsultuppdrag/151155-test-analyst/"
+  },
+  {
+    "id": "151157",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Vehicle Test Engineer",
+    "url": "https://upgraded.se/konsultuppdrag/151157-vehicle-test-engineer/"
+  },
+  {
+    "id": "151159",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Imaging Engineer",
+    "url": "https://upgraded.se/konsultuppdrag/151159-imaging-engineer/"
+  },
+  {
+    "id": "149362",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Business Analyst",
+    "url": "https://upgraded.se/konsultuppdrag/149362-business-analyst-57/"
+  },
+  {
+    "id": "151163",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Senior BI-lösningsarkitekt, Region Skåne avrop 2336",
+    "url": "https://upgraded.se/konsultuppdrag/151163-senior-bi-losningsarkitekt-region-skane-avrop-2336/"
+  },
+  {
+    "id": "151186",
+    "scraped": "2026-01-09",
+    "source": "upgraded",
+    "title": "Utbildare inom Testautomation och AI",
+    "url": "https://upgraded.se/konsultuppdrag/151186-utbildare-inom-testautomation-och-ai/"
+  },
+  {
+    "id": "14997",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Mjukvaruutvecklare - C++, Machine Learning - Linköping",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/mjukvaruutvecklare-c-machine-learning-linkping-14997",
+    "city": "Linköping",
+    "lastDate": "31 januari 2026",
+    "period": "2026-02-02 - 2026-09-25"
+  },
+  {
+    "id": "14998",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Cyber Security ingenjörer (Olika erfarenhetsnivåer)",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/cyber-security-ingenjrer-olika-erfarenhetsniver-14998",
+    "city": "Malmö/Lund",
+    "lastDate": "13 februari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "14999",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Krav- och verksamhetsanalytiker E-hälsomyndigheten Stockholm/Kalmar 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/krav-och-verksamhetsanalytiker-e-hlsomyndigheten-stockholmkalmar-100-14999",
+    "city": "Stockholm",
+    "lastDate": "19 januari 2026",
+    "period": "2026-02-04 - 2027-02-03"
+  },
+  {
+    "id": "15000",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Projektledare Transportstyrelsen Örebro 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/projektledare-transportstyrelsen-rebro-100-15000",
+    "city": "Örebro",
+    "lastDate": "15 januari 2026",
+    "period": "2026-04-01 - 2027-04-01"
+  },
+  {
+    "id": "15001",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Biztalkutvecklare Transportstyrelsen Örebro/Norrköping/Kista 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/biztalkutvecklare-transportstyrelsen-rebronorrkpingkista-100-15001",
+    "city": "Örebro",
+    "lastDate": "15 januari 2026",
+    "period": "2026-04-01 - 2027-04-01"
+  },
+  {
+    "id": "15002",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Strateg VTR Transportstyrelsen Örebro 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/strateg-vtr-transportstyrelsen-rebro-100-15002",
+    "city": "Örebro",
+    "lastDate": "20 januari 2026",
+    "period": "2026-05-01 - 2030-05-01"
+  },
+  {
+    "id": "15003",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Vehicle test engineer",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/vehicle-test-engineer-15003",
+    "city": "Södertälje",
+    "lastDate": "16 januari 2026",
+    "period": "2026-02-02 - 2028-01-31"
+  },
+  {
+    "id": "15004",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Utvecklare Backend .NET Arbetsförmedlingen Solna 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/utvecklare-backend-net-arbetsfrmedlingen-solna-100-15004",
+    "city": "Stockholm",
+    "lastDate": "12 januari 2026",
+    "period": "2026-02-01 - 2027-01-31"
+  },
+  {
+    "id": "15006",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Lösningsarkitekt anläggningsprojektering Trafikverket Stockholm 100%",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/lsningsarkitekt-anlggningsprojektering-trafikverket-stockholm-100-15006",
+    "city": "Stockholm",
+    "lastDate": "15 januari 2026",
+    "period": "2026-02-01 - 2027-01-31"
+  },
+  {
+    "id": "15007",
+    "scraped": "2026-01-09",
+    "source": "a society",
+    "title": "Projektledare HMI & Display Systems C/D",
+    "url": "https://www.asocietygroup.com/sv/uppdrag/projektledare-hmi-display-systems-cd-15007",
+    "city": "Stockholm",
+    "lastDate": "9 februari 2026",
+    "period": "N/A"
+  },
+  {
+    "id": "74918",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Senior mekanikingenjör - konceptutveckling",
+    "url": "https://app.verama.com/job-requests/74918"
+  },
+  {
+    "id": "74921",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Senior QA Tester",
+    "url": "https://app.verama.com/job-requests/74921"
+  },
+  {
+    "id": "74923",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Data Information Architect",
+    "url": "https://app.verama.com/job-requests/74923"
+  },
+  {
+    "id": "74926",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Teknisk specialist E-arkiv 2.0",
+    "url": "https://app.verama.com/job-requests/74926"
+  },
+  {
+    "id": "74927",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Senior PWA Developer",
+    "url": "https://app.verama.com/job-requests/74927"
+  },
+  {
+    "id": "74928",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Supportspecialist IT servicedesk - Borås",
+    "url": "https://app.verama.com/job-requests/74928"
+  },
+  {
+    "id": "74932",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Security Compliance Officer",
+    "url": "https://app.verama.com/job-requests/74932"
+  },
+  {
+    "id": "74934",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Business Analyst for go to market phase",
+    "url": "https://app.verama.com/job-requests/74934"
+  },
+  {
+    "id": "74935",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Tietojohtamisen ja arkkitehtuurin asiantuntijat (2) – VNK",
+    "url": "https://app.verama.com/job-requests/74935"
+  },
+  {
+    "id": "74937",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Transaction Monitoring Developer",
+    "url": "https://app.verama.com/job-requests/74937"
+  },
+  {
+    "id": "74940",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Programledare - Förändringsledare",
+    "url": "https://app.verama.com/job-requests/74940"
+  },
+  {
+    "id": "74941",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "DevOps Engineer",
+    "url": "https://app.verama.com/job-requests/74941"
+  },
+  {
+    "id": "74943",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "L2 Application Support / IT Analyst",
+    "url": "https://app.verama.com/job-requests/74943"
+  },
+  {
+    "id": "74944",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Developers for Payments Area Rampup",
+    "url": "https://app.verama.com/job-requests/74944"
+  },
+  {
+    "id": "74945",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Custom Code Expert",
+    "url": "https://app.verama.com/job-requests/74945"
+  },
+  {
+    "id": "74947",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Digital Commerce Google Applications Consultant",
+    "url": "https://app.verama.com/job-requests/74947"
+  },
+  {
+    "id": "74949",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Application Developer",
+    "url": "https://app.verama.com/job-requests/74949"
+  },
+  {
+    "id": "74951",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Transport, Trade & Logistics Specialist-D",
+    "url": "https://app.verama.com/job-requests/74951"
+  },
+  {
+    "id": "74954",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Engineer in Network & Cyber Security",
+    "url": "https://app.verama.com/job-requests/74954"
+  },
+  {
+    "id": "74956",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "IT Validation and Compliance Lead",
+    "url": "https://app.verama.com/job-requests/74956"
+  },
+  {
+    "id": "74957",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Manufacturing Engineer",
+    "url": "https://app.verama.com/job-requests/74957"
+  },
+  {
+    "id": "74959",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Backend Developer - AWS",
+    "url": "https://app.verama.com/job-requests/74959"
+  },
+  {
+    "id": "74961",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Health, Safety and Environment Specialist-C",
+    "url": "https://app.verama.com/job-requests/74961"
+  },
+  {
+    "id": "74962",
+    "scraped": "2026-01-09",
+    "source": "verama",
+    "title": "Ärendehandläggare (Planhandläggare)",
+    "url": "https://app.verama.com/job-requests/74962"
+  },
+  {
+    "id": "https://www.sigma.se/sv/assignment/spontanansokan-mjukvaruutvecklare-inom-inbyggda-system-stockholms-lan-sv-20260109/",
+    "scraped": "2026-01-09",
+    "source": "sigma",
+    "title": "Spontanansökan: Mjukvaruutvecklare inom inbyggda system",
+    "url": "https://www.sigma.se/sv/assignment/spontanansokan-mjukvaruutvecklare-inom-inbyggda-system-stockholms-lan-sv-20260109/"
+  },
+  {
+    "id": "#232217",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Full-Stack Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232199",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior Azure Data Engineer with Databricks",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232200",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "GCP Developer with .NET experience",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232227",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "100% Remote Position for SAP Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232219",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior Automotive Electronics Design Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232196",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Electronics Design Engineer (Automotive)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232228",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Développeur Full Stack Java (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232234",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior AS400 / AIX Architect",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232241",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Fullstack Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232243",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior iOS Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232224",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Customer Experience Research Consultant",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232246",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior Android Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232123",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "TGA-Ing. HKLS (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232247",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "QA Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232218",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Architect for Platform Operations Stabilization & Modernization",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232248",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Dev BI Tableau Software (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232252",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior UX/UI Designer for Digital Innovation",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232253",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Kravanalytiker - Kampanjverktyg",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232251",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Tester, remote und Hannover oder Münster (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232235",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Bankfachlicher Analyst mit Wertpapierkenntnissen, remote + Münster (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232222",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Automotive Electronics Design Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232205",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Ingénieur Système Linux/Unix (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232121",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Site Manager Battery and Solar (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232254",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Chef de projet technique Dynamics 365 Finance & Operations / AX (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232223",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Data Science Senior - (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232257",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Projektant UI/UX",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232264",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior Data Scientist with MLOps and AgenticAI Experience in Production",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232267",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "PMO Analyst (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232262",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Java Developer med erfaring i Angular og Quarkus",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232266",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "IAM Architect / IAM Engineer / Identity & Access Management Specialist",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232261",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Data Integration Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232272",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Expert DBA MongoDB & Tech Lead PaaS Azure (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232265",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "DevOps Tech Lead",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232273",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Go-Entwickler für Cloud-Infrastruktur (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232270",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior Windows Administrator - Modern Workplace & Security (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232275",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Kinaxis Maestro Support Specialist (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232268",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Referent Personalcontrolling (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232280",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Business Analyst (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232281",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "QA Java / Test Automation (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232282",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Scrum Master Hybrid in Bengaluru",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232284",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "AI Technical Lead",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232258",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Full-stack Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232283",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Business Analyst",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232285",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Business Analyst with Copilot Studio - Hybrid (Bangalore)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232238",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Développeur Commando Python (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232288",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Business Analyst",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232295",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Software Tester (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232260",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Dynamics 365 CRM Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232306",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Consultant SIRH - Expert Pléiade (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232152",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Chef de Projet BI (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232279",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Executive Assistant",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232303",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior Power BI Developer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232307",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Fullstack-udvikler (Java & Angular)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232310",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "System Engineer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232311",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Fullstack Umbraco Developers",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232300",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Anwendungsentwickler & Solution Architekt Mainframe Umfeld (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232312",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "DevOps/DevEx Engineer with AWS/TypeScript focus",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232296",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "IT-Steuerung & Digitalisierungsmanager (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232314",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior Fullstack Java Developer (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232317",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Test Lead/Analyst",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232305",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Analityk Biznesowy Danych",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232316",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Senior Consultant – Azure & Terraform (Execution Role)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232318",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Advisor – Arkitektur & Governance (rådgivende rolle)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232309",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Remote Opportunity as an SAP ECC-MM Consultant",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232229",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Chef de Projet SAP (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232313",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Data Architect (Microsoft Azure, Snowflake)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232322",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Cloud Developer (Microsoft Azure and AWS)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232206",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Support Manager - Team Lead (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232048",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Chef de projet fonctionnel (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232325",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Data Architect",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232315",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Identity & Access Management Specialist",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232149",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "UX/UI Designer (méthode Discovery / Delivery) – Design System (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232327",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "PMO, Düsseldorf (m/w/d)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232044",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Intégrateur applicatif (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232332",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Teamleder kapasitetsstyring/Prosjektleder multiressursbooking",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232323",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "IT Validation and Compliance Lead",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232092",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Aktuar/konsulent til gennemgang af policer",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232334",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Product Owner Paiement (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "#232336",
+    "scraped": "2026-01-09",
+    "source": "emagine",
+    "title": "Développeur / Data Scientist Senior – Data & Finance (h/f)",
+    "url": "https://portal.emagine.org/jobs/all"
+  },
+  {
+    "id": "https://www.techrelations.se//konsultuppdrag/vi-soker-en-senior-kravledare-sakerhetskonsult-till-ett-langre-uppdrag-hos-kund-i-sundbyberg",
+    "scraped": "2026-01-09",
+    "source": "techrelations",
+    "title": "Vi söker en senior kravledare/säkerhetskonsult till ett längre uppdrag hos kund i Sundbyberg.",
+    "url": "https://www.techrelations.se//konsultuppdrag/vi-soker-en-senior-kravledare-sakerhetskonsult-till-ett-langre-uppdrag-hos-kund-i-sundbyberg"
   }
 ]

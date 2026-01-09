@@ -17,25 +17,30 @@ export function AssignmentItem({ assignment }: Readonly<IProperties>) {
           <h3 className="font-bold text-highlight-4">{assignment.title}</h3>
         </div>
         <div className="flex flex-wrap">
-          <div>
-            <span>{assignment.scraped}</span>
+          <div className="pr-5">
+            <div>City:</div>
+            <div>{assignment.city}</div>
           </div>
-          <span className="pl-5">
+          <div className="pr-5">
+            <div>Scraped:</div>
+            <div>{assignment.scraped}</div>
+          </div>
+          <div className="pr-5">
+            <div>Tags:</div>
             <DevelopmentLabel display={assignment.isDevelopment} /> <UxLabel display={assignment.isUX} />
             <A11yLabel display={assignment.isA11y} />
-          </span>
-          <div className="pl-5">
-            <span>{assignment.source}</span>
           </div>
-
-          <div className="pl-5">
-            <span>{assignment.city}</span>
+          <div className="pr-5">
+            <div>Source:</div>
+            <div>{assignment.source}</div>
           </div>
-          <div className="pl-5">
-            <span>{assignment.period}</span>
+          <div className="pr-5">
+            <div>Last date:</div>
+            <div>{assignment.lastDate}</div>
           </div>
-          <div className="pl-5">
-            <span>{assignment.lastDate}</span>
+          <div className="pr-5">
+            <div>Period:</div>
+            <div>{assignment.period}</div>
           </div>
         </div>
       </a>

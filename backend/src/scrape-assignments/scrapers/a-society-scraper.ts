@@ -25,21 +25,17 @@ export async function scrapeASociety(page: Page, existingKeys: string[]): Promis
         .locator('[class*="AssignmentContent_point__"]')
         .all();
 
-      let city = "N/A";
-      let period = "N/A";
-      let lastDate = "N/A";
+      let city;
+      let period;
+      let lastDate;
 
       for (const keyPoint of keyPoints) {
         const text = await keyPoint.textContent();
         if (text?.includes("Arbetsort")) {
           city = text?.replace("Arbetsort", "").trim();
-        }
-
-        if (text?.includes("Period")) {
+        } else if (text?.includes("Period")) {
           period = text?.replace("Period", "").trim();
-        }
-
-        if (text?.includes("Sista ansökningsdag")) {
+        } else if (text?.includes("Sista ansökningsdag")) {
           lastDate = text?.replace("Sista ansökningsdag", "").trim();
         }
       }

@@ -7,7 +7,9 @@ interface IProperties {
     element: Locator
   ) => Promise<{ id: null | string | undefined; title: string | undefined; url: null | string }>;
   getElements: () => Promise<Locator[]>;
-  getMoreAssignmentData?: (url: string) => Promise<{ city: string; lastDate: string; period: string }>;
+  getMoreAssignmentData?: (
+    url: string
+  ) => Promise<{ city: string | undefined; lastDate: string | undefined; period: string | undefined }>;
   pageName: string;
   pageUrl: string;
   playwrightPage: Page;
@@ -50,9 +52,9 @@ export async function scrapeOnePage({
     for (const assignment of assignments) {
       if (assignment.url === pageUrl) break;
       const { city, lastDate, period } = await getMoreAssignmentData(assignment.url);
-      assignment.city = city;
-      assignment.lastDate = lastDate;
-      assignment.period = period;
+      assignment.city = city ?? "N/A";
+      assignment.lastDate = lastDate ?? "N/A";
+      assignment.period = period ?? "N/A";
     }
   }
 
