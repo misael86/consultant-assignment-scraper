@@ -9,6 +9,8 @@ import { useStore } from "@frontend/context/store";
 import { StrictMode, useEffect } from "react";
 import { useShallow } from "zustand/shallow";
 
+import { ProgressBar } from "@/components/progress-bar";
+
 export default function Home() {
   const {
     filteredAssignmentsAll,
@@ -38,17 +40,21 @@ export default function Home() {
 
   return (
     <StrictMode>
-      <main className="m-20">
+      <main className="m-20 mt-0">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center">
+          <div className="text-center mb-10 p-5">
             <Header size={1}>Consultant Assignment Scraper</Header>
           </div>
 
           <div className="mt-2.5 text-center">
-            <Button onClick={scrapeAssignments}>Scrape assignments</Button>
+            <Button isBig onClick={scrapeAssignments}>
+              Scrape assignments
+            </Button>
             {isScrapingAssignments && (
               <div className="mx-auto mt-5">
-                <progress className="ml-5" max={isScrapingNrAssignments} value={hasScrapedNrAssignments} />
+                <div className="ml-5">
+                  <ProgressBar max={isScrapingNrAssignments} value={hasScrapedNrAssignments} />
+                </div>
                 <span className="ml-2.5">
                   Scraping ({hasScrapedNrAssignments}/{isScrapingNrAssignments})...
                 </span>
