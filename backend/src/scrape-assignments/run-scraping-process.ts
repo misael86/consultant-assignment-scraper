@@ -3,11 +3,10 @@ import { scrapers } from "@backend/scrape-assignments/scrapers";
 import { IAssignment } from "@shared/assignment";
 import { Low } from "lowdb";
 import { JSONFilePreset } from "lowdb/node";
-import { Browser, chromium, Page } from "playwright";
+import { Browser, Page } from "playwright";
 import { WebSocket } from "ws";
 
-export async function runScrapingProcess(webSocket: WebSocket) {
-  const browser = await chromium.launch({ headless: true });
+export async function runScrapingProcess(webSocket: WebSocket, browser: Browser) {
   try {
     sendEvent(webSocket, { totalScrapers: scrapers.length, type: "scraping_started" });
     await runAllScrapers(webSocket, browser);
@@ -15,7 +14,6 @@ export async function runScrapingProcess(webSocket: WebSocket) {
     console.error("Scraping process failed:", error);
     sendEvent(webSocket, { message: "Scraping process failed", type: "error" });
   } finally {
-    await browser.close();
     sendEvent(webSocket, { type: "scraping_completed" });
   }
 }
@@ -53,17 +51,20 @@ async function runScraper(
   let retryCount = 3;
   const page = await browser.newPage();
 
-  while (retryCount > 0) {
-    try {
-      assignments = await scraper(page, existingKeys);
-      break;
-    } catch (error) {
-      retryCount--;
-      if (retryCount === 0) throw error;
+  try {
+    while (retryCount > 0) {
+      try {
+        assignments = await scraper(page, existingKeys);
+        break;
+      } catch (error) {
+        retryCount--;
+        if (retryCount === 0) throw error;
+      }
     }
+  } finally {
+    await page.close();
   }
 
-  await page.close();
   return assignments.toReversed();
 }
 
