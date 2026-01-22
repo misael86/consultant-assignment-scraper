@@ -58,13 +58,17 @@ async function runScraper(
         break;
       } catch (error) {
         retryCount--;
-        if (retryCount === 0) throw error;
+        if (retryCount === 0) {
+          throw error;
+        }
       }
     }
-  } finally {
+  } catch (error) {
     await page.close();
+    throw error;
   }
 
+  await page.close();
   return assignments.toReversed();
 }
 
